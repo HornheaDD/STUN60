@@ -1,6 +1,6 @@
 # S.T.U.N. Runner 60fps: project notes for Claude
 
-These notes live in the git repo (public). Machine-specific and private details (NAS, network, delivery locations,
+These notes live in the public git repo https://github.com/HornheaDD/STUN60 (local clone ~/mame). Machine-specific and private details (NAS, network, delivery locations,
 backups) are in ~/CLAUDE.md on the user's PC and must NOT be copied here. Paths below assume the repo is ~/mame.
 Build tree (not in git): ~/mame/build/mame-mame0285 = MAME 0.285 source + stun60-mame0285.patch. ROMs (not in git): ~/mame/roms.
 
