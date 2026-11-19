@@ -4,6 +4,23 @@ These notes live in the public git repo https://github.com/HornheaDD/STUN60 (loc
 backups) are in ~/CLAUDE.md on the user's PC and must NOT be copied here. Paths below assume the repo is ~/mame.
 Build tree (not in git): ~/mame/build/mame-mame0285 = MAME 0.285 source + stun60-mame0285.patch. ROMs (not in git): ~/mame/roms.
 
+## PAUSED HERE (2026-11-18, evening). Start with this section.
+Done today on CachyOS: setup from the migration bundle + first live run (59.5 fps in 3D play); CRT scanlines via BGFX with the
+C key (custom Lua binding stun60_slider); attract-screen "dip" explained (static story panel, GSP-bound) + false "overclock too
+low" warning fixed; portable packages rebuilt (Linux glibc >= 2.36, Windows 10/11); project put on git/GitHub.
+- Repo: https://github.com/HornheaDD/STUN60 (public, MIT; patch BSD-3-Clause). Local clone = ~/mame, branch main, in sync.
+  Commits use the repo-local noreply identity (already configured). `gh` is installed and logged in.
+  **Before every commit:** scan tracked files for IPs, NAS paths, /home/<user> paths and emails; never commit ROMs or
+  ROM-derived data (see .gitignore). Private/machine notes belong in ~/CLAUDE.md only.
+- Release v1.0 (2026-11-18): AppImage, linux tar.gz, windows zip from package/out/ (built from tag v1.0; SHA-256s in the notes).
+  New release: rebuild (./build.sh package, ./build.sh windows, then assemble as in "Packages rebuilt" below), run the verify test,
+  commit, `gh release create vX.Y --target main --notes-file ... files`, and re-download the assets to check checksums.
+- Local launcher: "S.T.U.N. Runner 60fps (custom MAME)" (scripts/run-stun60.sh), CRT deluxe saved as the user's choice.
+- **Next (agreed plan): HD redraw at 4:3** (live renderer in the custom build, from the decoded display list + colours; see
+  "HD redraw experiment" and "Colour decode DONE" below), then a widescreen probe. Estimate given: first live HD frames ~3-4 h,
+  finished + packaged ~2 days.
+- Backburner: choppy sound on the user's real Windows PC (later check seemed OK); "extra 1 missed (rendered true)" ~0.25/s.
+
 ## Current state (CachyOS, 2026-11-18)
 - **Setup DONE 2026-11-18:** ~/mame/build/mame-mame0285/stun60 built in ~5 min (-j16). Verify test: 60.0 fps, 20.00 ticks/s,
   677/677 exact. Launcher stunrun-60fps-custom.desktop in ~/.local/share/applications + ~/Desktop (-> run-stun60.sh).
