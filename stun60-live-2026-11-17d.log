@@ -1,0 +1,580 @@
+    60.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0, wall 0.976 s, max gap 24 ms, late 0
+   120.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0, wall 0.996 s, max gap 19 ms, late 0
+   180.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0, wall 0.997 s, max gap 19 ms, late 0
+   240.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0, wall 0.997 s, max gap 21 ms, late 0
+   300.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0, wall 0.996 s, max gap 20 ms, late 0
+   360.000 per second: drawn 19, extra 0, ticks 19, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0, wall 0.998 s, max gap 18 ms, late 0
+   372.000 extra 1 missed (rendered false, buffer FFFF)
+   373.000 extra 2 missed (rendered false, buffer 0000)
+   374.000 released a stale ADSP done
+   375.458 extra 1 missed (rendered true, buffer FFFF)
+   420.000 per second: drawn 48, extra 34, ticks 19, dropped 3, cycles 16, gd 0.90 jd 0.47, lua ms 0.4, wall 1.004 s, max gap 31 ms, late 2
+   480.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.90 jd 0.47, lua ms 0.5, wall 0.996 s, max gap 18 ms, late 0
+   540.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.90 jd 0.47, lua ms 0.4, wall 0.996 s, max gap 18 ms, late 0
+   574.000 released a stale ADSP done
+   600.000 per second: drawn 42, extra 26, ticks 20, dropped 0, cycles 11, gd 0.90 jd 0.52, lua ms 0.3, wall 0.990 s, max gap 31 ms, late 2
+   660.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.90 jd 0.52, lua ms 0.0, wall 0.996 s, max gap 24 ms, late 0
+   720.000 per second: drawn 19, extra 0, ticks 19, dropped 0, cycles 0, gd 0.90 jd 0.52, lua ms 0.0, wall 0.996 s, max gap 24 ms, late 0
+   780.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.90 jd 0.52, lua ms 0.0, wall 0.996 s, max gap 18 ms, late 0
+   840.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.90 jd 0.52, lua ms 0.0, wall 1.003 s, max gap 26 ms, late 1
+   881.571 no ADSP time this cycle (overclock adsp)
+   885.000 extra 1 missed (rendered false, buffer 0000)
+   886.000 extra 2 missed (rendered false, buffer 0000)
+   900.000 per second: drawn 28, extra 11, ticks 19, dropped 2, cycles 5, gd 0.74 jd 0.44, lua ms 0.1, wall 0.996 s, max gap 25 ms, late 1
+   960.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.64 jd 0.28, lua ms 0.4, wall 0.994 s, max gap 18 ms, late 0
+  1020.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.24, lua ms 0.4, wall 0.997 s, max gap 20 ms, late 0
+  1080.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.18, lua ms 0.3, wall 0.995 s, max gap 20 ms, late 0
+  1140.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.28, lua ms 0.4, wall 1.002 s, max gap 22 ms, late 0
+  1200.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.22, lua ms 0.4, wall 0.995 s, max gap 21 ms, late 0
+  1260.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.19, lua ms 0.4, wall 0.996 s, max gap 21 ms, late 0
+  1320.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.30, lua ms 1.5, wall 0.998 s, max gap 21 ms, late 0
+  1380.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.70 jd 0.33, lua ms 0.4, wall 0.997 s, max gap 20 ms, late 0
+  1440.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.30, lua ms 0.4, wall 0.995 s, max gap 20 ms, late 0
+  1500.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.42 jd 0.20, lua ms 0.3, wall 0.995 s, max gap 19 ms, late 0
+  1560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.42 jd 0.19, lua ms 0.3, wall 0.997 s, max gap 20 ms, late 0
+  1620.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.27, lua ms 0.4, wall 0.998 s, max gap 21 ms, late 0
+  1680.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.63 jd 0.29, lua ms 0.3, wall 0.998 s, max gap 21 ms, late 0
+  1740.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.22, lua ms 0.4, wall 0.995 s, max gap 26 ms, late 1
+  1800.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.23, lua ms 0.4, wall 0.997 s, max gap 22 ms, late 0
+  1860.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.28, lua ms 0.4, wall 0.997 s, max gap 21 ms, late 0
+  1920.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.22, lua ms 0.4, wall 0.995 s, max gap 20 ms, late 0
+  1980.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.25, lua ms 1.2, wall 0.998 s, max gap 21 ms, late 0
+  2040.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.25, lua ms 0.4, wall 0.996 s, max gap 20 ms, late 0
+  2100.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.26, lua ms 0.3, wall 0.997 s, max gap 18 ms, late 0
+  2160.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.22, lua ms 0.8, wall 0.996 s, max gap 21 ms, late 0
+  2220.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.26, lua ms 0.4, wall 0.997 s, max gap 20 ms, late 0
+  2280.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.56 jd 0.30, lua ms 0.5, wall 0.998 s, max gap 20 ms, late 0
+  2340.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.29, lua ms 0.8, wall 0.996 s, max gap 19 ms, late 0
+  2400.000 per second: drawn 59, extra 43, ticks 20, dropped 0, cycles 20, gd 0.90 jd 0.38, lua ms 0.4, wall 0.998 s, max gap 24 ms, late 0
+  2460.000 per second: drawn 60, extra 47, ticks 20, dropped 0, cycles 20, gd 0.75 jd 0.32, lua ms 0.4, wall 0.995 s, max gap 19 ms, late 0
+  2520.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.74 jd 0.27, lua ms 0.7, wall 0.997 s, max gap 19 ms, late 0
+  2580.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.74 jd 0.27, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+  2640.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.74 jd 0.27, lua ms 0.4, wall 0.997 s, max gap 19 ms, late 0
+  2700.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.63 jd 0.13, lua ms 0.3, wall 0.995 s, max gap 19 ms, late 0
+  2760.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.68 jd 0.19, lua ms 0.3, wall 0.996 s, max gap 18 ms, late 0
+  2820.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.80 jd 0.26, lua ms 0.3, wall 0.999 s, max gap 20 ms, late 0
+  2880.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.73 jd 0.19, lua ms 0.3, wall 0.995 s, max gap 18 ms, late 0
+  2940.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.81 jd 0.22, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+  3000.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.80 jd 0.32, lua ms 0.3, wall 0.999 s, max gap 19 ms, late 0
+  3060.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.88 jd 0.40, lua ms 0.5, wall 0.998 s, max gap 18 ms, late 0
+  3120.000 per second: drawn 57, extra 44, ticks 19, dropped 0, cycles 19, gd 0.74 jd 0.37, lua ms 0.4, wall 0.990 s, max gap 19 ms, late 0
+  3126.000 extra 1 missed (rendered false, buffer FFFF)
+  3127.000 no ADSP time this cycle (overclock adsp)
+  3127.000 extra 2 missed (rendered false, buffer 0000)
+  3180.000 per second: drawn 19, extra 0, ticks 19, dropped 2, cycles 1, gd 0.74 jd 0.37, lua ms 0.0, wall 0.998 s, max gap 23 ms, late 0
+  3240.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.74 jd 0.37, lua ms 0.0, wall 0.996 s, max gap 20 ms, late 0
+  3262.501 no ADSP time this cycle (overclock adsp)
+  3266.000 extra 1 missed (rendered false, buffer 0000)
+  3267.000 extra 2 missed (rendered false, buffer 0000)
+  3300.000 per second: drawn 41, extra 24, ticks 19, dropped 2, cycles 11, gd 0.88 jd 0.39, lua ms 0.3, wall 1.003 s, max gap 25 ms, late 0
+  3360.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.71 jd 0.32, lua ms 0.5, wall 0.996 s, max gap 18 ms, late 0
+  3406.000 released a stale ADSP done
+  3413.840 no ADSP time this cycle (overclock adsp)
+  3416.000 extra 1 missed (rendered false, buffer FFFF)
+  3417.000 extra 2 missed (rendered false, buffer 0000)
+  3420.000 per second: drawn 52, extra 37, ticks 20, dropped 2, cycles 17, gd 0.77 jd 0.41, lua ms 0.4, wall 0.998 s, max gap 27 ms, late 2
+  3480.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.64 jd 0.41, lua ms 0.5, wall 0.997 s, max gap 19 ms, late 0
+  3540.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.64 jd 0.41, lua ms 0.5, wall 0.997 s, max gap 19 ms, late 0
+  3584.000 released a stale ADSP done
+  3590.000 released a stale ADSP done
+  3600.000 per second: drawn 51, extra 35, ticks 21, dropped 0, cycles 16, gd 0.61 jd 0.43, lua ms 0.3, wall 0.990 s, max gap 30 ms, late 2
+  3604.882 no ADSP time this cycle (overclock adsp)
+  3608.000 extra 1 missed (rendered false, buffer 0000)
+  3609.000 extra 2 missed (rendered false, buffer 0000)
+  3660.000 per second: drawn 53, extra 39, ticks 19, dropped 2, cycles 17, gd 0.61 jd 0.38, lua ms 0.3, wall 1.002 s, max gap 25 ms, late 1
+  3688.401 extra 2 bad output
+  3691.000 released a stale ADSP done
+  3694.000 extra 2 bad output
+  3697.000 released a stale ADSP done
+  3710.640 no ADSP time this cycle (overclock adsp)
+  3714.000 extra 1 missed (rendered false, buffer 0000)
+  3715.000 extra 2 missed (rendered false, buffer 0000)
+  3720.000 per second: drawn 44, extra 27, ticks 21, dropped 4, cycles 14, gd 0.66 jd 0.40, lua ms 0.2, wall 0.997 s, max gap 28 ms, late 3
+  3780.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.31, lua ms 0.4, wall 0.996 s, max gap 20 ms, late 0
+  3840.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.32, lua ms 0.5, wall 0.997 s, max gap 20 ms, late 0
+  3900.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.39, lua ms 0.4, wall 0.998 s, max gap 19 ms, late 0
+  3925.409 extra 1 bad output
+  3960.000 per second: drawn 59, extra 45, ticks 20, dropped 1, cycles 20, gd 0.60 jd 0.37, lua ms 0.4, wall 0.997 s, max gap 21 ms, late 0
+  4020.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.31, lua ms 0.4, wall 0.996 s, max gap 22 ms, late 0
+  4080.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.65 jd 0.38, lua ms 0.4, wall 0.997 s, max gap 21 ms, late 0
+  4084.396 extra 1 bad output
+  4098.000 released a stale ADSP done
+  4121.901 no ADSP time this cycle (overclock adsp)
+  4125.000 extra 1 missed (rendered false, buffer 0000)
+  4126.000 extra 2 missed (rendered false, buffer 0000)
+  4140.000 per second: drawn 39, extra 22, ticks 20, dropped 3, cycles 11, gd 0.64 jd 0.42, lua ms 0.2, wall 0.999 s, max gap 29 ms, late 2
+  4200.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.34, lua ms 0.4, wall 0.993 s, max gap 20 ms, late 0
+  4260.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.83 jd 0.38, lua ms 0.4, wall 0.999 s, max gap 20 ms, late 0
+  4320.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.36, lua ms 0.4, wall 0.995 s, max gap 22 ms, late 0
+  4380.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.41, lua ms 0.5, wall 0.998 s, max gap 23 ms, late 0
+  4440.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.33, lua ms 0.4, wall 0.996 s, max gap 20 ms, late 0
+  4500.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.41, lua ms 0.5, wall 0.997 s, max gap 22 ms, late 0
+  4560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.56 jd 0.32, lua ms 0.6, wall 0.995 s, max gap 22 ms, late 0
+  4620.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.35, lua ms 0.4, wall 0.998 s, max gap 21 ms, late 0
+  4680.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.34, lua ms 0.5, wall 0.996 s, max gap 23 ms, late 0
+  4740.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.35, lua ms 0.4, wall 0.997 s, max gap 21 ms, late 0
+  4800.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.37, lua ms 0.4, wall 1.000 s, max gap 20 ms, late 0
+  4860.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.71 jd 0.37, lua ms 0.4, wall 0.994 s, max gap 21 ms, late 0
+  4875.000 released a stale ADSP done
+  4883.462 no ADSP time this cycle (overclock adsp)
+  4887.000 extra 1 missed (rendered false, buffer 0000)
+  4888.000 extra 2 missed (rendered false, buffer 0000)
+  4889.000 released a stale ADSP done
+  4920.000 per second: drawn 30, extra 10, ticks 21, dropped 2, cycles 6, gd 0.82 jd 0.40, lua ms 0.2, wall 0.990 s, max gap 30 ms, late 4
+  4927.000 no ADSP time this cycle (overclock adsp)
+  4930.000 extra 1 missed (rendered false, buffer 0000)
+  4931.000 extra 2 missed (rendered false, buffer 0000)
+  4945.000 released a stale ADSP done
+  4980.000 per second: drawn 50, extra 33, ticks 20, dropped 2, cycles 16, gd 0.57 jd 0.34, lua ms 0.3, wall 1.002 s, max gap 33 ms, late 2
+  5040.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.39, lua ms 0.5, wall 0.998 s, max gap 20 ms, late 0
+  5077.000 released a stale ADSP done
+  5079.935 no ADSP time this cycle (overclock adsp)
+  5083.000 extra 1 missed (rendered false, buffer 0000)
+  5084.000 extra 2 missed (rendered false, buffer 0000)
+  5085.000 released a stale ADSP done
+  5085.863 extra 1 bad output
+  5091.413 extra 1 bad output
+  5092.405 extra 2 bad output
+  5095.000 released a stale ADSP done
+  5096.583 no ADSP time this cycle (overclock adsp)
+  5096.583 extra 1 missed (rendered false, buffer FFFF)
+  5098.000 extra 2 missed (rendered false, buffer 0000)
+  5100.000 per second: drawn 49, extra 32, ticks 21, dropped 7, cycles 17, gd 0.66 jd 0.36, lua ms 0.3, wall 0.997 s, max gap 30 ms, late 2
+  5160.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.35, lua ms 0.4, wall 0.996 s, max gap 20 ms, late 0
+  5220.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.35, lua ms 0.4, wall 0.996 s, max gap 20 ms, late 0
+  5275.401 extra 1 bad output
+  5280.000 per second: drawn 59, extra 44, ticks 20, dropped 1, cycles 20, gd 0.63 jd 0.40, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+  5288.000 released a stale ADSP done
+  5297.405 extra 2 bad output
+  5300.000 released a stale ADSP done
+  5305.000 released a stale ADSP done
+  5308.798 no ADSP time this cycle (overclock adsp)
+  5312.000 extra 1 missed (rendered false, buffer 0000)
+  5313.000 extra 2 missed (rendered false, buffer 0000)
+  5340.000 per second: drawn 50, extra 32, ticks 20, dropped 3, cycles 16, gd 0.62 jd 0.41, lua ms 0.5, wall 0.997 s, max gap 29 ms, late 4
+  5342.000 released a stale ADSP done
+  5345.000 extra 2 bad output
+  5347.000 released a stale ADSP done
+  5387.443 extra 1 bad output
+  5398.000 released a stale ADSP done
+  5400.000 per second: drawn 53, extra 33, ticks 21, dropped 2, cycles 18, gd 0.62 jd 0.43, lua ms 0.3, wall 1.001 s, max gap 32 ms, late 4
+  5439.000 released a stale ADSP done
+  5445.399 extra 2 bad output
+  5448.000 released a stale ADSP done
+  5450.655 no ADSP time this cycle (overclock adsp)
+  5454.000 extra 1 missed (rendered false, buffer 0000)
+  5455.000 extra 2 missed (rendered false, buffer 0000)
+  5456.000 released a stale ADSP done
+  5460.000 per second: drawn 50, extra 34, ticks 21, dropped 3, cycles 16, gd 0.65 jd 0.41, lua ms 2.5, wall 0.986 s, max gap 32 ms, late 3
+  5490.653 no ADSP time this cycle (overclock adsp)
+  5494.000 extra 1 missed (rendered false, buffer 0000)
+  5495.000 extra 2 missed (rendered false, buffer 0000)
+  5496.000 released a stale ADSP done
+  5496.848 extra 1 bad output
+  5499.409 extra 1 bad output
+  5500.396 extra 2 bad output
+  5503.000 released a stale ADSP done
+  5507.680 no ADSP time this cycle (overclock adsp)
+  5511.000 extra 1 missed (rendered false, buffer 0000)
+  5512.000 extra 2 missed (rendered false, buffer 0000)
+  5520.000 per second: drawn 27, extra 6, ticks 21, dropped 7, cycles 6, gd 0.63 jd 0.40, lua ms 0.1, wall 1.002 s, max gap 33 ms, late 3
+  5526.000 released a stale ADSP done
+  5579.812 no ADSP time this cycle (overclock adsp)
+  5580.000 per second: drawn 24, extra 3, ticks 21, dropped 0, cycles 2, gd 0.63 jd 0.40, lua ms 0.0, wall 0.998 s, max gap 25 ms, late 0
+  5583.000 extra 1 missed (rendered false, buffer 0000)
+  5584.000 extra 2 missed (rendered false, buffer 0000)
+  5593.411 extra 1 bad output
+  5594.409 extra 2 bad output
+  5621.363 extra 1 missed (rendered true, buffer FFFF)
+  5626.000 extra 1 missed (rendered true, buffer FFFF)
+  5630.000 extra 1 missed (rendered true, buffer FFFF)
+  5634.000 extra 1 missed (rendered true, buffer FFFF)
+  5636.384 extra 1 missed (rendered true, buffer FFFF)
+  5637.405 extra 2 missed (rendered true, buffer FFFF)
+  5639.369 extra 1 missed (rendered true, buffer FFFF)
+  5640.000 per second: drawn 44, extra 27, ticks 18, dropped 10, cycles 18, gd 0.82 jd 0.38, lua ms 0.4, wall 0.995 s, max gap 26 ms, late 1
+  5644.000 extra 1 missed (rendered true, buffer FFFF)
+  5646.000 released a stale ADSP done
+  5649.000 extra 1 missed (rendered true, buffer FFFF)
+  5649.527 extra 2 missed (rendered true, buffer FFFF)
+  5653.000 extra 1 missed (rendered true, buffer FFFF)
+  5657.000 extra 1 missed (rendered true, buffer FFFF)
+  5661.000 extra 1 missed (rendered true, buffer FFFF)
+  5663.413 extra 1 missed (rendered true, buffer FFFF)
+  5664.449 extra 2 missed (rendered true, buffer FFFF)
+  5666.415 extra 1 missed (rendered true, buffer FFFF)
+  5671.000 extra 1 missed (rendered true, buffer FFFF)
+  5675.000 extra 1 missed (rendered true, buffer FFFF)
+  5679.000 extra 1 missed (rendered true, buffer FFFF)
+  5683.000 extra 1 missed (rendered true, buffer FFFF)
+  5689.415 extra 2 missed (rendered true, buffer FFFF)
+  5700.000 per second: drawn 36, extra 21, ticks 17, dropped 15, cycles 16, gd 0.87 jd 0.38, lua ms 0.2, wall 0.998 s, max gap 28 ms, late 2
+  5760.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.90 jd 0.37, lua ms 1.0, wall 0.997 s, max gap 19 ms, late 0
+  5820.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.90 jd 0.37, lua ms 0.7, wall 0.996 s, max gap 20 ms, late 0
+  5880.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.90 jd 0.37, lua ms 0.4, wall 0.996 s, max gap 18 ms, late 0
+  5940.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.90 jd 0.37, lua ms 0.5, wall 0.996 s, max gap 18 ms, late 0
+  5952.367 extra 1 missed (rendered true, buffer FFFF)
+  6000.000 per second: drawn 21, extra 4, ticks 18, dropped 1, cycles 3, gd 0.73 jd 0.37, lua ms 0.0, wall 0.991 s, max gap 27 ms, late 1
+  6060.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.73 jd 0.37, lua ms 0.0, wall 1.003 s, max gap 22 ms, late 0
+  6060.424 no ADSP time this cycle (overclock adsp)
+  6064.000 extra 1 missed (rendered false, buffer 0000)
+  6065.000 extra 2 missed (rendered false, buffer 0000)
+  6120.000 per second: drawn 56, extra 39, ticks 20, dropped 2, cycles 19, gd 0.78 jd 0.35, lua ms 0.3, wall 0.997 s, max gap 24 ms, late 0
+  6180.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.70 jd 0.33, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+  6228.348 extra 1 missed (rendered true, buffer FFFF)
+  6233.000 extra 1 missed (rendered true, buffer FFFF)
+  6237.000 extra 1 missed (rendered true, buffer FFFF)
+  6240.000 per second: drawn 54, extra 42, ticks 19, dropped 3, cycles 19, gd 0.90 jd 0.36, lua ms 0.4, wall 0.998 s, max gap 22 ms, late 0
+  6275.417 extra 1 bad output
+  6293.413 extra 1 bad output
+  6300.000 per second: drawn 58, extra 41, ticks 20, dropped 2, cycles 20, gd 0.60 jd 0.40, lua ms 0.5, wall 0.999 s, max gap 23 ms, late 0
+  6360.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.43, lua ms 0.5, wall 0.995 s, max gap 20 ms, late 0
+  6420.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.42, lua ms 0.5, wall 0.997 s, max gap 21 ms, late 0
+  6480.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.40, lua ms 0.4, wall 0.998 s, max gap 21 ms, late 0
+  6513.000 released a stale ADSP done
+  6516.000 extra 1 bad output
+  6516.000 extra 2 bad output
+  6519.000 released a stale ADSP done
+  6540.000 per second: drawn 43, extra 25, ticks 21, dropped 2, cycles 12, gd 0.63 jd 0.45, lua ms 0.3, wall 0.989 s, max gap 38 ms, late 5
+  6600.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.63 jd 0.45, lua ms 0.0, wall 0.996 s, max gap 29 ms, late 5
+  6644.000 no ADSP time this cycle (overclock adsp)
+  6647.000 extra 1 missed (rendered false, buffer 0000)
+  6648.000 extra 2 missed (rendered false, buffer 0000)
+  6648.417 extra 1 bad output
+  6660.000 per second: drawn 26, extra 7, ticks 19, dropped 3, cycles 4, gd 0.62 jd 0.41, lua ms 0.0, wall 1.004 s, max gap 25 ms, late 1
+  6662.000 released a stale ADSP done
+  6665.000 extra 2 bad output
+  6668.000 released a stale ADSP done
+  6670.844 no ADSP time this cycle (overclock adsp)
+  6673.000 extra 1 missed (rendered false, buffer 0000)
+  6674.000 extra 2 missed (rendered false, buffer 0000)
+  6720.000 per second: drawn 52, extra 34, ticks 21, dropped 3, cycles 18, gd 0.56 jd 0.34, lua ms 0.4, wall 0.994 s, max gap 31 ms, late 1
+  6780.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.40, lua ms 0.4, wall 0.999 s, max gap 24 ms, late 0
+  6840.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.64 jd 0.42, lua ms 0.4, wall 0.999 s, max gap 20 ms, late 0
+  6870.000 released a stale ADSP done
+  6900.000 per second: drawn 40, extra 23, ticks 20, dropped 0, cycles 10, gd 0.61 jd 0.43, lua ms 0.2, wall 0.987 s, max gap 30 ms, late 2
+  6960.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.61 jd 0.43, lua ms 0.0, wall 0.997 s, max gap 26 ms, late 5
+  7020.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.61 jd 0.43, lua ms 0.0, wall 0.996 s, max gap 26 ms, late 2
+  7047.737 no ADSP time this cycle (overclock adsp)
+  7051.000 extra 1 missed (rendered false, buffer 0000)
+  7052.000 extra 2 missed (rendered false, buffer 0000)
+  7053.000 released a stale ADSP done
+  7066.768 no ADSP time this cycle (overclock adsp)
+  7070.000 extra 1 missed (rendered false, buffer 0000)
+  7071.000 extra 2 missed (rendered false, buffer 0000)
+  7080.000 per second: drawn 26, extra 6, ticks 20, dropped 4, cycles 4, gd 0.57 jd 0.41, lua ms 0.1, wall 1.003 s, max gap 26 ms, late 3
+  7140.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.31, lua ms 1.4, wall 0.995 s, max gap 21 ms, late 0
+  7200.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.28, lua ms 0.4, wall 0.997 s, max gap 19 ms, late 0
+  7260.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.29, lua ms 0.4, wall 1.002 s, max gap 21 ms, late 0
+  7306.000 released a stale ADSP done
+  7320.000 per second: drawn 51, extra 34, ticks 21, dropped 0, cycles 16, gd 0.62 jd 0.41, lua ms 0.3, wall 0.987 s, max gap 26 ms, late 1
+  7372.500 no ADSP time this cycle (overclock adsp)
+  7376.000 extra 1 missed (rendered false, buffer 0000)
+  7377.000 extra 2 missed (rendered false, buffer 0000)
+  7380.000 per second: drawn 21, extra 2, ticks 19, dropped 2, cycles 1, gd 0.62 jd 0.42, lua ms 0.1, wall 1.004 s, max gap 26 ms, late 5
+  7382.000 released a stale ADSP done
+  7440.000 per second: drawn 21, extra 0, ticks 21, dropped 0, cycles 1, gd 0.62 jd 0.42, lua ms 0.0, wall 0.989 s, max gap 29 ms, late 8
+  7441.871 no ADSP time this cycle (overclock adsp)
+  7445.000 extra 1 missed (rendered false, buffer 0000)
+  7446.000 extra 2 missed (rendered false, buffer 0000)
+  7500.000 per second: drawn 55, extra 40, ticks 19, dropped 2, cycles 18, gd 0.54 jd 0.29, lua ms 0.3, wall 1.001 s, max gap 22 ms, late 0
+  7560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.36, lua ms 0.4, wall 0.997 s, max gap 20 ms, late 0
+  7607.000 released a stale ADSP done
+  7620.000 per second: drawn 51, extra 35, ticks 21, dropped 0, cycles 16, gd 0.61 jd 0.42, lua ms 0.3, wall 0.992 s, max gap 27 ms, late 2
+  7646.000 no ADSP time this cycle (overclock adsp)
+  7649.000 extra 1 missed (rendered false, buffer 0000)
+  7650.000 extra 2 missed (rendered false, buffer 0000)
+  7650.491 extra 1 bad output
+  7651.478 extra 2 bad output
+  7655.000 released a stale ADSP done
+  7680.000 per second: drawn 21, extra 0, ticks 21, dropped 4, cycles 2, gd 0.61 jd 0.49, lua ms 0.0, wall 1.003 s, max gap 29 ms, late 5
+  7689.000 no ADSP time this cycle (overclock adsp)
+  7692.000 extra 1 missed (rendered false, buffer 0000)
+  7693.000 extra 2 missed (rendered false, buffer 0000)
+  7698.000 released a stale ADSP done
+  7707.000 released a stale ADSP done
+  7712.453 extra 2 bad output
+  7716.000 released a stale ADSP done
+  7740.000 per second: drawn 29, extra 9, ticks 20, dropped 3, cycles 6, gd 0.61 jd 0.46, lua ms 0.1, wall 0.989 s, max gap 31 ms, late 4
+  7800.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.61 jd 0.46, lua ms 0.0, wall 0.998 s, max gap 28 ms, late 7
+  7860.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.61 jd 0.46, lua ms 0.0, wall 0.996 s, max gap 28 ms, late 9
+  7920.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.61 jd 0.46, lua ms 0.0, wall 0.997 s, max gap 28 ms, late 10
+  7980.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.61 jd 0.46, lua ms 0.0, wall 0.996 s, max gap 28 ms, late 12
+  8040.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.61 jd 0.46, lua ms 0.0, wall 0.997 s, max gap 28 ms, late 5
+  8100.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.61 jd 0.46, lua ms 0.0, wall 0.996 s, max gap 38 ms, late 1
+  8160.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.61 jd 0.46, lua ms 0.0, wall 0.997 s, max gap 26 ms, late 3
+  8170.709 no ADSP time this cycle (overclock adsp)
+  8174.000 extra 1 missed (rendered false, buffer 0000)
+  8175.000 extra 2 missed (rendered false, buffer 0000)
+  8220.000 per second: drawn 49, extra 34, ticks 19, dropped 2, cycles 15, gd 0.52 jd 0.34, lua ms 0.8, wall 1.002 s, max gap 25 ms, late 1
+  8280.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.35, lua ms 0.5, wall 0.999 s, max gap 21 ms, late 0
+  8340.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.34, lua ms 0.4, wall 0.994 s, max gap 21 ms, late 0
+  8400.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.37, lua ms 0.5, wall 0.997 s, max gap 21 ms, late 0
+  8460.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.37, lua ms 0.6, wall 0.997 s, max gap 22 ms, late 0
+  8520.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.72 jd 0.37, lua ms 0.5, wall 0.997 s, max gap 20 ms, late 0
+  8580.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.72 jd 0.37, lua ms 0.6, wall 0.997 s, max gap 22 ms, late 0
+  8640.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.36, lua ms 0.4, wall 0.996 s, max gap 23 ms, late 0
+  8683.000 released a stale ADSP done
+  8684.000 no ADSP time this cycle (overclock adsp)
+  8687.000 extra 1 missed (rendered false, buffer 0000)
+  8688.000 extra 2 missed (rendered false, buffer 0000)
+  8700.000 per second: drawn 56, extra 41, ticks 20, dropped 2, cycles 19, gd 0.60 jd 0.37, lua ms 0.4, wall 0.997 s, max gap 25 ms, late 1
+  8760.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.32, lua ms 0.6, wall 0.996 s, max gap 20 ms, late 0
+  8820.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.32, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+  8880.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.32, lua ms 0.7, wall 0.997 s, max gap 24 ms, late 0
+  8940.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.35, lua ms 0.4, wall 0.997 s, max gap 19 ms, late 0
+  8965.417 extra 1 missed (rendered true, buffer FFFF)
+  8970.000 extra 1 missed (rendered true, buffer FFFF)
+  8974.000 extra 1 missed (rendered true, buffer FFFF)
+  8978.000 extra 1 missed (rendered true, buffer FFFF)
+  8982.000 extra 1 missed (rendered true, buffer FFFF)
+  8986.000 extra 1 missed (rendered true, buffer FFFF)
+  8990.000 extra 1 missed (rendered true, buffer FFFF)
+  8994.000 extra 1 missed (rendered true, buffer FFFF)
+  8998.434 extra 1 bad output
+  9000.000 per second: drawn 44, extra 31, ticks 18, dropped 8, cycles 18, gd 0.90 jd 0.44, lua ms 0.3, wall 0.997 s, max gap 25 ms, late 0
+  9004.000 extra 1 missed (rendered true, buffer FFFF)
+  9008.000 extra 1 missed (rendered true, buffer FFFF)
+  9010.422 extra 1 missed (rendered true, buffer FFFF)
+  9010.422 extra 2 bad output
+  9013.417 extra 1 missed (rendered true, buffer FFFF)
+  9018.000 extra 1 missed (rendered true, buffer FFFF)
+  9022.000 extra 1 missed (rendered true, buffer FFFF)
+  9026.000 extra 1 missed (rendered true, buffer FFFF)
+  9037.000 extra 1 missed (rendered true, buffer FFFF)
+  9041.000 extra 1 missed (rendered true, buffer FFFF)
+  9060.000 per second: drawn 42, extra 27, ticks 17, dropped 11, cycles 17, gd 0.80 jd 0.35, lua ms 0.3, wall 0.995 s, max gap 25 ms, late 1
+  9120.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.82 jd 0.37, lua ms 0.3, wall 0.997 s, max gap 18 ms, late 0
+  9180.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.84 jd 0.37, lua ms 0.4, wall 0.997 s, max gap 18 ms, late 0
+  9240.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.81 jd 0.35, lua ms 0.4, wall 0.995 s, max gap 18 ms, late 0
+  9300.000 per second: drawn 52, extra 38, ticks 18, dropped 0, cycles 18, gd 0.61 jd 0.33, lua ms 0.3, wall 0.995 s, max gap 21 ms, late 0
+  9301.000 extra 1 missed (rendered false, buffer FFFF)
+  9302.000 no ADSP time this cycle (overclock adsp)
+  9302.000 extra 2 missed (rendered false, buffer 0000)
+  9360.000 per second: drawn 21, extra 0, ticks 21, dropped 2, cycles 1, gd 0.61 jd 0.33, lua ms 0.0, wall 0.994 s, max gap 22 ms, late 0
+  9410.476 no ADSP time this cycle (overclock adsp)
+  9414.000 extra 1 missed (rendered false, buffer 0000)
+  9415.000 extra 2 missed (rendered false, buffer 0000)
+  9420.000 per second: drawn 22, extra 3, ticks 19, dropped 2, cycles 2, gd 0.72 jd 0.38, lua ms 0.0, wall 1.002 s, max gap 24 ms, late 0
+  9480.000 per second: drawn 60, extra 44, ticks 20, dropped 0, cycles 20, gd 0.89 jd 0.37, lua ms 0.4, wall 0.996 s, max gap 24 ms, late 0
+  9540.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.89 jd 0.37, lua ms 0.4, wall 0.997 s, max gap 19 ms, late 0
+  9600.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.83 jd 0.37, lua ms 0.4, wall 0.997 s, max gap 19 ms, late 0
+  9605.000 released a stale ADSP done
+  9608.531 no ADSP time this cycle (overclock adsp)
+  9612.000 extra 1 missed (rendered false, buffer 0000)
+  9613.000 extra 2 missed (rendered false, buffer 0000)
+  9614.000 released a stale ADSP done
+  9615.392 extra 1 missed (rendered true, buffer FFFF)
+  9660.000 per second: drawn 53, extra 36, ticks 21, dropped 3, cycles 18, gd 0.71 jd 0.37, lua ms 0.4, wall 0.996 s, max gap 28 ms, late 2
+  9711.388 extra 1 missed (rendered true, buffer FFFF)
+  9716.000 extra 1 missed (rendered true, buffer FFFF)
+  9720.000 extra 1 missed (rendered true, buffer FFFF)
+  9720.000 per second: drawn 55, extra 41, ticks 19, dropped 2, cycles 19, gd 0.90 jd 0.39, lua ms 0.4, wall 0.994 s, max gap 23 ms, late 0
+  9749.419 extra 1 bad output
+  9750.399 extra 2 bad output
+  9754.000 released a stale ADSP done
+  9757.733 no ADSP time this cycle (overclock adsp)
+  9761.000 extra 1 missed (rendered false, buffer 0000)
+  9762.000 extra 2 missed (rendered false, buffer 0000)
+  9765.428 extra 1 bad output
+  9780.000 per second: drawn 50, extra 32, ticks 20, dropped 6, cycles 17, gd 0.66 jd 0.38, lua ms 0.4, wall 1.002 s, max gap 28 ms, late 2
+  9840.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.63 jd 0.35, lua ms 0.4, wall 0.995 s, max gap 20 ms, late 0
+  9900.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.35, lua ms 0.4, wall 1.000 s, max gap 21 ms, late 0
+  9960.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.38, lua ms 0.4, wall 0.995 s, max gap 21 ms, late 0
+ 10020.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.67 jd 0.38, lua ms 0.4, wall 0.997 s, max gap 24 ms, late 0
+ 10041.426 extra 1 bad output
+ 10042.426 extra 2 bad output
+ 10049.000 released a stale ADSP done
+ 10051.029 extra 2 bad output
+ 10054.000 released a stale ADSP done
+ 10080.000 per second: drawn 38, extra 18, ticks 21, dropped 3, cycles 11, gd 0.69 jd 0.43, lua ms 0.2, wall 0.990 s, max gap 31 ms, late 4
+ 10111.000 no ADSP time this cycle (overclock adsp)
+ 10114.000 extra 1 missed (rendered false, buffer 0000)
+ 10115.000 extra 2 missed (rendered false, buffer 0000)
+ 10116.000 released a stale ADSP done
+ 10124.000 no ADSP time this cycle (overclock adsp)
+ 10127.000 extra 1 missed (rendered false, buffer 0000)
+ 10128.000 extra 2 missed (rendered false, buffer 0000)
+ 10140.000 per second: drawn 28, extra 8, ticks 20, dropped 4, cycles 5, gd 0.78 jd 0.46, lua ms 0.1, wall 1.008 s, max gap 31 ms, late 2
+ 10160.000 released a stale ADSP done
+ 10171.819 no ADSP time this cycle (overclock adsp)
+ 10175.000 extra 1 missed (rendered false, buffer 0000)
+ 10176.000 extra 2 missed (rendered false, buffer 0000)
+ 10179.480 extra 1 bad output
+ 10182.493 extra 1 bad output
+ 10183.501 extra 2 bad output
+ 10187.000 released a stale ADSP done
+ 10189.810 no ADSP time this cycle (overclock adsp)
+ 10191.000 extra 1 missed (rendered false, buffer 0000)
+ 10192.000 extra 2 missed (rendered false, buffer 0000)
+ 10200.000 per second: drawn 41, extra 21, ticks 21, dropped 7, cycles 14, gd 0.69 jd 0.49, lua ms 0.2, wall 0.994 s, max gap 30 ms, late 2
+ 10260.000 per second: drawn 60, extra 47, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.40, lua ms 0.4, wall 0.995 s, max gap 21 ms, late 0
+ 10320.000 released a stale ADSP done
+ 10320.000 per second: drawn 60, extra 45, ticks 21, dropped 0, cycles 20, gd 0.62 jd 0.48, lua ms 0.5, wall 0.990 s, max gap 20 ms, late 0
+ 10324.482 extra 1 bad output
+ 10325.480 extra 2 bad output
+ 10329.000 released a stale ADSP done
+ 10380.000 per second: drawn 22, extra 2, ticks 20, dropped 2, cycles 2, gd 0.62 jd 0.49, lua ms 0.0, wall 0.997 s, max gap 32 ms, late 9
+ 10398.896 no ADSP time this cycle (overclock adsp)
+ 10402.000 extra 1 missed (rendered false, buffer 0000)
+ 10403.000 extra 2 missed (rendered false, buffer 0000)
+ 10440.000 per second: drawn 44, extra 27, ticks 20, dropped 2, cycles 13, gd 0.48 jd 0.32, lua ms 0.2, wall 1.001 s, max gap 27 ms, late 3
+ 10500.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.32, lua ms 0.4, wall 0.996 s, max gap 34 ms, late 1
+ 10560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.38, lua ms 0.3, wall 1.001 s, max gap 23 ms, late 0
+ 10607.468 extra 1 bad output
+ 10620.000 per second: drawn 59, extra 44, ticks 20, dropped 1, cycles 20, gd 0.57 jd 0.44, lua ms 0.4, wall 1.000 s, max gap 22 ms, late 0
+ 10680.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.37, lua ms 0.4, wall 0.991 s, max gap 20 ms, late 0
+ 10740.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.42, lua ms 0.4, wall 0.998 s, max gap 21 ms, late 0
+ 10790.478 extra 1 bad output
+ 10800.000 per second: drawn 59, extra 45, ticks 20, dropped 1, cycles 20, gd 0.63 jd 0.47, lua ms 0.5, wall 0.996 s, max gap 22 ms, late 0
+ 10810.000 released a stale ADSP done
+ 10812.800 no ADSP time this cycle (overclock adsp)
+ 10816.000 extra 1 missed (rendered false, buffer 0000)
+ 10817.000 extra 2 missed (rendered false, buffer 0000)
+ 10818.000 released a stale ADSP done
+ 10819.064 extra 1 bad output
+ 10819.512 extra 2 bad output
+ 10823.000 released a stale ADSP done
+ 10825.808 no ADSP time this cycle (overclock adsp)
+ 10828.000 extra 1 missed (rendered false, buffer 0000)
+ 10829.000 extra 2 missed (rendered false, buffer 0000)
+ 10860.000 per second: drawn 47, extra 30, ticks 21, dropped 6, cycles 16, gd 0.56 jd 0.44, lua ms 0.4, wall 0.999 s, max gap 30 ms, late 2
+ 10862.476 extra 1 bad output
+ 10863.470 extra 2 bad output
+ 10917.449 extra 2 bad output
+ 10919.453 extra 1 bad output
+ 10920.000 per second: drawn 57, extra 41, ticks 20, dropped 3, cycles 20, gd 0.57 jd 0.46, lua ms 0.6, wall 0.994 s, max gap 21 ms, late 0
+ 10924.000 released a stale ADSP done
+ 10925.441 extra 1 bad output
+ 10925.441 extra 2 bad output
+ 10930.000 released a stale ADSP done
+ 10932.984 no ADSP time this cycle (overclock adsp)
+ 10934.000 extra 1 missed (rendered false, buffer 0000)
+ 10935.000 extra 2 missed (rendered false, buffer 0000)
+ 10936.000 released a stale ADSP done
+ 10938.915 no ADSP time this cycle (overclock adsp)
+ 10941.000 extra 1 missed (rendered false, buffer 0000)
+ 10942.000 extra 2 missed (rendered false, buffer 0000)
+ 10943.000 released a stale ADSP done
+ 10980.000 per second: drawn 23, extra 1, ticks 22, dropped 7, cycles 4, gd 0.58 jd 0.45, lua ms 0.0, wall 0.989 s, max gap 32 ms, late 6
+ 11038.000 no ADSP time this cycle (overclock adsp)
+ 11040.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.58 jd 0.45, lua ms 0.0, wall 0.997 s, max gap 27 ms, late 2
+ 11041.000 extra 1 missed (rendered false, buffer 0000)
+ 11042.000 extra 2 missed (rendered false, buffer 0000)
+ 11042.443 extra 1 bad output
+ 11043.438 extra 2 bad output
+ 11045.441 extra 1 bad output
+ 11046.436 extra 2 bad output
+ 11050.000 released a stale ADSP done
+ 11059.995 no ADSP time this cycle (overclock adsp)
+ 11063.000 extra 1 missed (rendered false, buffer 0000)
+ 11064.000 extra 2 missed (rendered false, buffer 0000)
+ 11099.000 released a stale ADSP done
+ 11100.000 per second: drawn 43, extra 25, ticks 21, dropped 8, cycles 15, gd 0.57 jd 0.47, lua ms 0.3, wall 1.007 s, max gap 28 ms, late 4
+ 11160.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.57 jd 0.47, lua ms 0.0, wall 0.985 s, max gap 26 ms, late 6
+ 11197.729 no ADSP time this cycle (overclock adsp)
+ 11201.000 extra 1 missed (rendered false, buffer 0000)
+ 11202.000 extra 2 missed (rendered false, buffer 0000)
+ 11203.000 released a stale ADSP done
+ 11204.408 extra 1 missed (rendered true, buffer FFFF)
+ 11213.413 extra 2 bad output
+ 11220.000 per second: drawn 29, extra 10, ticks 20, dropped 4, cycles 6, gd 0.63 jd 0.41, lua ms 1.6, wall 1.006 s, max gap 27 ms, late 2
+ 11223.000 released a stale ADSP done
+ 11228.000 released a stale ADSP done
+ 11234.000 released a stale ADSP done
+ 11237.863 no ADSP time this cycle (overclock adsp)
+ 11241.000 extra 1 missed (rendered false, buffer 0000)
+ 11242.000 extra 2 missed (rendered false, buffer 0000)
+ 11242.441 extra 1 bad output
+ 11243.430 extra 2 bad output
+ 11246.000 released a stale ADSP done
+ 11248.768 no ADSP time this cycle (overclock adsp)
+ 11251.000 extra 1 missed (rendered false, buffer 0000)
+ 11252.000 extra 2 missed (rendered false, buffer 0000)
+ 11252.422 extra 1 bad output
+ 11253.415 extra 2 bad output
+ 11268.000 released a stale ADSP done
+ 11272.000 extra 2 bad output
+ 11274.000 released a stale ADSP done
+ 11275.000 no ADSP time this cycle (overclock adsp)
+ 11277.000 extra 1 missed (rendered false, buffer 0000)
+ 11278.000 extra 2 missed (rendered false, buffer 0000)
+ 11280.000 per second: drawn 36, extra 16, ticks 21, dropped 11, cycles 13, gd 0.60 jd 0.40, lua ms 0.1, wall 0.994 s, max gap 31 ms, late 10
+ 11294.410 extra 2 bad output
+ 11301.000 released a stale ADSP done
+ 11339.802 no ADSP time this cycle (overclock adsp)
+ 11340.000 per second: drawn 33, extra 13, ticks 21, dropped 1, cycles 7, gd 0.62 jd 0.42, lua ms 0.2, wall 0.995 s, max gap 28 ms, late 5
+ 11343.000 extra 1 missed (rendered false, buffer 0000)
+ 11344.000 extra 2 missed (rendered false, buffer 0000)
+ 11395.438 extra 1 bad output
+ 11396.430 extra 2 bad output
+ 11400.000 per second: drawn 54, extra 38, ticks 19, dropped 4, cycles 19, gd 0.63 jd 0.40, lua ms 0.4, wall 1.000 s, max gap 26 ms, late 1
+ 11417.000 released a stale ADSP done
+ 11426.000 released a stale ADSP done
+ 11427.000 no ADSP time this cycle (overclock adsp)
+ 11430.000 extra 1 missed (rendered false, buffer 0000)
+ 11431.000 extra 2 missed (rendered false, buffer 0000)
+ 11438.000 released a stale ADSP done
+ 11450.000 released a stale ADSP done
+ 11460.000 per second: drawn 46, extra 27, ticks 21, dropped 2, cycles 14, gd 0.64 jd 0.39, lua ms 0.2, wall 0.998 s, max gap 29 ms, late 7
+ 11520.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.64 jd 0.39, lua ms 0.0, wall 0.995 s, max gap 26 ms, late 2
+ 11580.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.64 jd 0.39, lua ms 0.0, wall 0.995 s, max gap 27 ms, late 8
+ 11640.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.64 jd 0.39, lua ms 0.0, wall 0.996 s, max gap 25 ms, late 1
+ 11693.651 no ADSP time this cycle (overclock adsp)
+ 11697.000 extra 1 missed (rendered false, buffer 0000)
+ 11698.000 extra 2 missed (rendered false, buffer 0000)
+ 11700.000 per second: drawn 20, extra 1, ticks 19, dropped 2, cycles 1, gd 0.64 jd 0.42, lua ms 0.0, wall 0.995 s, max gap 26 ms, late 1
+ 11704.428 extra 1 bad output
+ 11708.000 released a stale ADSP done
+ 11732.665 no ADSP time this cycle (overclock adsp)
+ 11736.000 extra 1 missed (rendered false, buffer 0000)
+ 11737.000 extra 2 missed (rendered false, buffer 0000)
+ 11760.000 per second: drawn 39, extra 20, ticks 20, dropped 3, cycles 11, gd 0.71 jd 0.42, lua ms 0.2, wall 0.999 s, max gap 26 ms, late 1
+ 11820.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.38, lua ms 0.4, wall 0.996 s, max gap 20 ms, late 0
+ 11880.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.47, lua ms 0.4, wall 0.998 s, max gap 22 ms, late 0
+ 11895.000 released a stale ADSP done
+ 11896.020 extra 1 bad output
+ 11896.483 extra 2 bad output
+ 11899.491 extra 1 bad output
+ 11900.499 extra 2 bad output
+ 11904.000 released a stale ADSP done
+ 11940.000 per second: drawn 30, extra 11, ticks 21, dropped 4, cycles 7, gd 0.63 jd 0.51, lua ms 0.2, wall 0.989 s, max gap 30 ms, late 6
+ 11955.915 no ADSP time this cycle (overclock adsp)
+ 11959.000 extra 1 missed (rendered false, buffer 0000)
+ 11960.000 extra 2 missed (rendered false, buffer 0000)
+ 11961.000 released a stale ADSP done
+ 11962.470 extra 1 missed (rendered true, buffer FFFF)
+ 11964.485 extra 1 bad output
+ 11965.483 extra 2 bad output
+ 11968.481 extra 2 bad output
+ 11970.476 extra 1 bad output
+ 12000.000 per second: drawn 41, extra 22, ticks 20, dropped 7, cycles 13, gd 0.53 jd 0.38, lua ms 0.2, wall 1.002 s, max gap 31 ms, late 2
+ 12060.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.29, lua ms 0.4, wall 0.996 s, max gap 21 ms, late 0
+ 12120.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.44, lua ms 0.4, wall 0.999 s, max gap 24 ms, late 0
+ 12180.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.43, lua ms 0.5, wall 0.999 s, max gap 21 ms, late 0
+ 12240.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.42, lua ms 0.4, wall 0.996 s, max gap 22 ms, late 0
+ 12289.478 extra 2 bad output
+ 12293.000 released a stale ADSP done
+ 12300.000 per second: drawn 54, extra 39, ticks 21, dropped 1, cycles 18, gd 0.58 jd 0.49, lua ms 0.4, wall 0.987 s, max gap 30 ms, late 2
+ 12360.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.58 jd 0.49, lua ms 0.0, wall 0.996 s, max gap 28 ms, late 5
+ 12363.840 no ADSP time this cycle (overclock adsp)
+ 12367.000 extra 1 missed (rendered false, buffer 0000)
+ 12368.000 extra 2 missed (rendered false, buffer 0000)
+ 12371.447 extra 1 bad output
+ 12420.000 per second: drawn 53, extra 35, ticks 20, dropped 3, cycles 18, gd 0.45 jd 0.35, lua ms 2.7, wall 1.004 s, max gap 26 ms, late 1
+ 12480.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.40 jd 0.33, lua ms 0.4, wall 0.995 s, max gap 20 ms, late 0
+ 12540.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.33 jd 0.33, lua ms 0.4, wall 0.999 s, max gap 21 ms, late 0
+ 12600.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.42 jd 0.36, lua ms 0.4, wall 0.995 s, max gap 20 ms, late 0
+ 12660.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.76 jd 0.34, lua ms 0.4, wall 0.995 s, max gap 21 ms, late 0
+ 12720.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.64 jd 0.33, lua ms 0.5, wall 0.996 s, max gap 18 ms, late 0
+ 12780.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.37, lua ms 0.4, wall 0.998 s, max gap 19 ms, late 0
+ 12840.000 per second: drawn 60, extra 44, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.36, lua ms 0.4, wall 0.996 s, max gap 20 ms, late 0
+ 12900.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.36, lua ms 0.4, wall 0.997 s, max gap 20 ms, late 0
+ 12960.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.36, lua ms 0.5, wall 0.996 s, max gap 19 ms, late 0
+ 13020.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.35, lua ms 0.4, wall 0.997 s, max gap 18 ms, late 0
+ 13080.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.35, lua ms 0.5, wall 0.997 s, max gap 22 ms, late 0
+ 13140.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.35, lua ms 0.4, wall 0.996 s, max gap 22 ms, late 0
+ 13176.000 extra 1 missed (rendered false, buffer FFFF)
+ 13177.000 no ADSP time this cycle (overclock adsp)
+ 13177.000 extra 2 missed (rendered false, buffer 0000)
+ 13200.000 per second: drawn 36, extra 21, ticks 18, dropped 2, cycles 10, gd 0.61 jd 0.36, lua ms 0.2, wall 0.991 s, max gap 21 ms, late 0

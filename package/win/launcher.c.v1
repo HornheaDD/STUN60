@@ -1,0 +1,41 @@
+/* S.T.U.N. Runner 60fps launcher: sets the overclock + data folder, then starts bin\stun60.exe.
+   Layout: STUNRunner60.exe, bin\stun60.exe, bin\stunrun-interp60.lua, roms\stunrun.zip (or stunrun.zip next to the exe),
+   data\ (created: log, overlay setting, cfg, nvram = high scores, snapshots). */
+#include <windows.h>
+#include <stdio.h>
+#include <wchar.h>
+static int exists(const wchar_t *p) { return GetFileAttributesW(p) != INVALID_FILE_ATTRIBUTES; }
+int WINAPI wWinMain(HINSTANCE h, HINSTANCE p, LPWSTR args, int show)
+{
+    wchar_t dir[MAX_PATH], tmp[MAX_PATH], data[MAX_PATH], exe[MAX_PATH], cmd[8192];
+    GetModuleFileNameW(NULL, dir, MAX_PATH);
+    wchar_t *s = wcsrchr(dir, L'\\'); if (s) *s = 0;
+    swprintf(data, MAX_PATH, L"%ls\\data", dir);
+    CreateDirectoryW(data, NULL);
+    const wchar_t *sub[] = { L"cfg", L"nvram", L"snap" };
+    for (int i = 0; i < 3; i++) { swprintf(tmp, MAX_PATH, L"%ls\\%ls", data, sub[i]); CreateDirectoryW(tmp, NULL); }
+    int found = 0;
+    const wchar_t *rp[] = { L"%ls\\stunrun.zip", L"%ls\\roms\\stunrun.zip", L"%ls\\stunrun", L"%ls\\roms\\stunrun" };
+    for (int i = 0; i < 4; i++) { swprintf(tmp, MAX_PATH, rp[i], dir); if (exists(tmp)) found = 1; }
+    if (!found) {
+        MessageBoxW(NULL, L"stunrun.zip not found.\n\nPut it next to STUNRunner60.exe or in the roms folder.",
+                    L"S.T.U.N. Runner 60fps", MB_ICONERROR);
+        return 1;
+    }
+    if (!GetEnvironmentVariableW(L"STUN60_CLOCK", tmp, MAX_PATH))
+        SetEnvironmentVariableW(L"STUN60_CLOCK", L"maincpu=3,gsp=4,adsp=8");
+    SetEnvironmentVariableW(L"STUN60_DATA", data);
+    swprintf(exe, MAX_PATH, L"%ls\\bin\\stun60.exe", dir);
+    swprintf(cmd, 8192,
+        L"\"%ls\" stunrun -inipath \"%ls\" -rompath \"%ls;%ls\\roms\" -cfg_directory \"%ls\\cfg\" "
+        L"-nvram_directory \"%ls\\nvram\" -snapshot_directory \"%ls\\snap\" -skip_gameinfo "
+        L"-sound portaudio -audio_latency 3 -autoboot_script \"%ls\\bin\\stunrun-interp60.lua\" %ls",
+        exe, data, dir, dir, data, data, data, dir, args ? args : L"");
+    STARTUPINFOW si = { sizeof si }; PROCESS_INFORMATION pi;
+    if (!CreateProcessW(exe, cmd, NULL, NULL, FALSE, 0, NULL, data, &si, &pi)) {
+        MessageBoxW(NULL, L"Could not start bin\\stun60.exe.", L"S.T.U.N. Runner 60fps", MB_ICONERROR);
+        return 1;
+    }
+    CloseHandle(pi.hThread); CloseHandle(pi.hProcess);
+    return 0;
+}

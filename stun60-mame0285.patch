@@ -1,0 +1,257 @@
+--- a/src/mame/atari/harddriv.cpp
++++ b/src/mame/atari/harddriv.cpp
+@@ -333,6 +333,11 @@
+ 
+ #include "emu.h"
+ #include "harddriv.h"
++#include <cstdio>
++#include <cstdlib>
++#include <string>
++#include <vector>
++#include <algorithm>
+ 
+ #include "machine/timer.h"
+ #include "machine/watchdog.h"
+@@ -1849,6 +1854,101 @@
+ 	harddriv_state::device_start();
+ }
+ 
++// stun60 (local patch): apply CPU clock scales (same as the Slider Controls overclock) from the
++// environment, e.g. STUN60_CLOCK="maincpu=4,gsp=4,adsp=6". Unset = stock clocks.
++void stunrun_board_device_state::device_reset()
++{
++	harddriv_state::device_reset();
++	const char *env = std::getenv("STUN60_CLOCK");
++	if (!env || !*env)
++		return;
++	std::string spec(env);
++	size_t pos = 0;
++	while (pos < spec.size())
++	{
++		size_t end = spec.find(',', pos);
++		if (end == std::string::npos) end = spec.size();
++		std::string item = spec.substr(pos, end - pos);
++		pos = end + 1;
++		size_t eq = item.find('=');
++		if (eq == std::string::npos) continue;
++		std::string name = item.substr(0, eq);
++		double scale = std::atof(item.c_str() + eq + 1);
++		if (scale < 0.1 || scale > 20.0) continue;
++		device_t *dev = nullptr;
++		if (name == "maincpu") dev = m_maincpu.target();
++		else if (name == "gsp") dev = m_gsp.target();
++		else if (name == "adsp") dev = m_adsp.target();
++		if (dev)
++		{
++			dev->set_clock_scale(scale);
++			std::fprintf(stderr, "stun60: %s clock x%.2f\n", name.c_str(), scale);
++		}
++	}
++}
++
++// stun60 (local patch): bulk work for the interpolation script, which would be slow in Lua.
++//   1 SNAP    P0=slot      save ADSP data RAM words 0-0x1FFE
++//   2 RESTORE P0=slot      write back the words that differ
++//   3 STORE   P0=bank P1=k copy a finished ADSP output list (count word, words.., FFFF) -> store k; result = count or 0
++//   4 TAIL    P0:P1=GSP bit address, P2=length   capture the HUD tail that follows the 3D block
++//   5 BUILD   P0=k P1:P2=GSP bit address         write 0x7000, store k, then the tail; result = count
++//   6 COMPARE P0=k P1:P2=GSP bit address         result = number of store words equal to the list there
++void harddriv_state::s60_command(uint16_t cmd)
++{
++	address_space &dsp = m_adsp->space(AS_DATA);
++	address_space &gsp = m_gsp->space(AS_PROGRAM);
++	const uint32_t addr = (uint32_t(m_s60_param[1]) << 16) | m_s60_param[2];
++	m_s60_result = 0;
++	switch (cmd)
++	{
++	case 1: {
++		auto &v = m_s60_snap[m_s60_param[0] & 15];
++		v.resize(0x1fff);
++		for (int i = 0; i < 0x1fff; i++) v[i] = dsp.read_word(i);
++		m_s60_result = 1;
++		break; }
++	case 2: {
++		auto &v = m_s60_snap[m_s60_param[0] & 15];
++		if (v.size() != 0x1fff) break;
++		for (int i = 0; i < 0x1fff; i++)
++			if (dsp.read_word(i) != v[i]) dsp.write_word(i, v[i]);
++		m_s60_result = 1;
++		break; }
++	case 3: {
++		const uint16_t *src = &m_som_memory[(m_s60_param[0] & 1) * 0x2000];
++		const uint16_t n = src[0];
++		auto &v = m_s60_store[m_s60_param[1] & 3];
++		v.clear();
++		if (n == 0 || n > 0x1ffe || src[n] != 0xffff) break;
++		v.assign(src + 1, src + 1 + n);
++		m_s60_result = n;
++		break; }
++	case 4: {
++		const uint32_t a = (uint32_t(m_s60_param[0]) << 16) | m_s60_param[1];
++		const int len = std::min<int>(m_s60_param[2], 4000);
++		m_s60_tail.resize(len);
++		for (int i = 0; i < len; i++) m_s60_tail[i] = gsp.read_word(a + 16 * i);
++		m_s60_result = len;
++		break; }
++	case 5: {
++		const auto &v = m_s60_store[m_s60_param[0] & 3];
++		if (v.empty()) break;
++		gsp.write_word(addr, 0x7000);
++		for (size_t i = 0; i < v.size(); i++) gsp.write_word(addr + 16 * (i + 1), v[i]);
++		const uint32_t q = addr + 16 * (v.size() + 1);
++		for (size_t i = 0; i < m_s60_tail.size(); i++) gsp.write_word(q + 16 * i, m_s60_tail[i]);
++		m_s60_result = v.size();
++		break; }
++	case 6: {
++		const auto &v = m_s60_store[m_s60_param[0] & 3];
++		int same = 0;
++		for (size_t i = 0; i < v.size(); i++) if (gsp.read_word(addr + 16 * (i + 1)) == v[i]) same++;
++		m_s60_result = same;
++		break; }
++	}
++}
++
+ DEFINE_DEVICE_TYPE(STUNRUN_BOARD, stunrun_board_device_state, "stunrun_board", "Stun Runner Board Device")
+ 
+ stunrun_board_device_state::stunrun_board_device_state(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock)
+@@ -4802,7 +4902,10 @@
+ 
+ 	// if we have a JSA board, install the read/write handlers
+ 	if (m_jsa.found())
+-		m_maincpu->space(AS_PROGRAM).install_readwrite_handler(0x600000, 0x603fff, read8smo_delegate(*m_jsa, FUNC(atari_jsa_base_device::main_response_r)), write8smo_delegate(*m_jsa, FUNC(atari_jsa_base_device::main_command_w)), 0xff00);
++		m_maincpu->space(AS_PROGRAM).install_readwrite_handler(0x600000, 0x603fff, read8smo_delegate(*m_jsa, FUNC(atari_jsa_base_device::main_response_r)),
++			// stun60 (local patch): end the 68010 timeslice after a sound command so the latch's "full" state
++			// (see hd68k_a80000_r) is visible before its next poll. Needed when the 68010 is overclocked.
++			write8smo_delegate(*this, NAME([this](uint8_t data) { m_jsa->main_command_w(data); m_maincpu->abort_timeslice(); })), 0xff00);
+ 
+ 	/* install handlers for the compact driving games' inputs */
+ 	if (compact_inputs)
+@@ -5094,6 +5197,36 @@
+ 
+ 	/* set up adsp speedup handlers */
+ 	m_adsp->space(AS_DATA).install_read_handler(0x1fff, 0x1fff, read16smo_delegate(*this, FUNC(harddriv_state::hdadsp_speedup_r)));
++
++	/* stun60 (local patch): read-only window onto both ADSP output banks at 0x828000 (bank 0)
++	   and 0x82c000 (bank 1), so a script can read finished output without switching banks.
++	   Unused on this board (0x820000-0x827fff is DS III / DSK on other boards). */
++	m_maincpu->space(AS_PROGRAM).install_read_handler(0x828000, 0x82ffff,
++		read16sm_delegate(*this, NAME([this] (offs_t offset) -> uint16_t { return m_som_memory[offset & 0x3fff]; })));
++	/* stun60: a write to 0x828000 sets the 68k buffer bank immediately (the board's own
++	   bank control at 0x818006/16 is applied at the next sync, too late for a script that
++	   starts an ADSP job in the same instant) */
++	m_maincpu->space(AS_PROGRAM).install_write_handler(0x828000, 0x828001,
++		write16s_delegate(*this, NAME([this] (offs_t offset, uint16_t data, uint16_t mem_mask) { m_m68k_adsp_buffer_bank = data & 1; })));
++
++	/* stun60: helper commands for the interpolation script (68k writes; see s60_command) */
++	m_maincpu->space(AS_PROGRAM).install_write_handler(0x828020, 0x828027,
++		write16s_delegate(*this, NAME([this] (offs_t offset, uint16_t data, uint16_t mem_mask) { m_s60_param[offset & 3] = data; })));
++	m_maincpu->space(AS_PROGRAM).install_write_handler(0x828030, 0x828031,
++		write16s_delegate(*this, NAME([this] (offs_t offset, uint16_t data, uint16_t mem_mask) { s60_command(data); })));
++	m_maincpu->space(AS_PROGRAM).install_read_handler(0x828032, 0x828033,
++		read16smo_delegate(*this, NAME([this] () -> uint16_t { return m_s60_result; })));
++
++	/* stun60: GSP speedup. After drawing, the GSP spins at FFF41650-FFF41680 reading the flip
++	   flag at FFF71670 (32 bits) until the vblank interrupt clears it. Sleep until the interrupt
++	   instead (costly when the GSP is overclocked). Reads only; RAM writes are unchanged. */
++	m_gsp->space(AS_PROGRAM).install_read_handler(0xfff71670, 0xfff7168f,
++		read16sm_delegate(*this, NAME([this] (offs_t offset) -> uint16_t {
++			uint16_t v = m_gsp_vram[((0xfff71670 - 0xffc00000) >> 4) + offset];
++			uint32_t pc = m_gsp->pc();
++			if (v != 0 && pc >= 0xfff41650 && pc <= 0xfff41690)
++				m_gsp->spin_until_interrupt();
++			return v; })));
+ }
+ 
+ 
+--- a/src/mame/atari/harddriv.h
++++ b/src/mame/atari/harddriv.h
+@@ -384,6 +384,13 @@
+ 
+ 	required_region_ptr<uint16_t> m_sim_memory;
+ 	uint16_t                m_som_memory[0x8000/2]{};
++	// stun60 (local patch): helper state for the interpolation script
++	std::vector<uint16_t>   m_s60_snap[16];
++	std::vector<uint16_t>   m_s60_store[4];
++	std::vector<uint16_t>   m_s60_tail;
++	uint16_t                m_s60_param[4]{};
++	uint16_t                m_s60_result = 0;
++	void s60_command(uint16_t cmd);
+ 	uint16_t *              m_adsp_pgm_memory_word = 0;
+ 
+ 	uint16_t *              m_ds3_sdata_memory = 0;
+@@ -676,7 +683,7 @@
+ protected:
+ 	virtual void device_add_mconfig(machine_config &config) override ATTR_COLD;
+ 	virtual void device_start() override ATTR_COLD;
+-//  virtual void device_reset();
++	virtual void device_reset() override ATTR_COLD;   // stun60: clock scales from STUN60_CLOCK
+ };
+ 
+ 
+--- a/src/mame/atari/harddriv_m.cpp
++++ b/src/mame/atari/harddriv_m.cpp
+@@ -197,7 +197,13 @@
+ 
+ uint16_t harddriv_state::hd68k_a80000_r()
+ {
+-	return m_a80000->read();
++	uint16_t v = m_a80000->read();
++	// stun60 (local patch): bit 15 = sound command latch empty (active high). The game polls it before
++	// each sound command; stock MAME reports it as always empty, so an overclocked 68010 overwrote
++	// back-to-back commands (lost music cues).
++	if (m_jsa.found())
++		v = m_jsa->main_to_sound_ready() ? (v & ~0x8000) : (v | 0x8000);
++	return v;
+ }
+ 
+ uint16_t harddriv_state::hd68k_port0_r()
+--- a/src/frontend/mame/luaengine.cpp
++++ b/src/frontend/mame/luaengine.cpp
+@@ -15,6 +15,9 @@
+ #include "pluginopts.h"
+ #include "ui/pluginopt.h"
+ #include "ui/ui.h"
++#include "ui/slider.h"
++#include "ui/menuitem.h"
++#include "osdepend.h"
+ 
+ #include "imagedev/cassette.h"
+ 
+@@ -2185,6 +2188,37 @@
+ 	ui_type["image_display_enabled"] = sol::property(&mame_ui_manager::image_display_enabled, &mame_ui_manager::set_image_display_enabled);
+ 
+ 	// undocumented/unsupported
++	// stun60: read (and optionally set) a slider by its description, e.g. "Window 0, Screen 0 Effect" (BGFX screen chain).
++	// Searches OSD sliders first, then UI sliders. Returns value, display text, min, max; nothing if not found.
++	ui_type.set_function("stun60_slider",
++			[] (mame_ui_manager &m, sol::this_state s, std::string const &name, sol::object newval) -> sol::variadic_results
++			{
++				sol::variadic_results result;
++				auto try_list = [&] (std::vector<ui::menu_item> const &items) -> bool
++				{
++					for (ui::menu_item const &item : items)
++					{
++						if (item.type() != ui::menu_item_type::SLIDER || !item.ref())
++							continue;
++						slider_state *const slider = reinterpret_cast<slider_state *>(item.ref());
++						if (slider->description != name)
++							continue;
++						if (newval.is<int32_t>())
++							slider->update(nullptr, std::clamp(newval.as<int32_t>(), slider->minval, slider->maxval));
++						std::string text;
++						int32_t const cur = slider->update(&text, SLIDER_NOCHANGE);
++						result.push_back(sol::make_object(s, cur));
++						result.push_back(sol::make_object(s, text));
++						result.push_back(sol::make_object(s, slider->minval));
++						result.push_back(sol::make_object(s, slider->maxval));
++						return true;
++					}
++					return false;
++				};
++				if (!try_list(m.machine().osd().get_slider_list()))
++					try_list(m.get_slider_list());
++				return result;
++			});
+ 	ui_type["show_menu"] = &mame_ui_manager::show_menu; // FIXME: this is dangerous - it doesn't give a proper chance for the current UI handler to clean up
+ 
+ 

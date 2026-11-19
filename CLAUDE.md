@@ -1,0 +1,400 @@
+# S.T.U.N. Runner 60fps: project notes for Claude
+
+These notes live in the git repo (public). Machine-specific and private details (NAS, network, delivery locations,
+backups) are in ~/CLAUDE.md on the user's PC and must NOT be copied here. Paths below assume the repo is ~/mame.
+Build tree (not in git): ~/mame/build/mame-mame0285 = MAME 0.285 source + stun60-mame0285.patch. ROMs (not in git): ~/mame/roms.
+
+## Current state (CachyOS, 2026-11-18)
+- **Setup DONE 2026-11-18:** ~/mame/build/mame-mame0285/stun60 built in ~5 min (-j16). Verify test: 60.0 fps, 20.00 ticks/s,
+  677/677 exact. Launcher stunrun-60fps-custom.desktop in ~/.local/share/applications + ~/Desktop (-> run-stun60.sh).
+  **First live run on CachyOS (2026-11-18, log ~/mame/stun60-live-2026-11-18.log, ~8 min):** 3D gameplay 392 s at 59.5 fps
+  (only 6 s < 55), ticks 19.95, wall avg 0.997 / max 1.007, late 0.03/s, 0 stale/bad output/ERR. hostmon (~/mame/hostmon-cachyos.log):
+  3.65 GHz avg, max 61 C, MAME ~51% CPU. 88 s were transition screens (no 3D block, ~26 fps, legit). Only real dip: 39-44 s,
+  gd jumped 0.30 -> 0.80 with jd 0.04, extras rendered but "extra missed (rendered true)" then all dropped until the level end;
+  suspect the gd estimate sticks high once extras are dropped (cf. jd probe fix). Minor; not investigated.
+  **SOLVED (2026-11-18): not gameplay.** It is the attract-mode story panel ("Sometime in the future... S.T.U.N. Running, the
+  Ultimate Challenge", frames ~2400-2700 after boot; the user's live dip was before inserting a coin). Measured GSP draw time
+  (FFF77F30 list taken -> FFF71680 done) = a constant 2.13 refreshes per list at gsp x4 (1.42 at x6, 1.06 at x8; normal frames
+  0.03-0.15), so no clock fixes it and the panel is static once zoomed in -> left as is. Real bug found there: the red
+  "Overclock too low" warning fired after it (live run at 42 s). Fix: warning now needs >=10 ADSP-time skips/s (adsp_skips),
+  text now "Emulated ADSP too slow for 60 fps / Raise adsp in STUN60_CLOCK". Tests: attract adsp=8 no warning; adsp=1 warns;
+  verify 60.0 fps / 20.00 ticks / 677 exact. Script prev: stunrun-interp60.lua.v4f. Probe: scratchpad drawprobe.lua (gone).
+  **CRT scanlines (2026-11-18):** MAME BGFX shaders work with the custom build (60 fps kept). User likes crt-geom-deluxe.
+  run-stun60.sh now ALWAYS uses -video bgfx -bgfx_path $B/bgfx -artpath "~/.mame/artwork;$B/artwork" (the crt chains load
+  textures from artwork/bgfx/...; without our artpath they only worked via the distro MAME's /usr/lib/mame/artwork).
+  One launcher (stunrun-60fps-custom.desktop); the CRT/SYNC test launchers were removed. In-game toggle:
+  Tab > Slider Controls > "Window 0, Screen 0 Effect"; saved in ~/.mame/cfg/stunrun.cfg (<window><screen chain=...>).
+  Tested precedence: cfg is honoured only when no chain is given in a system ini or on the command line (those override it).
+  So the script passes crt-geom-deluxe only if the cfg has no chain yet (first-run default = CRT on).
+  STUN60_CRT=deluxe|geom|off forces one for a launch. Old script: run-stun60.sh.bak-20261118.
+  **C key (2026-11-18):** cycles crt-geom-deluxe -> crt-geom -> default (on-screen message 2.5 s; saved in cfg like the menu).
+  Needs a new Lua binding in the custom build: luaengine.cpp `manager.ui:stun60_slider(name [, newval])` -> value, text, min, max
+  (OSD sliders first, then UI sliders; .orig kept). The script finds the chain slider values on first use (deluxe=4, geom=3 here;
+  none=0, default=1 always). Each switch costs 0-3 ms. Script prev version: stunrun-interp60.lua.v4e. Test driver pattern:
+  dofile the script, call global STUN60_CRT_CYCLE() from a frame notifier (needs a window, -video bgfx).
+  Full source patch now ~/mame/stun60-mame0285.patch (257 lines: harddriv.cpp/.h/_m.cpp + luaengine.cpp); the bundle's 207-line
+  patch lacks luaengine. Regression after rebuild: 60.0 fps, 20.00 ticks, 677/677 exact.
+  Not yet in the AppImage/Windows packages (need rebuilt binaries, bgfx/ + artwork/bgfx/ bundled, -video bgfx, the same artpath).
+  Don't take screenshots with spectacle -a: the active window may be the user's browser, not MAME.
+  Sync test: STUN60_SYNC=1 adds -syncrefresh -waitvsync (speed 99.62%, 60 fps, 20 ticks). User felt the NON-sync version
+  ran smoother -> not used (option kept in the script). Monitors: 60.00 Hz HDMI / 59.95 Hz DP, game ~60.2 Hz.
+  hostmon.sh now auto-picks k10temp/coretemp (Ubuntu copy kept as hostmon.sh.ubuntu). portaudio prints JACK/ALSA probe noise to stderr (harmless). Launching from Claude's shell on KDE: DISPLAY=:0 WAYLAND_DISPLAY=wayland-1
+  XAUTHORITY=$(ls /run/user/1000/xauth_*|head -1) (untested). Rebuilds: use -j16.
+
+- **Packages rebuilt on CachyOS (2026-11-18)** and delivered to the user (where: private ~/CLAUDE.md). Deliverables in
+  ~/mame/package/out/. Both now: -video bgfx, bgfx/ + artwork/bgfx/ bundled, C key, first-run CRT deluxe, STUN60_CRT. README updated.
+  - Linux: binary needs glibc >= 2.36 (was 2.43): link shim ~/mame/package/linux/glibc_compat.c/.o maps 2.38+ symbols
+    (math, __isoc23_*) to old versions via -Wl,--wrap (list in wrapflags.txt); static libstdc++/libgcc; NO_USE_PIPEWIRE=1.
+    Remaining 2.35/2.36 refs (_dl_find_object, arc4random) come from static libgcc/libstdc++. Bundled libs: libSDL3 built from
+    source 3.4.20 (sha512 = Arch's) with the shim and -DLIBC_HAS_{STRLCPY,STRLCAT,WCSLCPY,WCSLCAT}:INTERNAL=0 (glibc 2.34);
+    sdl2-compat + sdl2_ttf = Arch *generic* packages (CachyOS repos are x86-64-v3, never bundle those). No old-distro run test
+    (docker daemon not running); verified by symbol versions only. Old AppRun kept as package/linux/AppRun.v1.
+  - **The dev binary ~/mame/build/mame-mame0285/stun60 is now this package build.** Rebuild command (add REGENIE=1 when flags change;
+    make doesn't recompile on define changes, delete the affected .o files):
+    make SUBTARGET=stun60 SOURCES=src/mame/atari/harddriv.cpp NOWERROR=1 USE_QTDEBUG=0 TOOLS=0 TESTS=0 OPTIMIZE=2 NO_USE_PIPEWIRE=1
+    LDOPTS="-static-libstdc++ -static-libgcc $(cat ~/mame/package/linux/wrapflags.txt) $HOME/mame/package/linux/glibc_compat.o" -j16
+  - Windows: same tree, PATH=~/mame/build/mingw64/bin:$PATH make TARGETOS=windows CROSS_BUILD=1 MINGW64=$HOME/mame/build/mingw64
+    PTR64=1 ... -j16 (~4 min). Arch MinGW = UCRT -> Windows 10/11 only; system DLLs only. Launcher win/launcher.c updated (bgfx,
+    artpath data\artwork;bin\artwork, chain logic; old = launcher.c.v1), built with -municode -mwindows -static.
+    Wine 11 tests: 60.0 fps / 20.00 ticks / 677 exact; launcher + bgfx OK, saved chain crt-geom-deluxe.
+  - Use `ps -eo args | grep [s]tun60`, not `pgrep -f stun60.exe` (matches its own shell command).
+
+## MAME tips (written on the old Ubuntu laptop; the apt/desktop-shortcut parts are obsolete)
+- MAME 0.285 from apt. ROMs: `~/mame/roms/` (first in rompath). Per-game ini: `~/.mame/<game>.ini`.
+- Launching on the desktop from Claude's shell needs:
+  `DISPLAY=:0 XAUTHORITY=$(ls /run/user/1000/.mutter-Xwaylandauth.*|head -1) WAYLAND_DISPLAY=wayland-0 XDG_RUNTIME_DIR=/run/user/1000 setsid nohup mame ... &`
+- MAME ignores SIGTERM from this shell; use `kill -9 <pid>`. Never `pkill -f "mame ..."`,
+  because it matches and kills Claude's own shell command.
+- Headless runs: `-video none -sound none -nothrottle -seconds_to_run N -autoboot_script x.lua`.
+  `scr:pixels()` still works headless. Debugger from Lua: `-debug -debugger none`, then
+  `manager.machine.debugger:command("trace file,:tag,noloop")`.
+- Lua API notes (0.285): no CPU clock control (`device.clock` is nil) and no `ui:get_slider_list`.
+  Overclocking is only possible through the in-game Tab > Slider Controls (needs `-cheat`),
+  and the values are not saved on exit.
+  `screen:draw_box(x1,y1,x2,y2, fill, line)`: fill comes first.
+- Scripts (`~/mame/scripts/`):
+  - `fps-counter.lua`: generic on-screen "Drawn FPS" (counts real image changes per 60 refreshes).
+  - `stunrun-60fps.lua`: S.T.U.N. Runner cap unlock + counter.
+- Desktop shortcuts (also in `~/.local/share/applications/`): `stunrun.desktop` (normal),
+  `stunrun-test.desktop` (cheat + counter), `stunrun-60fps.desktop` (unlock + counter).
+- `~/.mame/stunrun.ini` = `cheat 1`; `~/.mame/cfg/stunrun.cfg.bak` = original cfg backup.
+
+## S.T.U.N. Runner 60fps project (stunrun, atari/harddriv.cpp)
+Goal: 60 drawn fps at the correct game speed.
+
+Hardware: 68010 main @8MHz (program in region mainpcb:maincpu, 0x00000-0xBFFFF),
+TMS34010 GSP @48MHz (video), ADSP-2100 @8MHz (math), 6502 sound. Screen 512x228 @60.2Hz.
+Benchmark: ~750% speed unpatched on this PC.
+
+Learned:
+- The game draws ~20 fps during tunnel gameplay (one new image per 3 refreshes); other screens draw 8-9 fps.
+- Overclocking gsp/adsp to 400% changed nothing: it is a software cap, not hardware.
+- The cap lives in the GSP code (addresses are TMS34010 *bit* addresses; Lua `spaces["program"]`
+  takes them directly, e.g. `read_u16(0xFFF77E80)`):
+  - Vblank/display IRQ handler at FFF41C00 increments the byte counter FFF716A0.
+  - Frame loop at FFF40ED0: `A1 = [FFF77E80]` (min refreshes/frame = **3**), copies counter
+    to FFF716B0 (refreshes elapsed, usually 1, so drawing finishes within 1 refresh),
+    waits at FFF40F50..FFF40F90 until counter >= A1, then clears the counter at FFF40FA0.
+  - The GSP is ~77% idle at stock clock; the main 68010 also busy-waits at 02FC82
+    (`tst.w (A2)` loop, calls 022766, clears watchdog $608000).
+- Writing FFF77E80 = 1 every frame (RAM patch, ROMs untouched) gives a full 60 fps in the tunnel.
+  **But game logic advances once per drawn frame, so the whole game runs 3x fast**: the demo's
+  tunnel segment took ~6 s instead of ~17 s. FFF716B0 (elapsed refreshes) does not seem to be
+  used to scale game speed. `2` = 30 fps at 1.5x speed.
+- The ADSP trace came out empty in the 6-frame capture (not investigated).
+- **User's live results (2026-11-15) differ from the headless demo test:**
+  - `MIN_REFRESHES = 2`: tunnel sections still max ~20 fps (expected 30).
+  - `MIN_REFRESHES = 1`: only ~40 fps for a second or two, otherwise lower (headless demo showed a steady 60).
+  - Unconfirmed theory: real gameplay is heavier than the attract demo, so drawing takes
+    >2 refreshes and the cap isn't the only limit there. To check: read FFF716B0 (elapsed
+    refreshes) during real play. Also try the unlock combined with gsp/adsp overclock sliders,
+    and confirm the cap write actually holds during gameplay.
+  - MAME speed stayed at ~100% (F11) during those runs, fluctuating 98-102% (normal throttling
+    jitter), so the host PC is not the bottleneck.
+    The limit is inside the emulated game: GSP/ADSP/68010 work per frame, or something else
+    in the frame pacing.
+
+- **Live-vs-headless gap explained (2026-11-15):** real gameplay is render-bound at stock clocks.
+  - Scripted real play headless: coin = `:mainpcb:jsa:JSAII` + `:mainpcb:IN0` "Coin 1" held 20 frames
+    at frame 600/640, "1 Player Start" (`:mainpcb:a80000`) at 700/900, Button 1 pulsed. Reaches level 2.
+  - Frame timeline per GSP frame (taps on FFF716B0 = frame start, FFF77F30 = display list taken,
+    FFF71670 = drawing done/flip; time = `manager.machine.time:as_double()/scr.frame_period`):
+    wait for the 68010 display list 0.5-0.9 refreshes, then GSP drawing **1.5-2.1 refreshes avg (max ~3.2)**,
+    then wait for the vblank flip. Cap=1 gives only 18-28 fps in gameplay; the attract tunnel is unusually
+    light (1 refresh), which is why headless showed 60.
+  - Frame flow: after vblank the GSP polls mailboxes FFF9FC00/FFFCFC00 (FFFF = list ready, double-buffered),
+    draws into buffer 2000000 or 203C000, writes it to FFF71670, spins at FFF41650/FFF414C0 until the vblank
+    IRQ FFF41C00 flips and clears it. ADSP ran ~90% of its cycles; 68010 also busy.
+  - The old pixel-change counter overcounts in gameplay (HUD changes). `stunrun-60fps.lua` now counts real
+    frames via a write tap on FFF716B0 (`fps-counter.lua` and the test shortcut still use pixel changes).
+  - So 60 fps needs gsp (~300-400%) and maincpu overclock as well as the unlock, plus a game-speed fix.
+  - Lua gotchas (0.285): screen has no vpos (use machine.time); `frame_period` is a number;
+    `d:command("bpset ...")` targets the visible CPU (maincpu), and `device:debug():bpset` printf output
+    didn't show in consolelog. Memory taps work; keep the tap handle in a global.
+
+- **User's live overclock test (2026-11-15):** unlock + gsp/maincpu/adsp all at 400% = steady 60 fps,
+  0 frameskip, ~100% speed, but the game runs far too fast. 60 fps is feasible; game speed is the problem.
+- **Option 2 findings (2026-11-15): no single time-step knob found.**
+  - One logic tick per GSP frame: right after the GSP frame start, a 68010 IRQ handler at 021444 writes
+    FFFF to $FFDB48, which releases the main loop's wait at 02FC82; 02F240 clears it.
+  - 68010 RAM is at FF8000-FFFFFF. Per-tick constant steppers: FF9566 (+1 tick counter), timer long
+    $FF9568 (-14/tick; HUD seconds = value/256, poke-verified), FF8016/FFDB38 (+~12.5), FF9582 (5-bit counter).
+  - The timer code at 026884-02688E is `moveq #$e,D1; sub.l D1,D0`, a hard-coded step. The code is compiled C
+    with per-tick constants, so a correct-speed 60 fps needs 20 Hz logic + interpolated rendering (big RE job).
+  - Tools: the 68010 disassembly is made with debugger `dasm m68.asm,0,C0000` (no unidasm installed).
+    68010 RAM write taps get dropped by a remap around frame 182, so install them late (e.g. at frame 1790).
+
+- User's goal reference: https://www.skytopia.com/stuff/stun60.mp4 is an AI-interpolated 60 fps mock-up (blended
+  ghost frames, normal game speed), not a real mod. The user wants live play to look like that.
+- Alternative to option 2: real-time frame generation. lsfg-vk (a Vulkan layer that needs the paid Lossless Scaling
+  app's files) + MAME `-video bgfx -bgfx_backend vulkan` (the UHD 620 has Intel Vulkan).
+  Catch: MAME presents 60 Hz with each game frame repeated about 3 times, so the generator needs only the new frames.
+  Not tried yet.
+- lsfg-vk status (checked 2026-11-16): v2.0.0 released 2026-09-05 (Vulkan 1.2+, FP16 speedup, Qt6 UI, lsfg-vk-cli
+  benchmark/validate/healthcheck, matches processes by Linux binary name). Moved off GitHub to lsfg-vk.dev (+ Codeberg mirror);
+  license now CC BY-NC-ND 4.0 (fine for personal use). Still needs Lossless Scaling owned on Steam (reportedly its "lsfg-vk" branch).
+  v1 configs incompatible. Not confirmed: Intel UHD 620 performance, Ubuntu packaging (lsfg-vk.dev failed DNS from here).
+
+- **HD redraw experiment (2026-11-16): success.** Results + tools in `~/mame/hd-experiment/` (tools/: cap.lua capture,
+  dec.py decoder, hr.py 1440x1080 renderer).
+  - Display list (GSP RAM, pointer = mailbox+0x10): 16-bit commands, top nibble -> jump table FFF470E0, walker FFF46E30.
+    0/F end, 3 fill rect, 2 line, 5 clip window, 4/9/D HUD+bitmaps, 7 = whole 3D scene (handler FFF44BF0).
+  - Opcode 7 block: base=after opcode word; word[0]=count; offset table at base+count words (FFFF ends);
+    poly at base+off: flags(bit15 skip, bit12 alt handler FFF48FC0 (unused so far), bits10-11 mode (2=dithered shadow),
+    low10 = colour index into FFF71D20 table -> F4000000), xl, xr, y, then repeat {right slope long, left slope long
+    (16.16, low word first), word n (n-1 more scanlines)} until FFFFFFFF. Fractions start at 0.5. Screen y = list y - 0x28.
+    Playfield rows 0-207, HUD 208-239. ~140-250 polys per frame. Polys are screen-space 2D (already projected).
+  - Colours were sampled from the matching MAME frame (colour table not decoded yet). Skyline background is a bitmap.
+  - Gotchas: debugger `dasm file,addr,len,1,:mainpcb:gsp` (5th arg selects CPU; `focus` doesn't work headless).
+    Read taps can get the GSP PC via `device.state["PC"].value` (PC = next instruction). tracelog in trace actions
+    printed nothing. Pillow 12 here: NEAREST resize is broken (use the pure-Python nn() in hr.py); no numpy.
+  - Next for 60 fps: the list is 2D with no polygon IDs, so interpolating needs matching polys between lists
+    (offset-table order may be stable) or going up to the 3D data (ADSP/68010). Live use needs a custom MAME build.
+- **2D interpolation test (2026-11-16): works on open track, fails in tunnels.** Tools: seq.lua (dump every scene block,
+  TF/TAG/N env), interp.py (align polys by order+colour+centroid DP, resample outlines, lerp), valid.py (interpolate
+  list i..i+2 at t=0.5, score vs real list i+1). A new list every 3 refreshes, alternating buffers FFFD0130/FFFA0130.
+  - Open track (frame 3600): interpolated 95-98% vs 90-97% for repeating the previous frame. Good.
+  - Tunnel (frame 2400): erratic, sometimes far worse (0.29-0.44). The camera moves about a ring per tick and the
+    same wall changes colour index, so 2D polys can't be paired (wagon-wheel effect). See tunnel-interp-fail.png.
+  - Conclusion: smooth 60 fps needs the 3D side: camera position/orientation + 3D vertex data before projection
+    (68010 RAM / ADSP), then re-project at in-between camera positions. 2D list stays useful for HD drawing.
+- **3D pipeline found (2026-11-16): the ADSP does all 3D work; we can steer its camera.**
+  - The 68010 copies finished polygon records from the ADSP buffer window $810000-$811FFF into GSP RAM via the host
+    port (memcpy at 02247A, writes $C0000C). So the ADSP projects, clips and computes edge slopes itself.
+  - Per tick the 68010 (code 02E0FA-02E1DA) writes just two input blocks into ADSP data memory (68010 window
+    $808000 + 2*word): camera block at word 0x1FE6 ($80BFCC..): position = 3 longs from 68010 RAM $FFDAF8/$FFDAFC/$FFDB00
+    -> $80BFD2..$80BFDC; camera matrix 9 words (1.14 fixed, 0x4000=1.0) from $FFDB04 -> $80BFEA..$80BFFA (seen yaw-only);
+    extra words $80BFDE-E8 (locals and $4A82A consts, maybe roll/pitch). Object block at word 0xA00 ($809400..):
+    per object ids, matrix, position (craft record in 68010 RAM around $FF9C7C: 3 longs + 9-word matrix).
+    ADSP control regs are around $818000-$818060. Track geometry is already inside the ADSP's memory.
+  - Proof: write tap on $80BFCC-$80BFFB returning the previous tick's camera words makes the next list 95% identical
+    to the previous list (vs 39-66% normally); the rest is moving objects. (cam.lua MODE=prev, cmpl.py.)
+  - Lua: write taps can return a value to replace the written data.
+  - Plan for 60 fps: run the ADSP render 2 extra times per tick with interpolated camera (+objects) and show those
+    lists. Needs: the ADSP render trigger/completion protocol, extra ADSP time (overclock adsp ~300%+),
+    GSP cap=1, and one tick (50 ms) of delay to interpolate (or extrapolate). Check that the render pass does not feed game logic.
+- **In-between renders WORK (2026-11-16).** `~/mame/hd-experiment/stun60-sidebyside-*.mp4` = 20 fps vs 60 fps (3 s of
+  tunnel, renders by the game's own ADSP at t=0, 1/3, 2/3; HD redraw with sampled colours). Tools: inj2.lua -> movie.py.
+  - MAME facts (harddriv_m.cpp): 68k $818000+2*n: val=bit3 of n, func=n&7: 3=buffer bank (deferred), 5=/BR (0=halt ADSP),
+    6=/HALT, 7=reset, 0/1 LEDs. $818060 = clear ADSP IRQ (68k IRQ level 2). Writing ADSP data word 0x1FFF ($80BFFE)
+    triggers the ADSP job interrupt. ADSP writes output ("SOM") into bank (m68k_bank^1); 68k reads bank m68k_bank at $810000.
+    Track geometry is streamed from ROM ("SIM", user1 region) so jobs are repeatable.
+  - Job protocol: main loop waits $FF9BB4 (02C3D6), clears it, toggles bank ($818006/$818016), upload routine 02E0FA or 02DE56
+    (camera + objects, 82 or 677 writes), clr $80BFFE (trigger), release $81801A. ADSP IRQ handler 021402 -> 02E418:
+    if $80BFC6 != 0 continue (more data), else set $FF9BB4=1 (done). Pipeline latency: upload -> shown 2 ticks later.
+  - Object slots in ADSP data (stride 0x30 bytes): +0/+2 ids, +4 matrix 9 words, +0x16/+0x1A/+0x1E position longs.
+    Writer PCs (tap PC = next instr): positions 02E342/34C/356 (02E30C update), 02E24A/250/256 (02E1EC new slot);
+    camera pos 02E16C/176/180 or 02DED6/EE0/EEA; matrices via memcpy 022DE0-022DE8.
+  - Injection (inj2.lua): on the real "done" write to $FF9BB4 return 0 (tap) to hold the 68010; snapshot ADSP data
+    0-0x1FFE (ADSP space, avoids trigger); per t: restore snapshot, halt, set 68k bank to b^1 (ADSP writes the copied bank b),
+    replay the last-but-one job's upload with camera+objects lerped toward the last job, release; on done (hold again),
+    set bank back to b next frame, read $810000 (count, then words) the frame after. Finally restore and write $FF9BB4=1.
+    Replay at t=0 reproduces the real list 100%.
+  - Next: live version. Needs gsp+adsp+maincpu overclock (sliders), GSP cap=1, and scheduling: per tick run 2 extra jobs
+    after the real job finishes, write each into a spare GSP list buffer (reuse the published list, swap the 7000 block,
+    re-append the HUD tail) and raise its mailbox one refresh apart. Colours come from GSP table FFF71D20 -> real palette in MAME.
+- **Live prototype (2026-11-16): `~/mame/scripts/stunrun-interp60.lua`**, desktop launcher `stunrun-interp60.desktop`
+  (-cheat; user sets gsp/adsp/maincpu ~400% in Tab > Slider Controls each launch). Overlay: drawn fps, ticks, interp, dropped.
+  Env for testing: STUN60_RELAX=1 (no deadlines, slow motion), STUN60_VERIFY=1 (render t=0 and compare with the real list),
+  STUN60_LOG=file, STUN60_DEBUG=1, STUN60_PCLOG=1. Headless driver: scratchpad re/live_test.lua (dofile's the script).
+  - Per real list (68010 publishes mailbox FFFF): cap=1; hold the 68010 at the real job's done ($FF9BB4 tap returns 0, only
+    once a new job was uploaded after the publish); wait until this tick's copy ($FFDB4E write) has finished; for t=1/3,2/3:
+    halt ADSP + set bank, wait 0.01 refresh (bank switch is deferred!), restore ADSP RAM to the pre-job snapshot of job A
+    (taken at the 68010's bank toggle), upload lerped job, release; on done set bank back, wait 0.01, read $810000.
+    Pair = jobs[n-2], jobs[n-1] (verified exact). Objects matched by 68010 object pointer (A2 at write time).
+    Extras go in the same GSP buffer as the real list (block at 7000 found via $FFDB4E length; HUD tail re-appended),
+    published one per GSP frame. Game tick ($FFDB48=FFFF from the GSP-frame IRQ) is suppressed until the last extra is
+    consumed. Deadlines: drop extras that can't be shown in time, then cap = 3 - shown (normal 20 fps pacing at stock).
+  - Gotchas found: emu.wait coroutines crash MAME on exit (use tap-pumped state machine instead); autoboot script re-runs
+    after a machine reset (global guard); 68010 wait loops time out by iteration count (refresh D5 while holding:
+    02C3AC-02C3DA -> 0, 02FC7C-02FCB6 -> 0x80000); the 68010 restarts the game (021286) if a copied block lacks FFFF.
+  - Headless results: relaxed 70 s run, 268/268 exact verifies, no resets; stock clocks: extras dropped, 20 fps normal.
+    Not yet tested live with overclock (can't overclock from Lua).
+  - Live test 1 (2026-11-16): all three at 400% -> 60 fps ~1 s then lockup; adsp ~130% -> 22-33 fps, locks after ~1 min.
+    Fix attempt: wait_copy had no timeout (a stuck cycle holds tick + done and refreshes the 68010 give-up counter = permanent
+    freeze); added timeout, 45-refresh watchdog (abort_cycle restores bank/ADSP), pcall around step (ERR n on overlay),
+    "ticks" now counts released ticks (20 = normal speed). Always logs to ~/mame/stun60.log; launcher sends stderr to
+    ~/mame/stun60-stderr.log. Previous version kept as stunrun-interp60.lua.v1. No UI inputs are exposed to Lua, so the sliders can't be driven headless.
+  - Live test 2 (all 400%): extras ~1 refresh late (each ADSP job ~0.85 refresh at 400%, v2 ran extras after the next real
+    job), "GSP handshake error" + game self-reset. v2 kept as stunrun-interp60.lua.v2.
+  - **v3 rewrite (2026-11-16)**, from a probe of the GSP handshake: GSP polls a mailbox, draws as soon as it is FFFF,
+    flips at vblank, then clears the mailbox (= list on screen, buffer free), reads the cap (FFF77E80, refreshes between draw
+    starts), raises the game tick, and clears counter FFF716A0 (+1 per vblank) when the cap is satisfied. Vblank at x.020.
+    The 68010 clears the tick at 02F240 and publishes right then. FFF71680 nonzero = draw done.
+    v3: extras use jobs[n-1],jobs[n] right after the publish (both are already uploaded; hold jobs[n]'s done), raise extra j after
+    vblank B+j (B = vblank when R(k) starts drawing), hold all GSP ticks and give exactly one at vblank B+3. Stock: 20/20.
+    Relaxed: verifies exact. Bugs fixed: write taps returning a value overwrite writes made inside them (lost done/tick).
+    Never write an address from inside its own tap, and don't let reads inside taps run the state machine (in_tap guard).
+
+Status (2026-11-16): the user chose the in-engine route (option B). The HD redraw and the in-between ADSP renders are proven
+offline (videos in ~/mame/hd-experiment/). **v3 WORKS LIVE (2026-11-16)**: gsp/adsp/maincpu 400% -> steady 60 drawn fps, 20 ticks (correct game speed), 40 interp/s, no lockups. Small dips in open areas (heavier ADSP jobs, jd ~0.85 refresh, 3 jobs per 3 refreshes is tight). Lua cost ~0.2 s CPU per s.
+  Overlay (2026-11-16): O key cycles full/small/off (saved in ~/.mame/stun60-overlay.txt, default small = fps only);
+  red warning "Overclock too low" after 3 s of gameplay with <10 extras/s. Estimates: jd only learns from jobs run, so
+  after 100 all-skipped cycles one probe job runs (decaying jd instead broke stock pacing); gd capped at 0.9.
+  Next: custom MAME 0.285 build (SUBTARGET=stunrun SOURCES=src/mame/atari/harddriv.cpp) with set_clock_scale() in
+  stunrun_board_device_state::device_start (harddriv.cpp ~line 1846), read from env, so no sliders and adsp can go >400%.
+  **Custom build DONE (2026-11-16):** ~/mame/build/mame-mame0285/stun60 (MAME 0.285, SUBTARGET=stun60 SOURCES=harddriv.cpp,
+  ~20 min build, log ~/mame/build/build.log). Patch: stunrun_board_device_state::device_reset() reads env
+  STUN60_CLOCK="maincpu=4,gsp=4,adsp=6" -> set_clock_scale (prints "stun60: X clock" to stderr); originals kept as *.orig.
+  Run with -inipath /etc/mame (picks up apt paths). Launcher: stunrun-60fps-custom.desktop (also on ~/Desktop), no -cheat.
+  Headless: adsp x4/x6/x8 all ~60 fps / 20 ticks, x8 jobs ~0.35 refresh; remaining dips are rare scene changes.
+  Host cost same for x4 and x6 (~157% unthrottled).
+  - **Sound garbled live (2026-11-16)**: host too slow (gameplay 104-119% headless). Overclock alone = 378%; the Lua
+    script was the cost: 68010 read-tap pumps (millions of calls/s at x4) and per-word Lua copies.
+  - **v4 (2026-11-16)**, script needs the custom build now (apt shortcut uses stunrun-interp60-apt.lua = v3 copy):
+    no 68010 pumps (D5 refresh at vblank/frame; steps run from the done tap, publish tap, vblank and GSP counter clear;
+    releasing the done from inside its own tap = tap returns 1). Custom build additions in init_stunrun (harddriv.cpp):
+    0x828000/0x82C000 read-only window on som banks; write 0x828000 = immediate 68k buffer bank (the 818006/16 switch
+    is deferred, so the ADSP's first output word went to the wrong bank and wiped the real list -> game restart);
+    params 0x828020-27, command 0x828030, result 0x828032 (s60_command: 1 SNAP, 2 RESTORE ADSP data, 3 STORE output,
+    4 TAIL capture, 5 BUILD list in GSP RAM, 6 COMPARE); GSP read speedup at FFF71670 for the flip spin loop
+    FFF41650-FFF41680 (small gain). Result: 198% avg / 142% min headless at maincpu=3,gsp=3,adsp=6 (launcher now uses
+    that), ~57 fps avg, 20 ticks, verify exact. Older script versions kept as .v1-.v4pre.
+  - **v4 live test (2026-11-17): sound OK, reached level 3.** Log kept: ~/mame/stun60-live-2026-11-17.log (195 s).
+    Ticks a steady 20/s throughout (correct speed). Gameplay mostly 60 fps; short dips to 33-45 for 1-2 s, mostly when jd >= ~0.5
+    refresh (heavy ADSP jobs at adsp=6). Several 2-7 s stretches at exactly 20 fps with cycles 0 (no interp attempted, probably
+    level-end/transition screens, unconfirmed). Frequent recoveries: 56 "released a stale ADSP done", 38 "bad output", 34 "no ADSP time".
+    adsp=8 live (2026-11-17): music OK all through, 59.4 avg fps (33 s gameplay logged), sound "a tiny bit garbled". Headless speed
+    adsp=6 187% avg/169% min, adsp=8 191%/180% (same cost). -audio_latency is ignored by sdl/pulse in 0.285; only portaudio
+    honours it (units of 20 ms). Launcher now adds `-sound portaudio -audio_latency 3` (60 ms); user still heard slight choppiness (see below). Next ideas: check what the cycles-0 stretches are; look into the stale-done/bad-output causes.
+  - **Music fix (2026-11-17):** music was missing in level 1-2 first tunnels (user report). Cause: the 68010 polls bit 15 of
+    $A80000 (sound latch empty) before each command (send routine 023EDA, writes $600000 at 023EF6), but MAME's stunrun port
+    has that bit "unused" = always empty, so at maincpu x3 back-to-back commands (game start 1D 1C 39) overwrote each other.
+    Patch: hd68k_a80000_r (harddriv_m.cpp, .orig kept) returns the real latch state; the $600000 write handler (init_multisync)
+    calls abort_timeslice() after main_command_w. Headless: all commands reach the 6502, audio RMS matches stock, 60 fps intact.
+    Probes: re-probes/snd6.lua (6502-side CMD/MIX/YM log), rms.py (per-second loudness compare of -wavwrite files).
+  - **Choppy sound diagnosis (2026-11-17):** user's longer adsp=8 run (log ~/mame/stun60-live-2026-11-17c.log): 58.7 avg fps
+    over ~2 min of play, but sound "still a little choppy", like a Bluetooth headset at the edge of its range, getting worse after a while.
+    - Emulated audio is clean: no dropouts in -wavwrite captures (re-probes/gaps.py), so it is host-side (MAME falling behind live).
+    - Per-frame host cost (unthrottled, re-probes/wper.lua): stock game a flat ~3.5 ms/frame; with the script the pattern is
+      2.3 / ~14 / 2.3 ms: real job + both extras run back to back in one frame (ADSP instruction count, ~3x a stock tick).
+      Same spike at adsp=4/6/8 (12-16 ms max), so the clock isn't the lever. Throttled, that frame lands ~14 ms late.
+    - Host power profile is "balanced" (governor powersave); suspected CPU slowdown under sustained load or heat.
+    - Overclock WITHOUT the script never gets into gameplay (boot loop, only 3-4 sound commands); irrelevant live but odd.
+    - Script now logs per second: `wall X s` (real time per emulated second), `max gap` (longest real gap between frames, ms),
+      `late` (frames >25 ms apart). Previous script kept as stunrun-interp60.lua.v4b.
+    - re-probes/hostmon.sh out.log [max_s]: logs CPU MHz avg/min, pkg temp, MAME CPU% each second while stun60 runs
+      (stops when MAME exits). Run in the background before the user plays: `~/mame/scripts/re-probes/hostmon.sh ~/mame/hostmon.log 1800`.
+  - **Host spike fixed (2026-11-17, evening):** a short live run with GNOME power mode = Performance still had wall 1.02-1.06 s
+    and ~20 late frames/s (one per tick), so throttling wasn't the main cause. Script now spreads the ADSP work: extra 1 right
+    after the real done, extra 2 after the next vblank, and the held done is released only at vblank B+2 (68010's next real
+    job runs in the 3rd refresh). Env STUN60_SPREAD=2 (default) / 1 (only extra 2 delayed) / 0 (old). Headless adsp=8 per-frame
+    host ms: old 17/3/3 pattern (p90 15.2, p99 17.9), mode 1 9/14/3, mode 2 flat ~8 (p90 8.3, p99 10.8); same 56 fps / 20 ticks,
+    790/790 verifies exact. Previous script kept as stunrun-interp60.lua.v4c.
+    Live run right after (log ~/mame/stun60-live-2026-11-17d.log, 165 s gameplay): wall avg 0.997 / max 1.007 s (before: 1.02-1.06),
+    late 0.44/s (before ~20), max gap 22 ms avg; 57.3 fps, 20 ticks. hostmon: ~3.6 GHz avg, pkg temp up to 94 C, MAME ~60% CPU.
+    23 s at ~20 fps with cycles 0. User: sound better; 20 fps dips also mid-tunnel with many enemies (robots, armored cars).
+  - **Busy-scene fix (2026-11-17):** cause = size limits. Heavy scenes have 3D blocks of 6000-7250 words; find_block rejected
+    d2 > 6000 (no cycle at all = "cycles 0", 20 fps) and custom MAME's s60 STORE (cmd 3) rejected n > 6000 ("bad output", then
+    "stale ADSP done" fallout). Both raised to 0x1FFE (som bank = 0x2000 words; GSP buffers are 0x3000 words apart), MAME rebuilt.
+    Headless 201 s scripted game: fps 51.4 -> 57.8, secs <40 fps 41 -> 11, cycles-0 secs 17 -> 4 (level-end fade/course map, legit),
+    stale done 63 -> 0, bad output 29 -> 0; verify 3985/3985 exact (749 lists > 6000 words). Script logs "no 3D block: ..."
+    (rate-limited) when a published list has no usable block. Remaining: "extra 1 missed (rendered true)" ~0.25/s (late, not lost).
+  - **Live test of busy-scene fix (2026-11-17, log ~/mame/stun60-live-2026-11-17e.log, 217 s):** 55.5 fps (was 49.6), secs <40 fps
+    23 (was 50), stale done/bad output gone; wall 0.997, late 0.24/s; host 3.57 GHz, temp up to 96 C. Remaining 20 fps stretches
+    every ~50 s = level ends (stale d2, no 7000 block or the 323-word one) = legit. New: a 30 fps stretch at 211-218 s with
+    ticks 15-16/s and gd pinned at 0.9: the GSP needs >1 refresh to draw (heavy scene), extra 1 misses every cycle.
+    Headless gsp=3 vs gsp=4: mean host ms 8.4 vs 8.9 (p99 12.2 vs 12.5), gd avg 0.63 vs 0.46, secs gd>=0.85 9 vs 0.
+    Launcher switched to maincpu=3,gsp=4,adsp=8 (both .desktop copies).
+  - **Live gsp=4 run (2026-11-17, log ~/mame/stun60-live-2026-11-17f.log, 205 s): best so far.** 58.4 fps, ticks 19.94,
+    secs <40 fps 8 (was 23), gd avg 0.49 (never >=0.85), late 0.04/s, wall avg 0.997 (4 secs 1.01-1.03 at 60 fps, harmless),
+    "extra missed (rendered true)" 157 -> 3. All 5 remaining dips (1-2 s each, at ~10/44/89/144/209 s) have the transition
+    signature (stale d2, 7000 at word 323/329 or none, "no ADSP time"), i.e. no 3D scene to interpolate. No hostmon that run.
+  - **PAUSED HERE (2026-11-17, ~23:30; user back the next morning).** Done today: host spread fix, busy-scene fix, gsp=4,
+    colour decode, Linux AppImage/tarball + Windows zip delivered, CachyOS migration bundle (tested). The user may continue on
+    the CachyOS PC. Next: HD redraw at 4:3 (estimate given: first HD frames ~3-4 h of work, finished + packaged ~2 days), then a
+    widescreen probe. Deferred: choppy sound on the user's real Windows PC (fine under Wine on CachyOS).
+    Claude was asked to power off the Ubuntu PC after this via `gnome-session-quit --power-off --no-prompt` (no --force).
+  - **Older pause note (2026-11-17, late).** Host spread, busy-scene size limits and gsp=4 are all in place and verified live
+    (58.4 fps, correct speed, sound fine; user confirmed the 5 dips were level changes). GOAL REACHED; remaining work is optional polish.
+    Launch: "S.T.U.N. Runner 60fps (custom MAME)" = stunrun-60fps-custom.desktop (also ~/Desktop):
+    `STUN60_CLOCK=maincpu=3,gsp=4,adsp=8 ~/mame/build/mame-mame0285/stun60 stunrun -inipath /etc/mame -sound portaudio
+    -audio_latency 3 -autoboot_script ~/mame/scripts/stunrun-interp60.lua` (stderr -> ~/mame/stun60-stderr.log, log ~/mame/stun60.log).
+    To resume: optionally start `~/mame/scripts/re-probes/hostmon.sh ~/mame/hostmon.log 1800` in the background, ask the user
+    to play (enemy-heavy tunnels), then read stun60.log: per-second lines (drawn/extra/ticks/cycles, wall/max gap/late) and any
+    "no 3D block:" lines (published list without a usable 3D block: shows d2, where the 7000 opcode is, its end word).
+    - Still open: "extra 1 missed (rendered true)" ~0.25/s (in-between ready but too late); CPU reaches 94 C under load;
+      if sound is still choppy, try -audio_latency 4-5.
+    Headless A/B driver: re-probes/ab.lua (per-frame host ms to $WLOG from frame 1400 + live_test.lua). Example:
+    `STUN60_LOG=x.txt WLOG=w.txt END=13500 STUN60_CLOCK=maincpu=3,gsp=3,adsp=8 ~/mame/build/mame-mame0285/stun60 stunrun
+    -inipath /etc/mame -video none -sound none -nothrottle -autoboot_script ~/mame/scripts/re-probes/ab.lua`
+    (add STUN60_VERIFY=1 to check exactness; frame ~3300 and ~6200 are level ends = legit 20 fps; a run to 13500 takes ~3 min).
+    Rebuild after editing harddriv.cpp/harddriv_m.cpp (incremental, a few minutes): in ~/mame/build/mame-mame0285 run
+    `make SUBTARGET=stun60 SOURCES=src/mame/atari/harddriv.cpp NOWERROR=1 USE_QTDEBUG=0 TOOLS=0 TESTS=0 OPTIMIZE=2 -j8`.
+    Headless test drivers in ~/mame/scripts/re-probes/: live_test.lua (scripted coin/start/fire, dofile's the script by path,
+    END env), spd.lua (logs video.speed_percent, a fraction: 1.9 = 190%), wper.lua/wonly.lua (per-frame wall ms), snd6.lua, rms.py, gaps.py.
+    m68.asm (full 68010 disassembly) is in re-probes/ too.
+    Ideas for later: HD redraw (1440x1080) live (next big step; user wants it).
+  - **Standalone packages (2026-11-17)** in ~/mame/package/ (README.txt shared; out/ = deliverables). No ROMs included.
+    Delivered to the user's file share (location: private ~/CLAUDE.md, not in the repo).
+    - Linux: STUNRunner60.AppDir (AppRun launcher: ROM next to AppImage / roms/ / ~/.local/share/stun60/roms / ~/mame/roms;
+      data + log in ~/.local/share/stun60; sets STUN60_CLOCK + STUN60_DATA; bundles libSDL2 (sdl2-classic), SDL2_ttf, samplerate).
+      AppImage built with tools/appimagetool-x86_64.AppImage (--appimage-extract-and-run --no-appstream). Needs glibc >= 2.43.
+      Also out/STUNRunner60-linux-x86_64.tar.gz (same folder, ./run). Both tested headless.
+    - Script: STUN60_DATA env = folder for log + overlay setting (else old ~/mame paths; HOME falls back to USERPROFILE). Prev: .v4d.
+    - Windows: cross-compiled with MinGW-w64 GCC 13 posix (sudo apt install mingw-w64 done). Toolchain symlink dir
+      ~/mame/build/mingw64/bin (posix variants + windres). Build: in ~/mame/build/mame-mame0285
+      `make TARGETOS=windows CROSS_BUILD=1 MINGW64=$HOME/mame/build/mingw64 PTR64=1 SUBTARGET=stun60 SOURCES=src/mame/atari/harddriv.cpp
+      NOWERROR=1 USE_QTDEBUG=0 TOOLS=0 TESTS=0 OPTIMIZE=2 -j8` (log ~/mame/build/build-win.log). Launcher: package/win/launcher.c ->
+      STUNRunner60.exe (sets env, data\ folder, checks ROM, starts bin\stun60.exe). Wine 10 installed by user; test prefix
+      ~/mame/package/wineprefix.
+      wineserver is /usr/lib/x86_64-linux-gnu/wine/wineserver (not on PATH); the launcher returns at once, so wait on the stun60.exe pid.
+      **Windows DONE (2026-11-17):** build ~17 min, stun60.exe 55 MB stripped, static (system DLLs only). Wine tests: launcher OK;
+      scripted gameplay 58.0 fps, ticks 19.95, verify 968/968 exact, 198% unthrottled. Delivered upgraded/Windows/
+      STUNRunner60-windows-x64.zip (13 MB) + README (CRLF). Running stun60.exe directly writes cfg/nvram into the cwd:
+      keep test runs out of the package folder.
+      **User test on real Windows (2026-11-17): runs, but the choppy-sound issue is back** (deferred by user). Ideas: launcher uses
+      -sound portaudio -audio_latency 3 (tuned on Linux); try -sound xaudio2 (Windows default) and/or -audio_latency 4-5,
+      check data\stun60.log wall/late columns from the user's PC (host speed vs this laptop).
+      2026-11-18: user says the Windows version seemed to run OK in a later check; maybe the choppy run was a fluke. Backburnered.
+      Same Windows zip under Wine on another Linux PC (CachyOS): sound fine. So the build is OK; the problem is specific to that
+      Windows PC/audio path (portaudio backend on Windows, latency, or host speed). Deferred.
+  - Overlay key is the letter O (user confirmed it works; zero does nothing, by design).
+  - **Plan agreed (2026-11-17):** HD redraw at 4:3 first (live renderer in the custom build), then a widescreen probe:
+    find the ADSP projection/clip limits, widen them, check edge pop-in (open areas), extend the skyline bitmap, keep HUD centred.
+    Fallback: crop 4:3 to 16:9. A ROM-only patch for stock MAME is impossible (stock clocks can't render 60 fps).
+  - **Colour decode DONE (2026-11-17), 100% pixel-exact** on frames 2400/3000/3600 (every drawn 3D pixel vs snapshot).
+    Tools/data: ~/mame/scripts/re-probes/col/ (colours.py = reference decode + render; capcol.lua = cap.lua + palette dump;
+    ctab.lua = table+palette dump; gsp_poly.asm = GSP poly handler disassembly).
+    - Chain: poly low10 = idx -> pen = low byte of word at GSP FFF71D20+16*idx (GSP writes it to F4000000 = gsp_control_lo[0],
+      the VRAM expander fill colour) -> RGB from palette RAM bank 0: shares ":mainpcb:gsp_palram_lo"/"_hi" (read_u16(2*pen)),
+      R = lo>>8, G = lo&255, B = hi&255 (harddriv_v.cpp gsp_palette_change; pixel = palettebank*256 + 8-bit value).
+    - Table is constant (all entries solid pairs, no dither; 875/1024 = idx&255). The PALETTE changes over time
+      (47 entries by frame 3000, 178 by 3600), so read it every frame. The old cmap.json had 2 wrong entries (idx 31, 116).
+    - Mode 2 (shadow): flags 0814 = black pen 20 on 1 pixel in 4, screen-space: x%4==0 on even list-y rows, x%4==2 on odd
+      (fill pattern B9=01010101 rotated per line). Often fully overdrawn by the craft. Mode 1 (B9=15151515) / mode 3 /
+      bit12 alt handler (FFF48FC0) not seen in these frames.
+    - Polys don't cover the whole playfield in open areas (48% at frame 3600): the rest is the skyline bitmap (HUD/bitmap opcodes).
+Older status (2026-11-15, user taking a break to decide). Two options were presented:
+- A (recommended): real-time frame generation (lsfg-vk + Lossless Scaling; see above). The user must buy and
+  install Lossless Scaling on Steam first. Then: install lsfg-vk, make a MAME vulkan launcher at stock speed,
+  and solve feeding only the new game frames (uneven 2-4 refresh pacing). Expect ghosting and added input lag.
+- B: true 20 Hz logic + interpolated 60 Hz rendering inside MAME (needs overclock sliders every launch).
+  First step, about as much work as the 2026-11-15 session: map the 68010 tick (logic vs display-list build;
+  the list goes to GSP mailboxes FFF9FC00/FFFCFC00) and find camera position/orientation in RAM.
+  Then report feasibility before going further.
+- The per-tick time-step search is done: no single knob exists (see findings above).
+- Probe scripts from this session were in the scratchpad `re/`: play2.lua (real-play input script),
+  tl2.lua (frame timeline), dump.lua (68010 RAM dumps per tick), who.lua (writer PCs); copies kept in `~/mame/scripts/re-probes/`.
+- Working files: scratchpad `re/` (traces, probe scripts) are temporary; anything worth keeping
+  goes in `~/mame/scripts/`.

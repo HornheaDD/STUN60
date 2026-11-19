@@ -1,0 +1,25 @@
+# Build tree (MAME 0.285 source + objects, ~2 GB): recreate from upstream + stun60-mame0285.patch
+build/
+# ROMs are copyrighted: never commit them
+roms/
+*.zip
+# Package build outputs and local backups
+package/out/
+package/nas-backup-*/
+package/STUNRunner60.AppDir/usr/
+package/tools/
+package/win/STUNRunner60.exe
+*.o
+# Current-run logs (dated live logs are kept on purpose)
+stun60.log
+stun60-stderr.log
+# Python caches
+__pycache__/
+*.pyc
+# ROM-derived data (disassemblies of the game program, memory/palette/display-list dumps): not redistributable
+scripts/re-probes/m68.asm
+scripts/re-probes/col/*.asm
+scripts/re-probes/col/*.bin
+scripts/re-probes/col/*.pal
+scripts/re-probes/col/c[0-9]*.txt
+scripts/re-probes/col/t[0-9]*.txt

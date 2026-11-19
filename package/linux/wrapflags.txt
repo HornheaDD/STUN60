@@ -1,0 +1,1 @@
+-Wl,--wrap=sinh,--wrap=atan2f,--wrap=sqrtf,--wrap=log10f,--wrap=acosf,--wrap=asinf,--wrap=fmod,--wrap=fmodf,--wrap=__isoc23_strtol,--wrap=__isoc23_strtoul,--wrap=__isoc23_strtoll,--wrap=__isoc23_strtoull,--wrap=__isoc23_wcstol,--wrap=__isoc23_vsscanf,--wrap=__isoc23_sscanf,--wrap=__isoc23_fscanf

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=S.T.U.N. Runner 60fps
+Comment=S.T.U.N. Runner at 60 fps (custom MAME + interpolation). O = overlay, C = CRT scanlines
+Exec=AppRun
+Icon=stunrunner60
+Terminal=false
+Categories=Game;ArcadeGame;

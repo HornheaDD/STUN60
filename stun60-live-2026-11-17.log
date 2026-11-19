@@ -1,0 +1,432 @@
+    60.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0
+   120.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0
+   180.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0
+   240.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0
+   300.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0
+   360.000 per second: drawn 19, extra 0, ticks 19, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0
+   418.000 extra 1 missed (rendered false, buffer FFFF)
+   419.000 extra 2 missed (rendered false, buffer 0000)
+   420.000 released a stale ADSP done
+   420.000 per second: drawn 19, extra 0, ticks 19, dropped 2, cycles 1, gd 0.60 jd 0.90, lua ms 0.0
+   420.596 skip extra 1 (adsp)
+   420.596 extra 1 bad output
+   480.000 per second: drawn 58, extra 41, ticks 19, dropped 1, cycles 19, gd 0.90 jd 0.61, lua ms 0.9
+   502.000 released a stale ADSP done
+   540.000 per second: drawn 33, extra 14, ticks 19, dropped 0, cycles 8, gd 0.87 jd 0.62, lua ms 0.5
+   600.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.87 jd 0.62, lua ms 0.0
+   660.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.87 jd 0.62, lua ms 0.0
+   681.710 no ADSP time this cycle (overclock adsp)
+   685.000 extra 1 missed (rendered false, buffer 0000)
+   686.000 extra 2 missed (rendered false, buffer 0000)
+   720.000 per second: drawn 42, extra 22, ticks 20, dropped 2, cycles 12, gd 0.88 jd 0.51, lua ms 0.1
+   780.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.36, lua ms 0.4
+   840.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.40 jd 0.25, lua ms 0.3
+   900.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.26, lua ms 0.8
+   960.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.36, lua ms 2.4
+  1020.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.23, lua ms 0.6
+  1080.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.25, lua ms 0.7
+  1140.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.40, lua ms 0.9
+  1200.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.68 jd 0.41, lua ms 1.1
+  1260.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.37, lua ms 0.9
+  1320.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.40 jd 0.24, lua ms 0.7
+  1380.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.41 jd 0.29, lua ms 0.7
+  1440.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.36, lua ms 0.7
+  1500.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.35, lua ms 3.5
+  1560.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.28, lua ms 0.3
+  1620.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.34, lua ms 0.7
+  1680.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.34, lua ms 1.1
+  1740.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.28, lua ms 0.3
+  1800.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.35, lua ms 1.0
+  1860.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.33, lua ms 0.6
+  1920.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.34, lua ms 0.4
+  1980.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.28, lua ms 0.8
+  2040.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.39, lua ms 0.7
+  2100.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.39, lua ms 0.8
+  2160.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.85 jd 0.36, lua ms 0.7
+  2220.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.89 jd 0.45, lua ms 0.7
+  2280.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.74 jd 0.35, lua ms 0.9
+  2340.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.74 jd 0.35, lua ms 0.7
+  2400.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.74 jd 0.35, lua ms 0.6
+  2460.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.75 jd 0.34, lua ms 0.6
+  2520.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.73 jd 0.33, lua ms 0.5
+  2580.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.67 jd 0.25, lua ms 0.6
+  2640.000 per second: drawn 38, extra 20, ticks 18, dropped 0, cycles 10, gd 0.51 jd 0.25, lua ms 0.3
+  2684.619 no ADSP time this cycle (overclock adsp)
+  2688.000 extra 1 missed (rendered false, buffer 0000)
+  2689.000 extra 2 missed (rendered false, buffer 0000)
+  2700.000 per second: drawn 26, extra 7, ticks 19, dropped 2, cycles 4, gd 0.81 jd 0.51, lua ms 0.1
+  2760.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.73 jd 0.47, lua ms 0.6
+  2820.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.80 jd 0.47, lua ms 0.9
+  2828.000 released a stale ADSP done
+  2835.968 no ADSP time this cycle (overclock adsp)
+  2838.000 extra 1 missed (rendered false, buffer FFFF)
+  2839.000 extra 2 missed (rendered false, buffer 0000)
+  2879.000 released a stale ADSP done
+  2880.000 per second: drawn 52, extra 31, ticks 21, dropped 2, cycles 17, gd 0.62 jd 0.53, lua ms 0.3
+  2894.903 no ADSP time this cycle (overclock adsp)
+  2898.000 extra 1 missed (rendered false, buffer 0000)
+  2899.000 extra 2 missed (rendered false, buffer 0000)
+  2906.000 released a stale ADSP done
+  2915.000 released a stale ADSP done
+  2940.000 per second: drawn 42, extra 26, ticks 19, dropped 2, cycles 12, gd 0.57 jd 0.54, lua ms 0.3
+  3000.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.50, lua ms 0.2
+  3060.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.50, lua ms 0.6
+  3120.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.48, lua ms 1.2
+  3154.542 extra 1 bad output
+  3155.056 extra 2 bad output
+  3158.000 released a stale ADSP done
+  3160.945 no ADSP time this cycle (overclock adsp)
+  3163.000 extra 1 missed (rendered false, buffer 0000)
+  3164.000 extra 2 missed (rendered false, buffer 0000)
+  3165.000 released a stale ADSP done
+  3180.000 per second: drawn 45, extra 23, ticks 22, dropped 4, cycles 14, gd 0.60 jd 0.54, lua ms 0.3
+  3214.844 no ADSP time this cycle (overclock adsp)
+  3218.000 extra 1 missed (rendered false, buffer 0000)
+  3219.000 extra 2 missed (rendered false, buffer 0000)
+  3240.000 per second: drawn 33, extra 16, ticks 19, dropped 2, cycles 7, gd 0.59 jd 0.43, lua ms 0.1
+  3300.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.39, lua ms 0.8
+  3336.504 extra 1 bad output
+  3346.000 released a stale ADSP done
+  3358.000 released a stale ADSP done
+  3360.000 per second: drawn 56, extra 35, ticks 21, dropped 1, cycles 19, gd 0.63 jd 0.52, lua ms 0.8
+  3361.777 no ADSP time this cycle (overclock adsp)
+  3365.000 extra 1 missed (rendered false, buffer 0000)
+  3366.000 extra 2 missed (rendered false, buffer 0000)
+  3390.531 extra 1 bad output
+  3420.000 per second: drawn 54, extra 35, ticks 19, dropped 3, cycles 18, gd 0.60 jd 0.49, lua ms 0.3
+  3480.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.56 jd 0.43, lua ms 0.6
+  3540.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.49, lua ms 0.8
+  3571.039 extra 2 bad output
+  3574.000 released a stale ADSP done
+  3600.000 per second: drawn 42, extra 21, ticks 21, dropped 1, cycles 12, gd 0.62 jd 0.55, lua ms 0.7
+  3660.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.62 jd 0.55, lua ms 0.0
+  3714.697 no ADSP time this cycle (overclock adsp)
+  3718.000 extra 1 missed (rendered false, buffer 0000)
+  3719.000 extra 2 missed (rendered false, buffer 0000)
+  3720.000 per second: drawn 20, extra 0, ticks 20, dropped 2, cycles 1, gd 0.62 jd 0.51, lua ms 0.0
+  3729.000 released a stale ADSP done
+  3738.697 no ADSP time this cycle (overclock adsp)
+  3742.000 extra 1 missed (rendered false, buffer 0000)
+  3743.000 extra 2 missed (rendered false, buffer 0000)
+  3744.000 released a stale ADSP done
+  3745.560 extra 1 missed (rendered true, buffer FFFF)
+  3748.000 released a stale ADSP done
+  3766.000 released a stale ADSP done
+  3780.000 per second: drawn 38, extra 18, ticks 21, dropped 3, cycles 10, gd 0.62 jd 0.55, lua ms 0.1
+  3815.000 no ADSP time this cycle (overclock adsp)
+  3818.000 extra 1 missed (rendered false, buffer 0000)
+  3819.000 extra 2 missed (rendered false, buffer 0000)
+  3840.000 per second: drawn 33, extra 16, ticks 19, dropped 2, cycles 7, gd 0.61 jd 0.56, lua ms 0.3
+  3900.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.44, lua ms 0.4
+  3960.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.79 jd 0.53, lua ms 1.6
+  4020.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.43, lua ms 0.6
+  4080.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.47, lua ms 0.9
+  4140.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.44, lua ms 0.7
+  4200.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.52, lua ms 0.7
+  4260.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.56 jd 0.47, lua ms 0.4
+  4279.000 released a stale ADSP done
+  4320.000 per second: drawn 58, extra 39, ticks 20, dropped 0, cycles 19, gd 0.56 jd 0.35, lua ms 0.4
+  4380.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.49, lua ms 0.9
+  4440.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.47, lua ms 0.8
+  4459.000 released a stale ADSP done
+  4471.000 released a stale ADSP done
+  4474.978 no ADSP time this cycle (overclock adsp)
+  4478.000 extra 1 missed (rendered false, buffer 0000)
+  4479.000 extra 2 missed (rendered false, buffer 0000)
+  4489.000 released a stale ADSP done
+  4500.000 per second: drawn 45, extra 25, ticks 21, dropped 2, cycles 14, gd 0.67 jd 0.59, lua ms 0.3
+  4523.000 no ADSP time this cycle (overclock adsp)
+  4526.000 extra 1 missed (rendered false, buffer 0000)
+  4527.000 extra 2 missed (rendered false, buffer 0000)
+  4528.000 released a stale ADSP done
+  4528.724 skip extra 1 (adsp)
+  4528.724 extra 1 bad output
+  4556.000 released a stale ADSP done
+  4560.000 per second: drawn 38, extra 19, ticks 20, dropped 3, cycles 10, gd 0.61 jd 0.55, lua ms 0.1
+  4620.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.56 jd 0.47, lua ms 0.4
+  4658.000 released a stale ADSP done
+  4668.000 no ADSP time this cycle (overclock adsp)
+  4671.000 extra 1 missed (rendered false, buffer 0000)
+  4672.000 extra 2 missed (rendered false, buffer 0000)
+  4673.000 released a stale ADSP done
+  4680.000 per second: drawn 46, extra 25, ticks 21, dropped 2, cycles 14, gd 0.64 jd 0.50, lua ms 0.5
+  4684.000 no ADSP time this cycle (overclock adsp)
+  4687.000 extra 1 missed (rendered false, buffer 0000)
+  4688.000 extra 2 missed (rendered false, buffer 0000)
+  4740.000 per second: drawn 54, extra 36, ticks 20, dropped 2, cycles 18, gd 0.65 jd 0.51, lua ms 0.3
+  4757.583 extra 1 bad output
+  4758.140 extra 2 bad output
+  4761.000 released a stale ADSP done
+  4761.794 skip extra 1 (adsp)
+  4761.794 extra 1 bad output
+  4765.000 released a stale ADSP done
+  4781.019 no ADSP time this cycle (overclock adsp)
+  4784.000 extra 1 missed (rendered false, buffer 0000)
+  4785.000 extra 2 missed (rendered false, buffer 0000)
+  4800.000 per second: drawn 43, extra 24, ticks 20, dropped 5, cycles 13, gd 0.60 jd 0.52, lua ms 0.4
+  4860.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.42, lua ms 0.9
+  4920.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.48, lua ms 0.9
+  4980.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.51, lua ms 0.9
+  5026.000 released a stale ADSP done
+  5028.199 extra 1 bad output
+  5031.529 extra 1 bad output
+  5040.000 per second: drawn 56, extra 36, ticks 20, dropped 2, cycles 19, gd 0.63 jd 0.52, lua ms 1.1
+  5041.000 released a stale ADSP done
+  5046.571 extra 1 bad output
+  5050.000 released a stale ADSP done
+  5056.911 no ADSP time this cycle (overclock adsp)
+  5060.000 extra 1 missed (rendered false, buffer 0000)
+  5061.000 extra 2 missed (rendered false, buffer 0000)
+  5067.522 extra 1 bad output
+  5068.016 extra 2 bad output
+  5073.525 extra 1 bad output
+  5083.000 released a stale ADSP done
+  5085.144 extra 1 bad output
+  5100.000 per second: drawn 43, extra 26, ticks 20, dropped 7, cycles 15, gd 0.64 jd 0.51, lua ms 0.3
+  5107.000 released a stale ADSP done
+  5141.628 no ADSP time this cycle (overclock adsp)
+  5144.000 extra 1 missed (rendered false, buffer 0000)
+  5145.000 extra 2 missed (rendered false, buffer 0000)
+  5145.567 extra 1 bad output
+  5146.109 extra 2 bad output
+  5149.000 released a stale ADSP done
+  5150.706 extra 1 missed (rendered true, buffer FFFF)
+  5160.000 per second: drawn 31, extra 11, ticks 21, dropped 5, cycles 8, gd 0.66 jd 0.50, lua ms 0.1
+  5162.621 extra 1 missed (rendered true, buffer FFFF)
+  5167.000 extra 1 missed (rendered true, buffer FFFF)
+  5171.000 extra 1 missed (rendered true, buffer FFFF)
+  5175.000 extra 1 missed (rendered true, buffer FFFF)
+  5179.000 extra 1 missed (rendered true, buffer FFFF)
+  5180.586 extra 1 bad output
+  5181.143 extra 2 bad output
+  5184.106 extra 1 missed (rendered true, buffer FFFF)
+  5189.000 extra 1 missed (rendered true, buffer FFFF)
+  5191.073 extra 1 missed (rendered true, buffer FFFF)
+  5193.000 extra 2 missed (rendered true, buffer FFFF)
+  5194.075 extra 1 missed (rendered true, buffer FFFF)
+  5199.000 extra 1 missed (rendered true, buffer FFFF)
+  5203.000 extra 1 missed (rendered true, buffer FFFF)
+  5205.623 extra 1 missed (rendered true, buffer FFFF)
+  5207.000 extra 2 missed (rendered true, buffer FFFF)
+  5213.000 extra 1 missed (rendered true, buffer FFFF)
+  5217.000 extra 1 missed (rendered true, buffer FFFF)
+  5219.259 extra 1 missed (rendered true, buffer FFFF)
+  5220.000 per second: drawn 32, extra 15, ticks 17, dropped 18, cycles 17, gd 0.90 jd 0.49, lua ms 0.4
+  5236.000 extra 2 missed (rendered true, buffer FFFF)
+  5280.000 per second: drawn 59, extra 42, ticks 20, dropped 2, cycles 20, gd 0.73 jd 0.40, lua ms 0.9
+  5340.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.77 jd 0.40, lua ms 0.8
+  5400.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.77 jd 0.40, lua ms 0.8
+  5460.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.75 jd 0.40, lua ms 0.8
+  5520.000 per second: drawn 33, extra 16, ticks 18, dropped 0, cycles 8, gd 0.54 jd 0.40, lua ms 0.3
+  5580.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.54 jd 0.40, lua ms 0.0
+  5640.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.54 jd 0.40, lua ms 0.0
+  5700.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.54 jd 0.40, lua ms 0.0
+  5760.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.54 jd 0.40, lua ms 0.0
+  5820.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.54 jd 0.40, lua ms 0.0
+  5880.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.54 jd 0.40, lua ms 0.0
+  5940.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.54 jd 0.40, lua ms 0.0
+  5956.520 no ADSP time this cycle (overclock adsp)
+  5960.000 extra 1 missed (rendered false, buffer 0000)
+  5961.000 extra 2 missed (rendered false, buffer 0000)
+  6000.000 per second: drawn 45, extra 28, ticks 19, dropped 2, cycles 13, gd 0.78 jd 0.41, lua ms 0.2
+  6060.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.73 jd 0.43, lua ms 0.9
+  6120.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.83 jd 0.46, lua ms 1.0
+  6127.409 extra 1 missed (rendered true, buffer FFFF)
+  6129.000 extra 2 missed (rendered true, buffer FFFF)
+  6130.287 extra 1 missed (rendered true, buffer FFFF)
+  6180.000 per second: drawn 56, extra 39, ticks 20, dropped 3, cycles 20, gd 0.60 jd 0.53, lua ms 0.5
+  6240.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.53, lua ms 0.2
+  6300.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.55, lua ms 0.6
+  6360.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.52, lua ms 0.7
+  6398.000 released a stale ADSP done
+  6406.571 extra 1 bad output
+  6407.117 extra 2 bad output
+  6410.000 released a stale ADSP done
+  6420.000 per second: drawn 50, extra 29, ticks 21, dropped 2, cycles 16, gd 0.61 jd 0.58, lua ms 0.6
+  6480.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.61 jd 0.58, lua ms 0.0
+  6540.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.61 jd 0.58, lua ms 0.0
+  6577.000 no ADSP time this cycle (overclock adsp)
+  6580.000 extra 1 missed (rendered false, buffer 0000)
+  6581.000 extra 2 missed (rendered false, buffer 0000)
+  6582.000 released a stale ADSP done
+  6596.000 no ADSP time this cycle (overclock adsp)
+  6599.000 extra 1 missed (rendered false, buffer 0000)
+  6600.000 extra 2 missed (rendered false, buffer 0000)
+  6600.000 per second: drawn 21, extra 0, ticks 20, dropped 2, cycles 1, gd 0.61 jd 0.58, lua ms 0.0
+  6600.542 extra 1 bad output
+  6601.065 extra 2 bad output
+  6660.000 per second: drawn 57, extra 40, ticks 20, dropped 4, cycles 20, gd 0.60 jd 0.48, lua ms 0.6
+  6720.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.42, lua ms 0.8
+  6780.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.50, lua ms 1.3
+  6840.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.52, lua ms 0.4
+  6894.558 extra 1 bad output
+  6895.100 extra 2 bad output
+  6898.000 released a stale ADSP done
+  6900.000 per second: drawn 57, extra 37, ticks 21, dropped 2, cycles 20, gd 0.59 jd 0.57, lua ms 0.4
+  6932.764 no ADSP time this cycle (overclock adsp)
+  6936.000 extra 1 missed (rendered false, buffer 0000)
+  6937.000 extra 2 missed (rendered false, buffer 0000)
+  6938.000 released a stale ADSP done
+  6960.000 per second: drawn 21, extra 0, ticks 21, dropped 2, cycles 1, gd 0.59 jd 0.57, lua ms 0.0
+  6975.911 no ADSP time this cycle (overclock adsp)
+  6979.000 extra 1 missed (rendered false, buffer 0000)
+  6980.000 extra 2 missed (rendered false, buffer 0000)
+  6981.000 released a stale ADSP done
+  7018.756 no ADSP time this cycle (overclock adsp)
+  7020.000 per second: drawn 21, extra 0, ticks 21, dropped 2, cycles 1, gd 0.59 jd 0.57, lua ms 0.0
+  7022.000 extra 1 missed (rendered false, buffer 0000)
+  7023.000 extra 2 missed (rendered false, buffer 0000)
+  7024.000 released a stale ADSP done
+  7037.877 no ADSP time this cycle (overclock adsp)
+  7041.000 extra 1 missed (rendered false, buffer 0000)
+  7042.000 extra 2 missed (rendered false, buffer 0000)
+  7076.000 released a stale ADSP done
+  7080.000 per second: drawn 43, extra 27, ticks 20, dropped 4, cycles 13, gd 0.61 jd 0.52, lua ms 0.5
+  7140.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.37, lua ms 0.9
+  7200.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.33, lua ms 0.3
+  7260.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.34, lua ms 0.3
+  7320.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.51, lua ms 0.4
+  7380.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.51, lua ms 0.3
+  7436.000 released a stale ADSP done
+  7440.000 per second: drawn 58, extra 39, ticks 21, dropped 0, cycles 19, gd 0.61 jd 0.50, lua ms 0.7
+  7442.825 no ADSP time this cycle (overclock adsp)
+  7446.000 extra 1 missed (rendered false, buffer 0000)
+  7447.000 extra 2 missed (rendered false, buffer 0000)
+  7448.000 released a stale ADSP done
+  7449.695 extra 1 missed (rendered true, buffer FFFF)
+  7452.000 released a stale ADSP done
+  7500.000 per second: drawn 51, extra 32, ticks 20, dropped 3, cycles 17, gd 0.54 jd 0.38, lua ms 0.2
+  7560.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.33, lua ms 0.8
+  7620.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.48, lua ms 0.9
+  7680.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.53, lua ms 1.4
+  7737.137 extra 2 bad output
+  7740.000 per second: drawn 59, extra 41, ticks 20, dropped 1, cycles 20, gd 0.59 jd 0.58, lua ms 0.4
+  7742.578 extra 1 bad output
+  7752.000 released a stale ADSP done
+  7800.000 per second: drawn 27, extra 7, ticks 20, dropped 1, cycles 4, gd 0.60 jd 0.58, lua ms 0.1
+  7860.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.60 jd 0.58, lua ms 0.0
+  7920.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.60 jd 0.58, lua ms 0.0
+  7980.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.60 jd 0.58, lua ms 0.0
+  8040.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.60 jd 0.58, lua ms 0.0
+  8100.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.60 jd 0.58, lua ms 0.0
+  8160.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.60 jd 0.58, lua ms 0.0
+  8181.856 no ADSP time this cycle (overclock adsp)
+  8185.000 extra 1 missed (rendered false, buffer 0000)
+  8186.000 extra 2 missed (rendered false, buffer 0000)
+  8220.000 per second: drawn 42, extra 22, ticks 20, dropped 2, cycles 12, gd 0.58 jd 0.44, lua ms 0.1
+  8280.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.42, lua ms 0.6
+  8340.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.41, lua ms 0.9
+  8400.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.43, lua ms 0.8
+  8460.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.39, lua ms 0.7
+  8520.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.44, lua ms 1.1
+  8580.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.46, lua ms 1.2
+  8640.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.38, lua ms 0.8
+  8700.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.37, lua ms 0.7
+  8760.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.42, lua ms 0.8
+  8820.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.41, lua ms 1.7
+  8844.499 extra 1 missed (rendered true, buffer FFFF)
+  8846.000 extra 2 missed (rendered true, buffer FFFF)
+  8847.336 extra 1 missed (rendered true, buffer FFFF)
+  8854.262 extra 1 missed (rendered true, buffer FFFF)
+  8874.000 extra 1 missed (rendered true, buffer FFFF)
+  8878.000 extra 1 missed (rendered true, buffer FFFF)
+  8880.000 per second: drawn 50, extra 33, ticks 19, dropped 6, cycles 19, gd 0.90 jd 0.52, lua ms 0.9
+  8882.000 extra 1 missed (rendered true, buffer FFFF)
+  8886.000 extra 1 missed (rendered true, buffer FFFF)
+  8890.000 extra 1 missed (rendered true, buffer FFFF)
+  8940.000 per second: drawn 55, extra 37, ticks 19, dropped 3, cycles 19, gd 0.68 jd 0.39, lua ms 0.3
+  9000.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.78 jd 0.48, lua ms 0.8
+  9060.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.80 jd 0.48, lua ms 0.7
+  9120.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.77 jd 0.44, lua ms 0.8
+  9166.957 skip extra 1 (adsp)
+  9166.957 extra 1 bad output
+  9180.000 per second: drawn 45, extra 27, ticks 18, dropped 1, cycles 14, gd 0.56 jd 0.44, lua ms 0.6
+  9240.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.44, lua ms 0.0
+  9300.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.44, lua ms 0.0
+  9360.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.44, lua ms 0.0
+  9420.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.44, lua ms 0.0
+  9480.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.44, lua ms 0.0
+  9540.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.44, lua ms 0.0
+  9600.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.44, lua ms 0.0
+  9635.548 no ADSP time this cycle (overclock adsp)
+  9639.000 extra 1 missed (rendered false, buffer 0000)
+  9640.000 extra 2 missed (rendered false, buffer 0000)
+  9660.000 per second: drawn 32, extra 14, ticks 19, dropped 2, cycles 7, gd 0.78 jd 0.44, lua ms 0.2
+  9720.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.84 jd 0.44, lua ms 0.4
+  9780.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.84 jd 0.44, lua ms 0.9
+  9840.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.83 jd 0.48, lua ms 1.8
+  9900.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.70 jd 0.47, lua ms 0.7
+  9943.000 extra 1 missed (rendered true, buffer FFFF)
+  9947.000 extra 1 missed (rendered true, buffer FFFF)
+  9960.000 per second: drawn 55, extra 36, ticks 19, dropped 2, cycles 19, gd 0.63 jd 0.44, lua ms 0.6
+ 10020.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.46, lua ms 0.3
+ 10080.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.44, lua ms 0.7
+ 10140.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.52, lua ms 0.9
+ 10166.000 released a stale ADSP done
+ 10172.000 released a stale ADSP done
+ 10175.867 no ADSP time this cycle (overclock adsp)
+ 10179.000 extra 1 missed (rendered false, buffer 0000)
+ 10180.000 extra 2 missed (rendered false, buffer 0000)
+ 10187.000 released a stale ADSP done
+ 10193.000 released a stale ADSP done
+ 10200.000 per second: drawn 48, extra 29, ticks 20, dropped 2, cycles 15, gd 0.62 jd 0.54, lua ms 0.4
+ 10260.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.68 jd 0.48, lua ms 0.3
+ 10320.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.52, lua ms 0.7
+ 10348.533 extra 1 bad output
+ 10352.000 released a stale ADSP done
+ 10354.260 extra 1 bad output
+ 10354.260 extra 2 bad output
+ 10358.000 released a stale ADSP done
+ 10371.295 no ADSP time this cycle (overclock adsp)
+ 10375.000 extra 1 missed (rendered false, buffer 0000)
+ 10376.000 extra 2 missed (rendered false, buffer 0000)
+ 10380.000 per second: drawn 43, extra 23, ticks 21, dropped 5, cycles 14, gd 0.63 jd 0.49, lua ms 0.6
+ 10440.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.68 jd 0.53, lua ms 0.4
+ 10467.000 released a stale ADSP done
+ 10500.000 per second: drawn 58, extra 41, ticks 20, dropped 0, cycles 19, gd 0.63 jd 0.57, lua ms 0.7
+ 10560.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.53, lua ms 0.8
+ 10620.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.61, lua ms 0.4
+ 10626.209 extra 2 bad output
+ 10629.000 released a stale ADSP done
+ 10680.000 per second: drawn 26, extra 6, ticks 21, dropped 1, cycles 3, gd 0.61 jd 0.63, lua ms 0.0
+ 10688.863 no ADSP time this cycle (overclock adsp)
+ 10692.000 extra 1 missed (rendered false, buffer 0000)
+ 10693.000 extra 2 missed (rendered false, buffer 0000)
+ 10740.000 per second: drawn 50, extra 31, ticks 19, dropped 2, cycles 16, gd 0.48 jd 0.38, lua ms 0.3
+ 10800.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.37, lua ms 0.7
+ 10860.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.48, lua ms 0.8
+ 10920.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.55, lua ms 1.1
+ 10980.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.52, lua ms 0.7
+ 11040.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.56 jd 0.51, lua ms 0.5
+ 11100.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.56 jd 0.55, lua ms 0.4
+ 11160.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.56, lua ms 0.9
+ 11220.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.59, lua ms 1.0
+ 11233.638 extra 1 bad output
+ 11280.000 per second: drawn 59, extra 40, ticks 20, dropped 1, cycles 20, gd 0.60 jd 0.54, lua ms 0.4
+ 11340.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.54, lua ms 0.5
+ 11400.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.65 jd 0.56, lua ms 0.7
+ 11408.115 extra 2 bad output
+ 11411.000 released a stale ADSP done
+ 11460.000 per second: drawn 27, extra 6, ticks 21, dropped 1, cycles 4, gd 0.68 jd 0.59, lua ms 0.2
+ 11494.970 no ADSP time this cycle (overclock adsp)
+ 11498.000 extra 1 missed (rendered false, buffer 0000)
+ 11499.000 extra 2 missed (rendered false, buffer 0000)
+ 11500.000 released a stale ADSP done
+ 11502.976 no ADSP time this cycle (overclock adsp)
+ 11505.000 extra 1 missed (rendered false, buffer 0000)
+ 11506.000 extra 2 missed (rendered false, buffer 0000)
+ 11507.000 released a stale ADSP done
+ 11515.000 no ADSP time this cycle (overclock adsp)
+ 11518.000 extra 1 missed (rendered false, buffer 0000)
+ 11519.000 extra 2 missed (rendered false, buffer 0000)
+ 11519.577 extra 1 bad output
+ 11520.000 per second: drawn 21, extra 0, ticks 21, dropped 6, cycles 3, gd 0.68 jd 0.58, lua ms 0.0
+ 11529.000 released a stale ADSP done
+ 11531.382 extra 1 bad output
+ 11580.000 per second: drawn 56, extra 39, ticks 20, dropped 2, cycles 19, gd 0.64 jd 0.55, lua ms 0.8
+ 11604.000 released a stale ADSP done
+ 11625.852 no ADSP time this cycle (overclock adsp)
+ 11629.000 extra 1 missed (rendered false, buffer 0000)
+ 11630.000 extra 2 missed (rendered false, buffer 0000)
+ 11640.000 per second: drawn 42, extra 22, ticks 20, dropped 2, cycles 12, gd 0.64 jd 0.49, lua ms 0.4
+ 11700.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.43, lua ms 0.4

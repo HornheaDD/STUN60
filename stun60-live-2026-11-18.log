@@ -1,0 +1,960 @@
+    60.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0, wall 0.982 s, max gap 26 ms, late 1
+   120.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0, wall 0.992 s, max gap 18 ms, late 0
+   180.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0, wall 0.998 s, max gap 19 ms, late 0
+   240.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0, wall 0.996 s, max gap 19 ms, late 0
+   300.000 per second: drawn 0, extra 0, ticks 0, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0, wall 1.000 s, max gap 19 ms, late 0
+   303.027 no 3D block: mb FFFCFC00 d2 0 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+   324.027 no 3D block: mb FFF9FC00 d2 0 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+   345.027 no 3D block: mb FFFCFC00 d2 0 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+   360.000 per second: drawn 19, extra 0, ticks 19, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0, wall 0.998 s, max gap 20 ms, late 0
+   366.026 no 3D block: mb FFF9FC00 d2 0 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+   387.026 no 3D block: mb FFFCFC00 d2 0 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+   408.027 no 3D block: mb FFF9FC00 d2 0 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+   420.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.60 jd 0.90, lua ms 0.0, wall 1.000 s, max gap 19 ms, late 0
+   429.031 no 3D block: mb FFFCFC00 d2 0 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+   438.533 no ADSP time this cycle (overclock adsp)
+   442.000 extra 1 missed (rendered false, buffer 0000)
+   443.000 extra 2 missed (rendered false, buffer 0000)
+   480.000 per second: drawn 44, extra 27, ticks 20, dropped 2, cycles 13, gd 0.48 jd 0.42, lua ms 0.3, wall 0.997 s, max gap 26 ms, late 1
+   540.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.47, lua ms 0.4, wall 0.996 s, max gap 20 ms, late 0
+   600.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.33, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+   660.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.33, lua ms 0.3, wall 0.998 s, max gap 21 ms, late 0
+   720.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.45, lua ms 0.4, wall 1.002 s, max gap 19 ms, late 0
+   780.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.49, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+   840.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.50, lua ms 1.0, wall 1.001 s, max gap 19 ms, late 0
+   900.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.45, lua ms 0.4, wall 0.998 s, max gap 19 ms, late 0
+   960.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.49, lua ms 0.6, wall 1.002 s, max gap 21 ms, late 0
+  1020.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.37, lua ms 0.3, wall 0.988 s, max gap 19 ms, late 0
+  1080.000 per second: drawn 60, extra 44, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.41, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+  1140.000 per second: drawn 60, extra 44, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.34, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+  1200.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.37, lua ms 0.3, wall 0.999 s, max gap 18 ms, late 0
+  1260.000 per second: drawn 60, extra 48, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.45, lua ms 0.5, wall 0.996 s, max gap 19 ms, late 0
+  1320.000 per second: drawn 60, extra 47, ticks 20, dropped 0, cycles 20, gd 0.83 jd 0.46, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+  1380.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.44, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+  1440.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.69 jd 0.50, lua ms 0.8, wall 0.999 s, max gap 18 ms, late 0
+  1500.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.42, lua ms 0.3, wall 0.994 s, max gap 18 ms, late 0
+  1560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.69 jd 0.47, lua ms 0.4, wall 1.002 s, max gap 19 ms, late 0
+  1620.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.38, lua ms 0.4, wall 0.993 s, max gap 18 ms, late 0
+  1680.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.33, lua ms 0.4, wall 0.994 s, max gap 18 ms, late 0
+  1740.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.30 jd 0.15, lua ms 0.3, wall 0.995 s, max gap 20 ms, late 0
+  1800.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.30 jd 0.15, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+  1860.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.30 jd 0.16, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+  1920.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.30 jd 0.15, lua ms 0.3, wall 0.995 s, max gap 20 ms, late 0
+  1980.000 per second: drawn 60, extra 48, ticks 20, dropped 0, cycles 20, gd 0.30 jd 0.15, lua ms 0.3, wall 0.997 s, max gap 20 ms, late 0
+  2037.626 no ADSP time this cycle (overclock adsp)
+  2039.000 extra 1 missed (rendered false, buffer 0000)
+  2040.000 extra 2 missed (rendered false, buffer 0000)
+  2040.000 per second: drawn 58, extra 44, ticks 19, dropped 0, cycles 19, gd 0.30 jd 0.04, lua ms 0.3, wall 0.993 s, max gap 19 ms, late 0
+  2100.000 per second: drawn 59, extra 46, ticks 20, dropped 2, cycles 20, gd 0.30 jd 0.04, lua ms 0.2, wall 0.996 s, max gap 20 ms, late 0
+  2160.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.30 jd 0.04, lua ms 0.2, wall 0.994 s, max gap 20 ms, late 0
+  2220.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.30 jd 0.04, lua ms 0.2, wall 0.997 s, max gap 19 ms, late 0
+  2280.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.30 jd 0.04, lua ms 0.2, wall 0.997 s, max gap 19 ms, late 0
+  2330.000 extra 1 missed (rendered true, buffer FFFF)
+  2334.000 extra 1 missed (rendered true, buffer FFFF)
+  2335.000 extra 2 missed (rendered true, buffer FFFF)
+  2337.000 extra 1 missed (rendered true, buffer FFFF)
+  2338.000 extra 2 missed (rendered true, buffer FFFF)
+  2340.000 extra 1 missed (rendered true, buffer FFFF)
+  2340.000 per second: drawn 53, extra 39, ticks 20, dropped 5, cycles 20, gd 0.80 jd 0.04, lua ms 0.2, wall 0.999 s, max gap 20 ms, late 0
+  2341.000 extra 2 missed (rendered true, buffer FFFF)
+  2343.000 extra 1 missed (rendered true, buffer FFFF)
+  2344.000 extra 2 missed (rendered true, buffer FFFF)
+  2346.000 extra 1 missed (rendered true, buffer FFFF)
+  2347.000 extra 2 missed (rendered true, buffer FFFF)
+  2349.000 extra 1 missed (rendered true, buffer FFFF)
+  2350.000 extra 2 missed (rendered true, buffer FFFF)
+  2352.000 extra 1 missed (rendered true, buffer FFFF)
+  2353.000 extra 2 missed (rendered true, buffer FFFF)
+  2355.000 extra 1 missed (rendered true, buffer FFFF)
+  2356.000 extra 2 missed (rendered true, buffer FFFF)
+  2358.000 extra 1 missed (rendered true, buffer FFFF)
+  2359.000 extra 2 missed (rendered true, buffer FFFF)
+  2361.000 extra 1 missed (rendered true, buffer FFFF)
+  2362.000 extra 2 missed (rendered true, buffer FFFF)
+  2364.000 extra 1 missed (rendered true, buffer FFFF)
+  2365.000 extra 2 missed (rendered true, buffer FFFF)
+  2367.000 extra 1 missed (rendered true, buffer FFFF)
+  2368.000 extra 2 missed (rendered true, buffer FFFF)
+  2370.000 extra 1 missed (rendered true, buffer FFFF)
+  2371.000 extra 2 missed (rendered true, buffer FFFF)
+  2373.000 extra 1 missed (rendered true, buffer FFFF)
+  2374.000 extra 2 missed (rendered true, buffer FFFF)
+  2376.000 extra 1 missed (rendered true, buffer FFFF)
+  2377.000 extra 2 missed (rendered true, buffer FFFF)
+  2379.000 extra 1 missed (rendered true, buffer FFFF)
+  2380.000 extra 2 missed (rendered true, buffer FFFF)
+  2382.000 extra 1 missed (rendered true, buffer FFFF)
+  2383.000 extra 2 missed (rendered true, buffer FFFF)
+  2385.000 extra 1 missed (rendered true, buffer FFFF)
+  2386.000 extra 2 missed (rendered true, buffer FFFF)
+  2388.000 extra 1 missed (rendered true, buffer FFFF)
+  2389.000 extra 2 missed (rendered true, buffer FFFF)
+  2391.000 extra 1 missed (rendered true, buffer FFFF)
+  2392.000 extra 2 missed (rendered true, buffer FFFF)
+  2394.000 extra 1 missed (rendered true, buffer FFFF)
+  2395.000 extra 2 missed (rendered true, buffer FFFF)
+  2397.000 extra 1 missed (rendered true, buffer FFFF)
+  2398.000 extra 2 missed (rendered true, buffer FFFF)
+  2400.000 extra 1 missed (rendered true, buffer FFFF)
+  2400.000 per second: drawn 20, extra 0, ticks 20, dropped 40, cycles 20, gd 0.80 jd 0.04, lua ms 0.1, wall 0.999 s, max gap 19 ms, late 0
+  2401.000 extra 2 missed (rendered true, buffer FFFF)
+  2403.000 extra 1 missed (rendered true, buffer FFFF)
+  2404.000 extra 2 missed (rendered true, buffer FFFF)
+  2406.000 extra 1 missed (rendered true, buffer FFFF)
+  2407.000 extra 2 missed (rendered true, buffer FFFF)
+  2409.000 extra 1 missed (rendered true, buffer FFFF)
+  2410.000 extra 2 missed (rendered true, buffer FFFF)
+  2412.000 extra 1 missed (rendered true, buffer FFFF)
+  2413.000 extra 2 missed (rendered true, buffer FFFF)
+  2415.000 extra 1 missed (rendered true, buffer FFFF)
+  2416.000 extra 2 missed (rendered true, buffer FFFF)
+  2418.000 extra 1 missed (rendered true, buffer FFFF)
+  2419.000 extra 2 missed (rendered true, buffer FFFF)
+  2421.000 extra 1 missed (rendered true, buffer FFFF)
+  2422.000 extra 2 missed (rendered true, buffer FFFF)
+  2424.000 extra 1 missed (rendered true, buffer FFFF)
+  2425.000 extra 2 missed (rendered true, buffer FFFF)
+  2427.000 extra 1 missed (rendered true, buffer FFFF)
+  2428.000 extra 2 missed (rendered true, buffer FFFF)
+  2430.000 extra 1 missed (rendered true, buffer FFFF)
+  2431.000 extra 2 missed (rendered true, buffer FFFF)
+  2433.000 extra 1 missed (rendered true, buffer FFFF)
+  2434.000 extra 2 missed (rendered true, buffer FFFF)
+  2436.000 extra 1 missed (rendered true, buffer FFFF)
+  2437.000 extra 2 missed (rendered true, buffer FFFF)
+  2439.000 extra 1 missed (rendered true, buffer FFFF)
+  2440.000 extra 2 missed (rendered true, buffer FFFF)
+  2442.000 extra 1 missed (rendered true, buffer FFFF)
+  2443.000 extra 2 missed (rendered true, buffer FFFF)
+  2445.000 extra 1 missed (rendered true, buffer FFFF)
+  2446.000 extra 2 missed (rendered true, buffer FFFF)
+  2448.000 extra 1 missed (rendered true, buffer FFFF)
+  2449.000 extra 2 missed (rendered true, buffer FFFF)
+  2451.000 extra 1 missed (rendered true, buffer FFFF)
+  2452.000 extra 2 missed (rendered true, buffer FFFF)
+  2454.000 extra 1 missed (rendered true, buffer FFFF)
+  2455.000 extra 2 missed (rendered true, buffer FFFF)
+  2457.000 extra 1 missed (rendered true, buffer FFFF)
+  2458.000 extra 2 missed (rendered true, buffer FFFF)
+  2460.000 extra 1 missed (rendered true, buffer FFFF)
+  2460.000 per second: drawn 20, extra 0, ticks 20, dropped 40, cycles 20, gd 0.80 jd 0.04, lua ms 0.2, wall 0.994 s, max gap 19 ms, late 0
+  2461.000 extra 2 missed (rendered true, buffer FFFF)
+  2463.000 extra 1 missed (rendered true, buffer FFFF)
+  2464.000 extra 2 missed (rendered true, buffer FFFF)
+  2466.000 extra 1 missed (rendered true, buffer FFFF)
+  2467.000 extra 2 missed (rendered true, buffer FFFF)
+  2469.000 extra 1 missed (rendered true, buffer FFFF)
+  2470.000 extra 2 missed (rendered true, buffer FFFF)
+  2472.000 extra 1 missed (rendered true, buffer FFFF)
+  2473.000 extra 2 missed (rendered true, buffer FFFF)
+  2475.000 extra 1 missed (rendered true, buffer FFFF)
+  2476.000 extra 2 missed (rendered true, buffer FFFF)
+  2478.000 extra 1 missed (rendered true, buffer FFFF)
+  2479.000 extra 2 missed (rendered true, buffer FFFF)
+  2481.000 extra 1 missed (rendered true, buffer FFFF)
+  2482.000 extra 2 missed (rendered true, buffer FFFF)
+  2484.000 extra 1 missed (rendered true, buffer FFFF)
+  2485.000 extra 2 missed (rendered true, buffer FFFF)
+  2487.000 extra 1 missed (rendered true, buffer FFFF)
+  2488.000 extra 2 missed (rendered true, buffer FFFF)
+  2490.000 extra 1 missed (rendered true, buffer FFFF)
+  2491.000 extra 2 missed (rendered true, buffer FFFF)
+  2493.000 extra 1 missed (rendered true, buffer FFFF)
+  2494.000 extra 2 missed (rendered true, buffer FFFF)
+  2496.000 extra 1 missed (rendered true, buffer FFFF)
+  2497.000 extra 2 missed (rendered true, buffer FFFF)
+  2499.000 extra 1 missed (rendered true, buffer FFFF)
+  2500.000 extra 2 missed (rendered true, buffer FFFF)
+  2502.000 extra 1 missed (rendered true, buffer FFFF)
+  2503.000 extra 2 missed (rendered true, buffer FFFF)
+  2505.000 extra 1 missed (rendered true, buffer FFFF)
+  2506.000 extra 2 missed (rendered true, buffer FFFF)
+  2508.000 extra 1 missed (rendered true, buffer FFFF)
+  2509.000 extra 2 missed (rendered true, buffer FFFF)
+  2511.000 extra 1 missed (rendered true, buffer FFFF)
+  2512.000 extra 2 missed (rendered true, buffer FFFF)
+  2514.000 extra 1 missed (rendered true, buffer FFFF)
+  2515.000 extra 2 missed (rendered true, buffer FFFF)
+  2517.000 extra 1 missed (rendered true, buffer FFFF)
+  2518.000 extra 2 missed (rendered true, buffer FFFF)
+  2520.000 extra 1 missed (rendered true, buffer FFFF)
+  2520.000 per second: drawn 20, extra 0, ticks 20, dropped 40, cycles 20, gd 0.80 jd 0.04, lua ms 0.1, wall 0.997 s, max gap 20 ms, late 0
+  2520.000 warning shown: overclock too low
+  2521.000 extra 2 missed (rendered true, buffer FFFF)
+  2523.000 extra 1 missed (rendered true, buffer FFFF)
+  2524.000 extra 2 missed (rendered true, buffer FFFF)
+  2526.000 extra 1 missed (rendered true, buffer FFFF)
+  2527.000 extra 2 missed (rendered true, buffer FFFF)
+  2529.000 extra 1 missed (rendered true, buffer FFFF)
+  2530.000 extra 2 missed (rendered true, buffer FFFF)
+  2532.000 extra 1 missed (rendered true, buffer FFFF)
+  2533.000 extra 2 missed (rendered true, buffer FFFF)
+  2535.000 extra 1 missed (rendered true, buffer FFFF)
+  2536.000 extra 2 missed (rendered true, buffer FFFF)
+  2538.000 extra 1 missed (rendered true, buffer FFFF)
+  2539.000 extra 2 missed (rendered true, buffer FFFF)
+  2541.000 extra 1 missed (rendered true, buffer FFFF)
+  2542.000 extra 2 missed (rendered true, buffer FFFF)
+  2544.000 extra 1 missed (rendered true, buffer FFFF)
+  2545.000 extra 2 missed (rendered true, buffer FFFF)
+  2547.000 extra 1 missed (rendered true, buffer FFFF)
+  2548.000 extra 2 missed (rendered true, buffer FFFF)
+  2550.000 extra 1 missed (rendered true, buffer FFFF)
+  2551.000 extra 2 missed (rendered true, buffer FFFF)
+  2553.000 extra 1 missed (rendered true, buffer FFFF)
+  2554.000 extra 2 missed (rendered true, buffer FFFF)
+  2556.000 extra 1 missed (rendered true, buffer FFFF)
+  2557.000 extra 2 missed (rendered true, buffer FFFF)
+  2559.000 extra 1 missed (rendered true, buffer FFFF)
+  2560.000 extra 2 missed (rendered true, buffer FFFF)
+  2562.000 extra 1 missed (rendered true, buffer FFFF)
+  2563.000 extra 2 missed (rendered true, buffer FFFF)
+  2565.000 extra 1 missed (rendered true, buffer FFFF)
+  2566.000 extra 2 missed (rendered true, buffer FFFF)
+  2568.000 extra 1 missed (rendered true, buffer FFFF)
+  2569.000 extra 2 missed (rendered true, buffer FFFF)
+  2571.000 extra 1 missed (rendered true, buffer FFFF)
+  2572.000 extra 2 missed (rendered true, buffer FFFF)
+  2574.000 extra 1 missed (rendered true, buffer FFFF)
+  2575.000 extra 2 missed (rendered true, buffer FFFF)
+  2577.000 extra 1 missed (rendered true, buffer FFFF)
+  2578.000 extra 2 missed (rendered true, buffer FFFF)
+  2580.000 extra 1 missed (rendered true, buffer FFFF)
+  2580.000 per second: drawn 20, extra 0, ticks 20, dropped 40, cycles 20, gd 0.80 jd 0.04, lua ms 0.1, wall 0.998 s, max gap 24 ms, late 0
+  2581.000 extra 2 missed (rendered true, buffer FFFF)
+  2583.000 extra 1 missed (rendered true, buffer FFFF)
+  2584.000 extra 2 missed (rendered true, buffer FFFF)
+  2586.000 extra 1 missed (rendered true, buffer FFFF)
+  2587.000 extra 2 missed (rendered true, buffer FFFF)
+  2589.000 extra 1 missed (rendered true, buffer FFFF)
+  2590.000 extra 2 missed (rendered true, buffer FFFF)
+  2592.000 extra 1 missed (rendered true, buffer FFFF)
+  2593.000 extra 2 missed (rendered true, buffer FFFF)
+  2595.000 extra 1 missed (rendered true, buffer FFFF)
+  2596.000 extra 2 missed (rendered true, buffer FFFF)
+  2598.000 extra 1 missed (rendered true, buffer FFFF)
+  2599.000 extra 2 missed (rendered true, buffer FFFF)
+  2601.000 extra 1 missed (rendered true, buffer FFFF)
+  2602.000 extra 2 missed (rendered true, buffer FFFF)
+  2604.000 extra 1 missed (rendered true, buffer FFFF)
+  2605.000 extra 2 missed (rendered true, buffer FFFF)
+  2607.000 extra 1 missed (rendered true, buffer FFFF)
+  2608.000 extra 2 missed (rendered true, buffer FFFF)
+  2610.000 extra 1 missed (rendered true, buffer FFFF)
+  2611.000 extra 2 missed (rendered true, buffer FFFF)
+  2613.000 extra 1 missed (rendered true, buffer FFFF)
+  2614.000 extra 2 missed (rendered true, buffer FFFF)
+  2616.000 extra 1 missed (rendered true, buffer FFFF)
+  2617.000 extra 2 missed (rendered true, buffer FFFF)
+  2619.000 extra 1 missed (rendered true, buffer FFFF)
+  2620.000 extra 2 missed (rendered true, buffer FFFF)
+  2622.000 extra 1 missed (rendered true, buffer FFFF)
+  2623.000 extra 2 missed (rendered true, buffer FFFF)
+  2625.000 extra 1 missed (rendered true, buffer FFFF)
+  2626.000 extra 2 missed (rendered true, buffer FFFF)
+  2628.000 extra 1 missed (rendered true, buffer FFFF)
+  2629.000 extra 2 missed (rendered true, buffer FFFF)
+  2631.000 extra 1 missed (rendered true, buffer FFFF)
+  2632.000 extra 2 missed (rendered true, buffer FFFF)
+  2634.000 extra 1 missed (rendered true, buffer FFFF)
+  2635.000 extra 2 missed (rendered true, buffer FFFF)
+  2637.000 extra 1 missed (rendered true, buffer FFFF)
+  2638.000 extra 2 missed (rendered true, buffer FFFF)
+  2640.000 extra 1 missed (rendered true, buffer FFFF)
+  2640.000 per second: drawn 20, extra 0, ticks 20, dropped 40, cycles 20, gd 0.80 jd 0.04, lua ms 0.1, wall 0.996 s, max gap 20 ms, late 0
+  2641.000 extra 2 missed (rendered true, buffer FFFF)
+  2643.000 extra 1 missed (rendered true, buffer FFFF)
+  2644.000 extra 2 missed (rendered true, buffer FFFF)
+  2646.000 extra 1 missed (rendered true, buffer FFFF)
+  2647.000 extra 2 missed (rendered true, buffer FFFF)
+  2649.000 extra 1 missed (rendered true, buffer FFFF)
+  2650.000 extra 2 missed (rendered true, buffer FFFF)
+  2652.000 extra 1 missed (rendered true, buffer FFFF)
+  2653.000 extra 2 missed (rendered true, buffer FFFF)
+  2655.000 extra 1 missed (rendered true, buffer FFFF)
+  2656.000 extra 2 missed (rendered true, buffer FFFF)
+  2658.000 extra 1 missed (rendered true, buffer FFFF)
+  2659.000 extra 2 missed (rendered true, buffer FFFF)
+  2661.000 extra 1 missed (rendered true, buffer FFFF)
+  2662.000 extra 2 missed (rendered true, buffer FFFF)
+  2691.416 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 2470, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2700.000 per second: drawn 39, extra 20, ticks 21, dropped 16, cycles 17, gd 0.30 jd 0.04, lua ms 0.1, wall 0.998 s, max gap 19 ms, late 0
+  2714.031 no 3D block: mb FFF9FC00 d2 3 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2735.030 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 496, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2756.030 no 3D block: mb FFF9FC00 d2 3 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2760.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.30 jd 0.04, lua ms 0.0, wall 0.995 s, max gap 20 ms, late 0
+  2777.030 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 496, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2798.030 no 3D block: mb FFF9FC00 d2 3 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2819.031 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 496, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2820.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.30 jd 0.04, lua ms 0.0, wall 0.997 s, max gap 19 ms, late 0
+  2840.031 no 3D block: mb FFF9FC00 d2 3 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2861.031 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 496, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2880.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.30 jd 0.04, lua ms 0.0, wall 0.996 s, max gap 20 ms, late 0
+  2882.030 no 3D block: mb FFF9FC00 d2 3 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2903.031 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 496, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2924.032 no 3D block: mb FFF9FC00 d2 3 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2940.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.30 jd 0.04, lua ms 0.0, wall 0.998 s, max gap 20 ms, late 0
+  2945.031 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 496, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2967.028 no 3D block: mb FFF9FC00 d2 3 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  2988.028 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 496, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3000.000 per second: drawn 19, extra 0, ticks 19, dropped 0, cycles 0, gd 0.30 jd 0.04, lua ms 0.0, wall 0.997 s, max gap 19 ms, late 0
+  3009.028 no 3D block: mb FFF9FC00 d2 3 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3030.028 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 496, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3051.029 no 3D block: mb FFF9FC00 d2 3 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3060.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.30 jd 0.04, lua ms 0.0, wall 1.000 s, max gap 19 ms, late 0
+  3072.028 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 496, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3093.028 no 3D block: mb FFF9FC00 d2 3 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3114.029 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 496, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3120.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.30 jd 0.04, lua ms 0.0, wall 0.993 s, max gap 19 ms, late 0
+  3135.029 no 3D block: mb FFF9FC00 d2 3 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3156.029 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 496, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3177.029 no 3D block: mb FFF9FC00 d2 3 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3180.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.30 jd 0.04, lua ms 0.0, wall 0.995 s, max gap 40 ms, late 1
+  3198.029 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 496, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3219.029 no 3D block: mb FFF9FC00 d2 3 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3240.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.30 jd 0.04, lua ms 0.0, wall 0.996 s, max gap 19 ms, late 0
+  3240.028 no 3D block: mb FFFCFC00 d2 3 first 7000 at word 496, end word 8C00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3300.000 per second: drawn 43, extra 27, ticks 19, dropped 0, cycles 11, gd 0.58 jd 0.47, lua ms 0.2, wall 1.003 s, max gap 24 ms, late 0
+  3318.703 extra 1 missed (rendered true, buffer FFFF)
+  3320.022 no 3D block: mb FFF9FC00 d2 6076 first 7000 at word 2561, end word 0000, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3342.031 no 3D block: mb FFF9FC00 d2 6076 first 7000 at word 323, end word 0D00, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3360.000 per second: drawn 25, extra 8, ticks 18, dropped 1, cycles 5, gd 0.57 jd 0.47, lua ms 0.1, wall 0.996 s, max gap 33 ms, late 2
+  3363.031 no 3D block: mb FFFCFC00 d2 6076 first 7000 at word 2561, end word 0000, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3384.031 no 3D block: mb FFF9FC00 d2 6076 first 7000 at word 202, end word 0000, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  3402.581 no ADSP time this cycle (overclock adsp)
+  3406.000 extra 1 missed (rendered false, buffer 0000)
+  3407.000 extra 2 missed (rendered false, buffer 0000)
+  3420.000 per second: drawn 28, extra 9, ticks 20, dropped 2, cycles 5, gd 0.57 jd 0.48, lua ms 0.1, wall 1.007 s, max gap 26 ms, late 2
+  3480.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.48, lua ms 1.3, wall 1.000 s, max gap 18 ms, late 0
+  3540.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.28, lua ms 0.4, wall 0.997 s, max gap 19 ms, late 0
+  3600.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.33 jd 0.24, lua ms 0.3, wall 0.991 s, max gap 20 ms, late 0
+  3660.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.30 jd 0.19, lua ms 0.2, wall 0.997 s, max gap 19 ms, late 0
+  3720.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.33 jd 0.28, lua ms 0.2, wall 0.996 s, max gap 19 ms, late 0
+  3780.000 per second: drawn 60, extra 47, ticks 20, dropped 0, cycles 20, gd 0.32 jd 0.20, lua ms 0.3, wall 0.999 s, max gap 19 ms, late 0
+  3840.000 per second: drawn 60, extra 48, ticks 20, dropped 0, cycles 20, gd 0.30 jd 0.20, lua ms 0.3, wall 0.999 s, max gap 19 ms, late 0
+  3900.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.29, lua ms 0.3, wall 0.992 s, max gap 19 ms, late 0
+  3960.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.30, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+  4020.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.30, lua ms 0.3, wall 0.996 s, max gap 18 ms, late 0
+  4080.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.30 jd 0.19, lua ms 0.3, wall 0.999 s, max gap 19 ms, late 0
+  4140.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.31 jd 0.24, lua ms 0.3, wall 0.994 s, max gap 19 ms, late 0
+  4200.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.28, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+  4260.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.27, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+  4320.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.37 jd 0.22, lua ms 0.2, wall 0.996 s, max gap 19 ms, late 0
+  4380.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.38 jd 0.27, lua ms 0.3, wall 1.000 s, max gap 18 ms, late 0
+  4440.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.40 jd 0.26, lua ms 0.3, wall 0.994 s, max gap 19 ms, late 0
+  4500.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.37 jd 0.22, lua ms 0.3, wall 0.996 s, max gap 20 ms, late 0
+  4560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.41 jd 0.27, lua ms 0.3, wall 0.996 s, max gap 18 ms, late 0
+  4620.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.26, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+  4680.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.35 jd 0.25, lua ms 0.3, wall 0.999 s, max gap 19 ms, late 0
+  4740.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.36 jd 0.23, lua ms 0.3, wall 0.993 s, max gap 19 ms, late 0
+  4800.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.30, lua ms 0.2, wall 0.998 s, max gap 18 ms, late 0
+  4860.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.40 jd 0.30, lua ms 0.3, wall 0.999 s, max gap 19 ms, late 0
+  4920.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.68 jd 0.36, lua ms 0.3, wall 0.994 s, max gap 19 ms, late 0
+  4980.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.65 jd 0.32, lua ms 0.3, wall 1.000 s, max gap 18 ms, late 0
+  5040.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.32, lua ms 0.4, wall 0.993 s, max gap 19 ms, late 0
+  5100.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.32, lua ms 0.3, wall 0.997 s, max gap 18 ms, late 0
+  5160.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.32, lua ms 0.3, wall 0.996 s, max gap 18 ms, late 0
+  5220.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.23, lua ms 0.3, wall 0.996 s, max gap 18 ms, late 0
+  5280.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.28, lua ms 0.2, wall 1.001 s, max gap 19 ms, late 0
+  5340.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.23, lua ms 0.2, wall 0.993 s, max gap 18 ms, late 0
+  5400.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.56 jd 0.24, lua ms 0.3, wall 0.996 s, max gap 18 ms, late 0
+  5460.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.27, lua ms 0.2, wall 0.998 s, max gap 18 ms, late 0
+  5520.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.19, lua ms 0.2, wall 0.996 s, max gap 18 ms, late 0
+  5580.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.73 jd 0.46, lua ms 0.4, wall 1.004 s, max gap 33 ms, late 1
+  5640.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.67 jd 0.42, lua ms 0.7, wall 0.993 s, max gap 18 ms, late 0
+  5666.667 extra 1 missed (rendered true, buffer FFFF)
+  5668.022 no 3D block: mb FFF9FC00 d2 5279 first 7000 at word nil, end word -, head 4000 FFF2 FFF5 000D 4000 FFFE 000B 0001 4000 0000 0000 0000
+  5690.031 no 3D block: mb FFF9FC00 d2 5279 first 7000 at word 323, end word 160B, head 4000 FFF2 FFF5 000D 4000 FFFE 000B 0001 4000 0000 0000 0000
+  5700.000 per second: drawn 31, extra 15, ticks 18, dropped 1, cycles 7, gd 0.55 jd 0.42, lua ms 0.2, wall 0.996 s, max gap 24 ms, late 0
+  5711.031 no 3D block: mb FFFCFC00 d2 5279 first 7000 at word nil, end word -, head 4000 FFF2 FFF5 000D 4000 FFFE 000B 0001 4000 0000 0000 0000
+  5732.030 no 3D block: mb FFF9FC00 d2 5279 first 7000 at word 323, end word 160B, head 4000 FFF2 FFF5 000D 4000 FFFE 000B 0001 4000 0000 0000 0000
+  5753.030 no 3D block: mb FFFCFC00 d2 5279 first 7000 at word nil, end word -, head 4000 FFF2 FFF5 000D 4000 FFFE 000B 0001 4000 0000 0000 0000
+  5760.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.55 jd 0.42, lua ms 0.0, wall 0.993 s, max gap 20 ms, late 0
+  5774.030 no 3D block: mb FFF9FC00 d2 5279 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  5795.497 no ADSP time this cycle (overclock adsp)
+  5799.000 extra 1 missed (rendered false, buffer 0000)
+  5800.000 extra 2 missed (rendered false, buffer 0000)
+  5820.000 per second: drawn 32, extra 15, ticks 19, dropped 2, cycles 7, gd 0.66 jd 0.39, lua ms 0.1, wall 1.000 s, max gap 24 ms, late 0
+  5880.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.35, lua ms 0.3, wall 0.999 s, max gap 18 ms, late 0
+  5940.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.42, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+  6000.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.42, lua ms 0.3, wall 0.994 s, max gap 19 ms, late 0
+  6060.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.42, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+  6120.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.42, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+  6180.000 per second: drawn 60, extra 47, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.39, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+  6240.000 per second: drawn 60, extra 48, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.41, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+  6300.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.33, lua ms 0.3, wall 0.993 s, max gap 19 ms, late 0
+  6360.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.40 jd 0.28, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+  6420.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.36, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+  6480.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.38, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+  6540.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.42 jd 0.31, lua ms 0.9, wall 0.992 s, max gap 18 ms, late 0
+  6600.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.38, lua ms 0.4, wall 0.999 s, max gap 20 ms, late 0
+  6660.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.40, lua ms 0.3, wall 0.995 s, max gap 28 ms, late 1
+  6720.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.47, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+  6780.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.40, lua ms 0.4, wall 0.999 s, max gap 18 ms, late 0
+  6840.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.40, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+  6900.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.41, lua ms 0.4, wall 0.995 s, max gap 20 ms, late 0
+  6960.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.30, lua ms 0.3, wall 0.992 s, max gap 20 ms, late 0
+  7020.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.42 jd 0.35, lua ms 0.3, wall 0.997 s, max gap 20 ms, late 0
+  7080.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.41 jd 0.35, lua ms 0.3, wall 0.999 s, max gap 18 ms, late 0
+  7140.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.39, lua ms 0.4, wall 1.000 s, max gap 18 ms, late 0
+  7200.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.40 jd 0.35, lua ms 0.3, wall 0.991 s, max gap 19 ms, late 0
+  7260.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.40, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+  7320.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.41 jd 0.38, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+  7380.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.43, lua ms 0.4, wall 1.000 s, max gap 18 ms, late 0
+  7440.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.49, lua ms 0.4, wall 0.998 s, max gap 19 ms, late 0
+  7500.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.42, lua ms 0.3, wall 0.991 s, max gap 19 ms, late 0
+  7560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.37, lua ms 0.4, wall 0.999 s, max gap 18 ms, late 0
+  7620.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.35, lua ms 0.4, wall 0.995 s, max gap 19 ms, late 0
+  7680.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.37, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+  7740.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.39, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+  7800.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.37, lua ms 0.3, wall 0.993 s, max gap 19 ms, late 0
+  7860.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.39, lua ms 0.4, wall 0.998 s, max gap 20 ms, late 0
+  7920.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.40, lua ms 0.4, wall 0.995 s, max gap 19 ms, late 0
+  7980.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.44, lua ms 0.4, wall 0.998 s, max gap 18 ms, late 0
+  8040.000 per second: drawn 60, extra 40, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.34, lua ms 0.4, wall 0.993 s, max gap 20 ms, late 0
+  8100.000 per second: drawn 60, extra 44, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.36, lua ms 1.0, wall 0.999 s, max gap 19 ms, late 0
+  8160.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.38, lua ms 0.7, wall 0.995 s, max gap 18 ms, late 0
+  8220.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.39, lua ms 0.3, wall 0.997 s, max gap 18 ms, late 0
+  8280.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.78 jd 0.42, lua ms 0.3, wall 0.999 s, max gap 18 ms, late 0
+  8340.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.37, lua ms 0.4, wall 1.000 s, max gap 18 ms, late 0
+  8400.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.72 jd 0.37, lua ms 0.3, wall 0.991 s, max gap 18 ms, late 0
+  8460.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.72 jd 0.37, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+  8520.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.72 jd 0.37, lua ms 0.3, wall 0.997 s, max gap 18 ms, late 0
+  8558.000 extra 1 missed (rendered true, buffer FFFF)
+  8559.027 no 3D block: mb FFFCFC00 d2 4592 first 7000 at word nil, end word -, head F882 0000 C071 0000 4000 0000 3F8F 0000 F882 0000 0000 0000
+  8580.000 per second: drawn 38, extra 23, ticks 18, dropped 1, cycles 11, gd 0.55 jd 0.37, lua ms 0.2, wall 0.994 s, max gap 25 ms, late 1
+  8581.031 no 3D block: mb FFFCFC00 d2 4592 first 7000 at word 323, end word 0B0E, head F882 0000 C071 0000 4000 0000 3F8F 0000 F882 0000 0000 0000
+  8602.030 no 3D block: mb FFF9FC00 d2 4592 first 7000 at word nil, end word -, head F882 0000 C071 0000 4000 0000 3F8F 0000 F882 0000 0000 0000
+  8623.030 no 3D block: mb FFFCFC00 d2 4592 first 7000 at word 323, end word 0B0E, head F882 0000 C071 0000 4000 0000 3F8F 0000 F882 0000 0000 0000
+  8640.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.55 jd 0.37, lua ms 0.0, wall 0.995 s, max gap 19 ms, late 0
+  8644.030 no 3D block: mb FFF9FC00 d2 4592 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  8664.262 no 3D block: mb FFF9FC00 d2 4592 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+  8665.422 no ADSP time this cycle (overclock adsp)
+  8669.000 extra 1 missed (rendered false, buffer 0000)
+  8670.000 extra 2 missed (rendered false, buffer 0000)
+  8700.000 per second: drawn 39, extra 21, ticks 19, dropped 2, cycles 10, gd 0.59 jd 0.32, lua ms 0.1, wall 1.000 s, max gap 23 ms, late 0
+  8760.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.34, lua ms 0.3, wall 0.998 s, max gap 18 ms, late 0
+  8820.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.34, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+  8880.000 per second: drawn 60, extra 47, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.42, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+  8940.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.40, lua ms 0.3, wall 0.994 s, max gap 19 ms, late 0
+  9000.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.42, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+  9060.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.39, lua ms 0.4, wall 1.000 s, max gap 18 ms, late 0
+  9120.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.44, lua ms 0.6, wall 0.995 s, max gap 19 ms, late 0
+  9180.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.47, lua ms 1.7, wall 0.999 s, max gap 18 ms, late 0
+  9240.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.43, lua ms 0.4, wall 0.994 s, max gap 19 ms, late 0
+  9300.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.39, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+  9360.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.34, lua ms 0.9, wall 0.993 s, max gap 19 ms, late 0
+  9420.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.41, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+  9480.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.42, lua ms 0.9, wall 0.999 s, max gap 19 ms, late 0
+  9540.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.45, lua ms 0.4, wall 1.001 s, max gap 19 ms, late 0
+  9600.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.47, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+  9660.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.45, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+  9720.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.40, lua ms 0.4, wall 0.991 s, max gap 19 ms, late 0
+  9780.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.35, lua ms 0.3, wall 0.995 s, max gap 20 ms, late 0
+  9840.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.35, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+  9900.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.35, lua ms 0.4, wall 0.999 s, max gap 18 ms, late 0
+  9960.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.35, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+ 10020.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.37, lua ms 0.4, wall 0.991 s, max gap 19 ms, late 0
+ 10080.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.37, lua ms 0.3, wall 0.996 s, max gap 18 ms, late 0
+ 10140.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.31, lua ms 0.3, wall 1.000 s, max gap 19 ms, late 0
+ 10200.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.38 jd 0.27, lua ms 0.3, wall 0.994 s, max gap 19 ms, late 0
+ 10260.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.29, lua ms 0.3, wall 0.995 s, max gap 19 ms, late 0
+ 10320.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.38 jd 0.29, lua ms 0.3, wall 0.997 s, max gap 21 ms, late 0
+ 10380.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.42 jd 0.37, lua ms 0.3, wall 1.001 s, max gap 19 ms, late 0
+ 10440.000 per second: drawn 60, extra 49, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.41, lua ms 0.4, wall 0.994 s, max gap 20 ms, late 0
+ 10500.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.40, lua ms 0.3, wall 0.999 s, max gap 18 ms, late 0
+ 10560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.39, lua ms 0.4, wall 0.994 s, max gap 19 ms, late 0
+ 10620.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.42 jd 0.33, lua ms 0.3, wall 0.999 s, max gap 19 ms, late 0
+ 10680.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.42 jd 0.34, lua ms 0.3, wall 0.993 s, max gap 19 ms, late 0
+ 10740.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.48, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+ 10800.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.44, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 10860.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.49, lua ms 0.4, wall 1.001 s, max gap 20 ms, late 0
+ 10920.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.52, lua ms 0.4, wall 1.000 s, max gap 18 ms, late 0
+ 10980.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.50, lua ms 0.5, wall 1.000 s, max gap 19 ms, late 0
+ 11040.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.50, lua ms 0.5, wall 1.000 s, max gap 19 ms, late 0
+ 11100.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.44, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+ 11160.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.41, lua ms 0.7, wall 0.993 s, max gap 19 ms, late 0
+ 11220.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.37 jd 0.32, lua ms 0.3, wall 0.995 s, max gap 20 ms, late 0
+ 11280.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.41 jd 0.35, lua ms 0.3, wall 0.999 s, max gap 26 ms, late 1
+ 11340.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.35, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 11400.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.40 jd 0.32, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 11460.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.42 jd 0.35, lua ms 0.3, wall 0.993 s, max gap 19 ms, late 0
+ 11520.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.37, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 11580.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.42 jd 0.32, lua ms 0.4, wall 0.999 s, max gap 18 ms, late 0
+ 11640.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.40 jd 0.31, lua ms 0.4, wall 0.994 s, max gap 20 ms, late 0
+ 11700.000 per second: drawn 60, extra 47, ticks 20, dropped 0, cycles 20, gd 0.42 jd 0.32, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+ 11760.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.33, lua ms 0.3, wall 0.993 s, max gap 19 ms, late 0
+ 11820.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.34, lua ms 0.4, wall 0.999 s, max gap 18 ms, late 0
+ 11880.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.78 jd 0.42, lua ms 0.4, wall 1.002 s, max gap 25 ms, late 0
+ 11940.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.80 jd 0.42, lua ms 0.3, wall 0.990 s, max gap 18 ms, late 0
+ 12000.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.80 jd 0.42, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+ 12060.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.80 jd 0.42, lua ms 0.4, wall 1.000 s, max gap 18 ms, late 0
+ 12120.000 per second: drawn 52, extra 38, ticks 18, dropped 0, cycles 18, gd 0.70 jd 0.42, lua ms 0.3, wall 1.004 s, max gap 27 ms, late 1
+ 12120.520 extra 1 missed (rendered true, buffer FFFF)
+ 12122.023 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12144.031 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word 323, end word 160F, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12165.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12180.000 per second: drawn 21, extra 1, ticks 20, dropped 1, cycles 1, gd 0.66 jd 0.42, lua ms 0.0, wall 0.983 s, max gap 19 ms, late 0
+ 12186.030 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word 323, end word 160F, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12207.030 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12228.031 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word 323, end word 160F, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12240.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 0.997 s, max gap 19 ms, late 0
+ 12249.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12270.030 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word 323, end word 160F, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12291.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12300.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 0.997 s, max gap 19 ms, late 0
+ 12312.030 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word 323, end word 160F, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12333.036 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12354.030 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word 323, end word 160F, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12360.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 0.997 s, max gap 19 ms, late 0
+ 12375.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12396.031 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word 323, end word 160F, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12417.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12420.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 1.000 s, max gap 34 ms, late 1
+ 12438.031 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word 323, end word 160F, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12459.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12480.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 0.993 s, max gap 20 ms, late 0
+ 12480.031 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12501.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12522.031 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12540.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 0.996 s, max gap 20 ms, late 0
+ 12543.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12564.030 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12585.030 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12600.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 0.998 s, max gap 19 ms, late 0
+ 12606.030 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12627.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12648.031 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12660.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 0.996 s, max gap 19 ms, late 0
+ 12669.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12690.031 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12711.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12720.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 1.000 s, max gap 19 ms, late 0
+ 12732.031 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12753.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12774.031 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12780.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 0.989 s, max gap 19 ms, late 0
+ 12795.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12816.030 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12837.030 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12840.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 0.997 s, max gap 19 ms, late 0
+ 12858.031 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12879.030 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12900.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 0.997 s, max gap 20 ms, late 0
+ 12900.030 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12921.030 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12942.030 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12960.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 0.994 s, max gap 20 ms, late 0
+ 12963.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 12992.584 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 13015.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 13020.000 per second: drawn 19, extra 0, ticks 19, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 0.998 s, max gap 19 ms, late 0
+ 13036.030 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word 323, end word 160F, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 13057.031 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 13078.031 no 3D block: mb FFF9FC00 d2 5795 first 7000 at word 323, end word 160F, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 13080.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.66 jd 0.42, lua ms 0.0, wall 0.997 s, max gap 19 ms, late 0
+ 13099.030 no 3D block: mb FFFCFC00 d2 5795 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+ 13105.455 no ADSP time this cycle (overclock adsp)
+ 13109.000 extra 1 missed (rendered false, buffer 0000)
+ 13110.000 extra 2 missed (rendered false, buffer 0000)
+ 13140.000 per second: drawn 39, extra 21, ticks 19, dropped 2, cycles 10, gd 0.62 jd 0.35, lua ms 0.1, wall 1.000 s, max gap 24 ms, late 0
+ 13200.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.36, lua ms 0.3, wall 0.999 s, max gap 19 ms, late 0
+ 13260.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.74 jd 0.37, lua ms 0.4, wall 0.998 s, max gap 19 ms, late 0
+ 13320.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.41, lua ms 0.3, wall 0.995 s, max gap 19 ms, late 0
+ 13380.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.40, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 13440.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.38, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 13500.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.36, lua ms 0.3, wall 0.999 s, max gap 19 ms, late 0
+ 13560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.43, lua ms 0.4, wall 0.995 s, max gap 19 ms, late 0
+ 13620.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.42, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+ 13680.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.45, lua ms 0.3, wall 0.997 s, max gap 18 ms, late 0
+ 13740.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.33, lua ms 0.3, wall 0.995 s, max gap 19 ms, late 0
+ 13800.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.40, lua ms 0.3, wall 1.001 s, max gap 19 ms, late 0
+ 13860.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.42, lua ms 0.3, wall 0.994 s, max gap 19 ms, late 0
+ 13920.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.47, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+ 13980.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.46, lua ms 0.4, wall 0.997 s, max gap 19 ms, late 0
+ 14040.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.44, lua ms 0.6, wall 0.996 s, max gap 19 ms, late 0
+ 14100.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.38, lua ms 0.3, wall 0.998 s, max gap 18 ms, late 0
+ 14160.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.28, lua ms 0.4, wall 0.992 s, max gap 19 ms, late 0
+ 14220.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.41 jd 0.29, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 14280.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.41 jd 0.29, lua ms 0.3, wall 0.997 s, max gap 20 ms, late 0
+ 14340.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.44, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+ 14400.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.42, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+ 14460.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.43, lua ms 0.4, wall 0.994 s, max gap 19 ms, late 0
+ 14520.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.36, lua ms 0.3, wall 0.995 s, max gap 20 ms, late 0
+ 14580.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.34, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 14640.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.48, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 14700.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.44, lua ms 0.4, wall 1.000 s, max gap 20 ms, late 0
+ 14760.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.47, lua ms 0.4, wall 0.994 s, max gap 18 ms, late 0
+ 14820.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.47, lua ms 0.4, wall 0.996 s, max gap 18 ms, late 0
+ 14880.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.48, lua ms 0.4, wall 0.997 s, max gap 19 ms, late 0
+ 14940.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.46, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+ 15000.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.53, lua ms 0.4, wall 1.002 s, max gap 20 ms, late 0
+ 15060.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.37, lua ms 0.3, wall 0.992 s, max gap 19 ms, late 0
+ 15120.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.40, lua ms 0.4, wall 0.995 s, max gap 19 ms, late 0
+ 15180.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.42 jd 0.33, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 15240.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.36, lua ms 0.3, wall 0.999 s, max gap 19 ms, late 0
+ 15300.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.35, lua ms 0.9, wall 0.998 s, max gap 19 ms, late 0
+ 15360.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.35, lua ms 0.3, wall 0.994 s, max gap 19 ms, late 0
+ 15420.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.38, lua ms 0.3, wall 0.999 s, max gap 26 ms, late 1
+ 15480.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.37, lua ms 0.3, wall 0.994 s, max gap 18 ms, late 0
+ 15540.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.79 jd 0.45, lua ms 0.3, wall 1.000 s, max gap 19 ms, late 0
+ 15600.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.56 jd 0.35, lua ms 0.3, wall 0.995 s, max gap 19 ms, late 0
+ 15660.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.35, lua ms 0.3, wall 0.994 s, max gap 18 ms, late 0
+ 15720.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.35, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 15780.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.35, lua ms 0.4, wall 0.998 s, max gap 19 ms, late 0
+ 15811.000 extra 1 missed (rendered false, buffer FFFF)
+ 15812.000 no ADSP time this cycle (overclock adsp)
+ 15812.000 extra 2 missed (rendered false, buffer 0000)
+ 15812.022 no 3D block: mb FFF9FC00 d2 4286 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 15833.031 no 3D block: mb FFF9FC00 d2 4286 first 7000 at word 329, end word 0F0D, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 15840.000 per second: drawn 33, extra 17, ticks 19, dropped 2, cycles 9, gd 0.47 jd 0.35, lua ms 0.1, wall 0.992 s, max gap 24 ms, late 0
+ 15854.030 no 3D block: mb FFFCFC00 d2 4286 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 15875.031 no 3D block: mb FFF9FC00 d2 4286 first 7000 at word 329, end word 0F0D, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 15896.031 no 3D block: mb FFFCFC00 d2 4286 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 15900.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.47 jd 0.35, lua ms 0.0, wall 1.000 s, max gap 20 ms, late 0
+ 15917.031 no 3D block: mb FFF9FC00 d2 4286 first 7000 at word 329, end word 0F0D, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 15938.030 no 3D block: mb FFFCFC00 d2 4286 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 15959.030 no 3D block: mb FFF9FC00 d2 4286 first 7000 at word 329, end word 0F0D, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 15960.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.47 jd 0.35, lua ms 0.0, wall 1.000 s, max gap 19 ms, late 0
+ 15980.031 no 3D block: mb FFFCFC00 d2 4286 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 16001.031 no 3D block: mb FFF9FC00 d2 4286 first 7000 at word 329, end word 0F0D, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 16020.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.47 jd 0.35, lua ms 0.0, wall 0.992 s, max gap 20 ms, late 0
+ 16022.030 no 3D block: mb FFFCFC00 d2 4286 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 16043.030 no 3D block: mb FFF9FC00 d2 4286 first 7000 at word 329, end word 0F0D, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 16064.030 no 3D block: mb FFFCFC00 d2 4286 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 16080.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.47 jd 0.35, lua ms 0.0, wall 0.997 s, max gap 20 ms, late 0
+ 16085.031 no 3D block: mb FFF9FC00 d2 4286 first 7000 at word 329, end word 0F0D, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 16106.030 no 3D block: mb FFFCFC00 d2 4286 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 16127.031 no 3D block: mb FFF9FC00 d2 4286 first 7000 at word 329, end word 0F0D, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 16140.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.47 jd 0.35, lua ms 0.0, wall 0.997 s, max gap 19 ms, late 0
+ 16148.031 no 3D block: mb FFFCFC00 d2 4286 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 16169.031 no 3D block: mb FFF9FC00 d2 4286 first 7000 at word 329, end word 0F0D, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 16190.030 no 3D block: mb FFFCFC00 d2 4286 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 16200.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.47 jd 0.35, lua ms 0.0, wall 0.997 s, max gap 18 ms, late 0
+ 16211.031 no 3D block: mb FFF9FC00 d2 4286 first 7000 at word 329, end word 0F0D, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 16232.031 no 3D block: mb FFFCFC00 d2 4286 first 7000 at word nil, end word -, head 2078 0000 C8D9 0000 4000 0000 3727 0000 2078 0000 0000 0000
+ 16253.030 no 3D block: mb FFF9FC00 d2 4286 first 7000 at word 183, end word 4010, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+ 16260.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.47 jd 0.35, lua ms 0.0, wall 1.000 s, max gap 19 ms, late 0
+ 16275.674 no 3D block: mb FFFCFC00 d2 4286 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+ 16277.489 no ADSP time this cycle (overclock adsp)
+ 16281.000 extra 1 missed (rendered false, buffer 0000)
+ 16282.000 extra 2 missed (rendered false, buffer 0000)
+ 16320.000 per second: drawn 44, extra 28, ticks 19, dropped 2, cycles 13, gd 0.63 jd 0.39, lua ms 0.2, wall 0.994 s, max gap 24 ms, late 0
+ 16380.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.63 jd 0.39, lua ms 0.3, wall 0.996 s, max gap 18 ms, late 0
+ 16440.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.63 jd 0.39, lua ms 0.9, wall 0.997 s, max gap 18 ms, late 0
+ 16500.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.38, lua ms 0.4, wall 1.000 s, max gap 18 ms, late 0
+ 16560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.71 jd 0.43, lua ms 0.4, wall 0.994 s, max gap 18 ms, late 0
+ 16620.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.41, lua ms 0.4, wall 0.998 s, max gap 19 ms, late 0
+ 16680.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.40, lua ms 0.3, wall 0.995 s, max gap 19 ms, late 0
+ 16740.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.42, lua ms 0.3, wall 0.997 s, max gap 20 ms, late 0
+ 16800.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.43, lua ms 0.4, wall 1.001 s, max gap 18 ms, late 0
+ 16860.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.45, lua ms 0.4, wall 0.994 s, max gap 19 ms, late 0
+ 16920.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.44, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 16980.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.45, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+ 17040.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.46, lua ms 0.3, wall 0.998 s, max gap 20 ms, late 0
+ 17100.000 per second: drawn 60, extra 44, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.30, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 17160.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.37, lua ms 0.3, wall 0.993 s, max gap 19 ms, late 0
+ 17220.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.46, lua ms 0.4, wall 0.998 s, max gap 20 ms, late 0
+ 17280.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.40, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 17340.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.47, lua ms 0.3, wall 0.999 s, max gap 20 ms, late 0
+ 17400.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.40, lua ms 0.4, wall 0.994 s, max gap 19 ms, late 0
+ 17460.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.34, lua ms 0.3, wall 0.998 s, max gap 20 ms, late 0
+ 17520.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.39, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 17580.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.43, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 17640.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.35 jd 0.43, lua ms 0.4, wall 0.997 s, max gap 19 ms, late 0
+ 17700.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.41, lua ms 0.3, wall 1.000 s, max gap 19 ms, late 0
+ 17760.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.41, lua ms 0.4, wall 0.993 s, max gap 19 ms, late 0
+ 17820.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.38, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 17880.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.35, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 17940.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.35, lua ms 0.4, wall 0.999 s, max gap 20 ms, late 0
+ 18000.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.39, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+ 18060.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.43, lua ms 0.3, wall 0.992 s, max gap 19 ms, late 0
+ 18120.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.38, lua ms 0.3, wall 0.996 s, max gap 18 ms, late 0
+ 18180.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.42, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 18240.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.45, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+ 18300.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.41, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+ 18360.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.43, lua ms 0.3, wall 0.992 s, max gap 19 ms, late 0
+ 18420.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.47, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 18480.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.45, lua ms 0.6, wall 0.997 s, max gap 31 ms, late 1
+ 18540.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.46, lua ms 0.4, wall 0.997 s, max gap 18 ms, late 0
+ 18600.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.36 jd 0.28, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 18660.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.42 jd 0.43, lua ms 0.4, wall 0.994 s, max gap 20 ms, late 0
+ 18720.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.46, lua ms 0.5, wall 0.999 s, max gap 18 ms, late 0
+ 18780.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.40, lua ms 0.3, wall 0.993 s, max gap 19 ms, late 0
+ 18840.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.41 jd 0.43, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 18900.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.43, lua ms 0.4, wall 1.001 s, max gap 19 ms, late 0
+ 18960.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.37 jd 0.28, lua ms 0.3, wall 0.992 s, max gap 19 ms, late 0
+ 19020.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.41 jd 0.40, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 19080.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.43, lua ms 1.2, wall 0.997 s, max gap 20 ms, late 0
+ 19140.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.30 jd 0.38, lua ms 0.4, wall 1.000 s, max gap 20 ms, late 0
+ 19200.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.38, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 19260.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.35, lua ms 0.3, wall 0.992 s, max gap 19 ms, late 0
+ 19320.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.41 jd 0.34, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 19380.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.43 jd 0.36, lua ms 0.3, wall 1.000 s, max gap 20 ms, late 0
+ 19440.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.42, lua ms 0.3, wall 0.995 s, max gap 19 ms, late 0
+ 19500.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.63 jd 0.35, lua ms 0.4, wall 0.998 s, max gap 19 ms, late 0
+ 19560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.76 jd 0.45, lua ms 0.4, wall 0.993 s, max gap 19 ms, late 0
+ 19620.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.63 jd 0.43, lua ms 0.4, wall 0.999 s, max gap 18 ms, late 0
+ 19680.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.73 jd 0.47, lua ms 0.4, wall 0.995 s, max gap 19 ms, late 0
+ 19740.000 per second: drawn 60, extra 47, ticks 20, dropped 0, cycles 20, gd 0.72 jd 0.45, lua ms 0.3, wall 0.997 s, max gap 18 ms, late 0
+ 19800.000 per second: drawn 60, extra 47, ticks 20, dropped 0, cycles 20, gd 0.71 jd 0.42, lua ms 0.4, wall 0.995 s, max gap 18 ms, late 0
+ 19834.697 extra 1 missed (rendered true, buffer FFFF)
+ 19836.023 no 3D block: mb FFFCFC00 d2 5530 first 7000 at word nil, end word -, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 19858.031 no 3D block: mb FFFCFC00 d2 5530 first 7000 at word 323, end word 0C0D, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 19860.000 per second: drawn 36, extra 21, ticks 18, dropped 1, cycles 10, gd 0.52 jd 0.42, lua ms 0.2, wall 0.995 s, max gap 24 ms, late 0
+ 19879.031 no 3D block: mb FFF9FC00 d2 5530 first 7000 at word nil, end word -, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 19900.036 no 3D block: mb FFFCFC00 d2 5530 first 7000 at word 323, end word 0C0D, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 19920.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.52 jd 0.42, lua ms 0.0, wall 0.993 s, max gap 20 ms, late 0
+ 19921.030 no 3D block: mb FFF9FC00 d2 5530 first 7000 at word nil, end word -, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 19942.031 no 3D block: mb FFFCFC00 d2 5530 first 7000 at word 323, end word 0C0D, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 19963.031 no 3D block: mb FFF9FC00 d2 5530 first 7000 at word nil, end word -, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 19980.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.52 jd 0.42, lua ms 0.0, wall 0.997 s, max gap 19 ms, late 0
+ 19984.031 no 3D block: mb FFFCFC00 d2 5530 first 7000 at word 323, end word 0C0D, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 20005.031 no 3D block: mb FFF9FC00 d2 5530 first 7000 at word nil, end word -, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 20026.031 no 3D block: mb FFFCFC00 d2 5530 first 7000 at word 323, end word 0C0D, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 20040.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.52 jd 0.42, lua ms 0.0, wall 0.998 s, max gap 19 ms, late 0
+ 20047.031 no 3D block: mb FFF9FC00 d2 5530 first 7000 at word nil, end word -, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 20068.031 no 3D block: mb FFFCFC00 d2 5530 first 7000 at word 323, end word 0C0D, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 20089.031 no 3D block: mb FFF9FC00 d2 5530 first 7000 at word nil, end word -, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 20100.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.52 jd 0.42, lua ms 0.0, wall 1.000 s, max gap 19 ms, late 0
+ 20110.031 no 3D block: mb FFFCFC00 d2 5530 first 7000 at word 323, end word 0C0D, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 20131.031 no 3D block: mb FFF9FC00 d2 5530 first 7000 at word nil, end word -, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 20152.031 no 3D block: mb FFFCFC00 d2 5530 first 7000 at word 323, end word 0C0D, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 20160.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.52 jd 0.42, lua ms 0.0, wall 0.992 s, max gap 19 ms, late 0
+ 20173.031 no 3D block: mb FFF9FC00 d2 5530 first 7000 at word nil, end word -, head 3CC2 0B67 EF74 F29C 3E45 F9BF 0EFC 0966 3D81 0000 0000 0000
+ 20194.031 no 3D block: mb FFFCFC00 d2 5530 first 7000 at word nil, end word -, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+ 20206.422 no ADSP time this cycle (overclock adsp)
+ 20210.000 extra 1 missed (rendered false, buffer 0000)
+ 20211.000 extra 2 missed (rendered false, buffer 0000)
+ 20220.000 per second: drawn 25, extra 6, ticks 19, dropped 2, cycles 3, gd 0.57 jd 0.32, lua ms 0.1, wall 1.000 s, max gap 23 ms, late 0
+ 20280.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.63 jd 0.35, lua ms 0.3, wall 0.997 s, max gap 18 ms, late 0
+ 20340.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.32, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 20400.000 per second: drawn 60, extra 41, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.36, lua ms 0.4, wall 1.001 s, max gap 18 ms, late 0
+ 20460.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.35, lua ms 0.3, wall 0.991 s, max gap 19 ms, late 0
+ 20520.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.37, lua ms 0.4, wall 0.997 s, max gap 19 ms, late 0
+ 20580.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.37, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+ 20640.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.36, lua ms 0.4, wall 0.996 s, max gap 19 ms, late 0
+ 20700.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.36, lua ms 0.3, wall 0.995 s, max gap 19 ms, late 0
+ 20760.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.36, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 20820.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.35, lua ms 0.3, wall 1.000 s, max gap 20 ms, late 0
+ 20880.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.36, lua ms 0.7, wall 0.995 s, max gap 19 ms, late 0
+ 20940.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.36, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 21000.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.40 jd 0.28, lua ms 0.3, wall 0.993 s, max gap 18 ms, late 0
+ 21060.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.37, lua ms 0.3, wall 1.000 s, max gap 19 ms, late 0
+ 21120.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.63 jd 0.34, lua ms 0.4, wall 0.993 s, max gap 19 ms, late 0
+ 21180.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.57 jd 0.34, lua ms 0.3, wall 0.996 s, max gap 18 ms, late 0
+ 21240.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.51 jd 0.33, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+ 21300.000 per second: drawn 60, extra 47, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.32, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+ 21360.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.30, lua ms 0.9, wall 0.992 s, max gap 20 ms, late 0
+ 21420.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.52 jd 0.30, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 21480.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.54 jd 0.33, lua ms 0.3, wall 0.997 s, max gap 20 ms, late 0
+ 21540.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.34, lua ms 0.3, wall 1.000 s, max gap 19 ms, late 0
+ 21600.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.35, lua ms 0.3, wall 1.000 s, max gap 19 ms, late 0
+ 21660.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.25, lua ms 0.3, wall 0.989 s, max gap 20 ms, late 0
+ 21720.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.56 jd 0.31, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 21780.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.33, lua ms 0.3, wall 1.000 s, max gap 19 ms, late 0
+ 21840.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.33, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 21900.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.34, lua ms 0.3, wall 0.994 s, max gap 35 ms, late 1
+ 21960.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.35, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 22020.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.36, lua ms 0.3, wall 1.000 s, max gap 19 ms, late 0
+ 22080.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.35, lua ms 0.3, wall 0.997 s, max gap 21 ms, late 0
+ 22140.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.34, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 22200.000 per second: drawn 60, extra 47, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.35, lua ms 0.3, wall 0.993 s, max gap 19 ms, late 0
+ 22260.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.34, lua ms 0.3, wall 0.999 s, max gap 19 ms, late 0
+ 22320.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.33, lua ms 0.3, wall 0.997 s, max gap 20 ms, late 0
+ 22380.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.35, lua ms 0.3, wall 0.994 s, max gap 20 ms, late 0
+ 22440.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.34, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+ 22500.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.34, lua ms 0.4, wall 0.995 s, max gap 18 ms, late 0
+ 22560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.33, lua ms 0.4, wall 0.998 s, max gap 18 ms, late 0
+ 22620.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.40 jd 0.28, lua ms 0.3, wall 0.993 s, max gap 19 ms, late 0
+ 22680.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.34, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 22740.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.31, lua ms 0.3, wall 1.000 s, max gap 18 ms, late 0
+ 22800.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.35, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+ 22860.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.34, lua ms 1.6, wall 0.990 s, max gap 18 ms, late 0
+ 22920.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.35, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 22980.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.35, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+ 23040.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.34, lua ms 0.4, wall 0.998 s, max gap 19 ms, late 0
+ 23100.000 per second: drawn 60, extra 42, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.34, lua ms 0.3, wall 0.994 s, max gap 19 ms, late 0
+ 23160.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.41 jd 0.29, lua ms 0.3, wall 0.995 s, max gap 19 ms, late 0
+ 23220.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.34, lua ms 0.3, wall 0.999 s, max gap 19 ms, late 0
+ 23280.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.34, lua ms 0.4, wall 0.999 s, max gap 18 ms, late 0
+ 23340.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.48 jd 0.30, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 23400.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.50 jd 0.31, lua ms 0.3, wall 0.993 s, max gap 19 ms, late 0
+ 23460.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.49 jd 0.31, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 23520.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.31, lua ms 0.3, wall 0.999 s, max gap 19 ms, late 0
+ 23580.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.35, lua ms 0.3, wall 0.994 s, max gap 19 ms, late 0
+ 23640.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.34, lua ms 0.4, wall 1.000 s, max gap 18 ms, late 0
+ 23700.000 per second: drawn 60, extra 44, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.35, lua ms 0.4, wall 0.994 s, max gap 19 ms, late 0
+ 23760.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.75 jd 0.40, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+ 23820.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.53 jd 0.31, lua ms 0.7, wall 0.992 s, max gap 20 ms, late 0
+ 23880.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.35, lua ms 0.2, wall 0.997 s, max gap 18 ms, late 0
+ 23940.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.36, lua ms 0.3, wall 1.000 s, max gap 18 ms, late 0
+ 24000.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.34, lua ms 0.8, wall 0.995 s, max gap 18 ms, late 0
+ 24027.023 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24049.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24060.000 per second: drawn 39, extra 21, ticks 21, dropped 0, cycles 10, gd 0.56 jd 0.32, lua ms 0.1, wall 0.991 s, max gap 20 ms, late 0
+ 24070.029 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24091.028 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24112.029 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24120.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 0.997 s, max gap 20 ms, late 0
+ 24133.028 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24154.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24175.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24180.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 0.997 s, max gap 19 ms, late 0
+ 24196.029 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24217.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24238.029 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24240.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 1.000 s, max gap 19 ms, late 0
+ 24259.028 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24280.029 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24300.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 0.993 s, max gap 19 ms, late 0
+ 24301.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24322.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24343.033 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24360.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 0.996 s, max gap 20 ms, late 0
+ 24364.029 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24385.028 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24406.029 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24420.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 0.997 s, max gap 19 ms, late 0
+ 24427.028 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24448.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24469.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24480.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 1.000 s, max gap 21 ms, late 0
+ 24490.029 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24511.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24532.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24540.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 0.997 s, max gap 20 ms, late 0
+ 24553.028 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24574.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24595.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24600.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 0.992 s, max gap 19 ms, late 0
+ 24616.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24637.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24658.029 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24660.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 0.997 s, max gap 19 ms, late 0
+ 24679.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24700.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24720.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 1.000 s, max gap 19 ms, late 0
+ 24721.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24742.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24763.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24780.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 0.994 s, max gap 19 ms, late 0
+ 24784.029 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24805.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24826.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24840.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 1.000 s, max gap 19 ms, late 0
+ 24847.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24868.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24889.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24900.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 0.992 s, max gap 19 ms, late 0
+ 24910.029 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24931.028 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24952.029 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24960.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 1.000 s, max gap 20 ms, late 0
+ 24973.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 24994.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25015.029 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25020.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 0.993 s, max gap 20 ms, late 0
+ 25036.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25057.028 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25078.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25080.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 0.998 s, max gap 19 ms, late 0
+ 25099.028 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25120.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25140.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.56 jd 0.32, lua ms 0.0, wall 1.000 s, max gap 19 ms, late 0
+ 25141.028 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25162.028 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25174.422 no ADSP time this cycle (overclock adsp)
+ 25178.000 extra 1 missed (rendered false, buffer 0000)
+ 25179.000 extra 2 missed (rendered false, buffer 0000)
+ 25200.000 per second: drawn 31, extra 14, ticks 19, dropped 2, cycles 7, gd 0.30 jd 0.32, lua ms 0.1, wall 0.992 s, max gap 23 ms, late 0
+ 25207.000 extra 1 missed (rendered false, buffer FFFF)
+ 25208.000 no ADSP time this cycle (overclock adsp)
+ 25208.000 extra 2 missed (rendered false, buffer 0000)
+ 25208.022 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25229.030 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word 323, end word 0D00, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25250.031 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25260.000 per second: drawn 19, extra 0, ticks 19, dropped 2, cycles 1, gd 0.30 jd 0.32, lua ms 0.0, wall 0.997 s, max gap 20 ms, late 0
+ 25271.030 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word 323, end word 0D00, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25292.031 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25313.031 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word 323, end word 0D00, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25320.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.30 jd 0.32, lua ms 0.0, wall 0.997 s, max gap 20 ms, late 0
+ 25334.030 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25355.030 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word 323, end word 0D00, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25376.031 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25380.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.30 jd 0.32, lua ms 0.0, wall 0.998 s, max gap 20 ms, late 0
+ 25397.030 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word 323, end word 0D00, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25418.030 no 3D block: mb FFF9FC00 d2 3720 first 7000 at word nil, end word -, head 36A7 FFF3 214C FFE4 4000 0046 DEB4 FFB5 36A7 0000 0000 0000
+ 25439.030 no 3D block: mb FFFCFC00 d2 3720 first 7000 at word 202, end word 0000, head 4000 0000 0000 0000 4000 0000 0000 0000 4000 0000 0000 0000
+ 25440.000 per second: drawn 20, extra 0, ticks 20, dropped 0, cycles 0, gd 0.30 jd 0.32, lua ms 0.0, wall 1.001 s, max gap 19 ms, late 0
+ 25457.480 no ADSP time this cycle (overclock adsp)
+ 25461.000 extra 1 missed (rendered false, buffer 0000)
+ 25462.000 extra 2 missed (rendered false, buffer 0000)
+ 25500.000 per second: drawn 44, extra 28, ticks 19, dropped 2, cycles 13, gd 0.58 jd 0.38, lua ms 0.3, wall 0.996 s, max gap 24 ms, late 0
+ 25560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.55 jd 0.36, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 25620.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.63 jd 0.35, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 25680.000 per second: drawn 60, extra 45, ticks 20, dropped 0, cycles 20, gd 0.69 jd 0.38, lua ms 0.4, wall 1.001 s, max gap 19 ms, late 0
+ 25740.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.67 jd 0.37, lua ms 0.4, wall 0.994 s, max gap 20 ms, late 0
+ 25800.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.63 jd 0.36, lua ms 0.3, wall 0.995 s, max gap 19 ms, late 0
+ 25860.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.32, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 25920.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.65 jd 0.44, lua ms 0.4, wall 1.003 s, max gap 19 ms, late 0
+ 25980.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.40, lua ms 0.4, wall 0.993 s, max gap 19 ms, late 0
+ 26040.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.40, lua ms 0.3, wall 1.000 s, max gap 19 ms, late 0
+ 26100.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.64 jd 0.44, lua ms 0.3, wall 0.993 s, max gap 19 ms, late 0
+ 26160.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.69 jd 0.51, lua ms 0.8, wall 1.000 s, max gap 19 ms, late 0
+ 26220.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.69 jd 0.56, lua ms 0.4, wall 0.994 s, max gap 19 ms, late 0
+ 26280.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.70 jd 0.53, lua ms 0.4, wall 0.998 s, max gap 18 ms, late 0
+ 26340.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.67 jd 0.48, lua ms 0.9, wall 0.994 s, max gap 19 ms, late 0
+ 26400.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.64 jd 0.43, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+ 26460.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.46, lua ms 0.4, wall 0.995 s, max gap 18 ms, late 0
+ 26520.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.67 jd 0.47, lua ms 0.3, wall 0.995 s, max gap 19 ms, late 0
+ 26580.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.48, lua ms 0.3, wall 0.999 s, max gap 18 ms, late 0
+ 26640.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.65 jd 0.44, lua ms 0.4, wall 0.999 s, max gap 18 ms, late 0
+ 26700.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.65 jd 0.44, lua ms 0.4, wall 0.997 s, max gap 19 ms, late 0
+ 26760.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.49, lua ms 0.4, wall 0.995 s, max gap 21 ms, late 0
+ 26820.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.65 jd 0.50, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 26880.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.50, lua ms 0.3, wall 0.997 s, max gap 18 ms, late 0
+ 26940.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.69 jd 0.45, lua ms 0.4, wall 1.000 s, max gap 18 ms, late 0
+ 27000.000 per second: drawn 60, extra 43, ticks 20, dropped 0, cycles 20, gd 0.62 jd 0.39, lua ms 0.4, wall 0.992 s, max gap 19 ms, late 0
+ 27060.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.63 jd 0.40, lua ms 0.3, wall 0.997 s, max gap 18 ms, late 0
+ 27120.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.36, lua ms 0.3, wall 0.996 s, max gap 19 ms, late 0
+ 27180.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.64 jd 0.42, lua ms 0.3, wall 1.000 s, max gap 19 ms, late 0
+ 27240.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.31, lua ms 0.4, wall 0.995 s, max gap 18 ms, late 0
+ 27300.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.37, lua ms 0.3, wall 0.995 s, max gap 19 ms, late 0
+ 27360.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.40, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 27420.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.42, lua ms 0.4, wall 1.001 s, max gap 19 ms, late 0
+ 27480.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.64 jd 0.47, lua ms 0.4, wall 0.993 s, max gap 19 ms, late 0
+ 27540.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.38 jd 0.49, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+ 27600.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.39 jd 0.52, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+ 27660.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.32 jd 0.41, lua ms 0.4, wall 0.992 s, max gap 19 ms, late 0
+ 27720.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.31 jd 0.39, lua ms 1.0, wall 0.997 s, max gap 19 ms, late 0
+ 27780.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.32 jd 0.39, lua ms 0.3, wall 0.994 s, max gap 20 ms, late 0
+ 27840.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.37 jd 0.39, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 27900.000 per second: drawn 60, extra 48, ticks 20, dropped 0, cycles 20, gd 0.64 jd 0.43, lua ms 0.4, wall 1.001 s, max gap 19 ms, late 0
+ 27960.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.37, lua ms 0.5, wall 0.993 s, max gap 19 ms, late 0
+ 28020.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.40, lua ms 0.3, wall 0.994 s, max gap 18 ms, late 0
+ 28080.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.43, lua ms 0.3, wall 0.998 s, max gap 19 ms, late 0
+ 28140.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.66 jd 0.45, lua ms 0.4, wall 0.998 s, max gap 19 ms, late 0
+ 28200.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.64 jd 0.47, lua ms 0.4, wall 1.000 s, max gap 18 ms, late 0
+ 28260.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.69 jd 0.43, lua ms 0.4, wall 0.992 s, max gap 21 ms, late 0
+ 28320.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.41, lua ms 0.3, wall 0.996 s, max gap 18 ms, late 0
+ 28380.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.58 jd 0.37, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 28440.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.40, lua ms 0.4, wall 0.999 s, max gap 21 ms, late 0
+ 28500.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.59 jd 0.39, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+ 28560.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.60 jd 0.34, lua ms 0.7, wall 0.991 s, max gap 19 ms, late 0
+ 28620.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.64 jd 0.38, lua ms 0.3, wall 0.997 s, max gap 19 ms, late 0
+ 28680.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.61 jd 0.37, lua ms 0.4, wall 1.001 s, max gap 19 ms, late 0
+ 28740.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.39, lua ms 0.4, wall 0.995 s, max gap 19 ms, late 0
+ 28800.000 per second: drawn 60, extra 44, ticks 20, dropped 0, cycles 20, gd 0.44 jd 0.38, lua ms 0.4, wall 0.999 s, max gap 19 ms, late 0
+ 28860.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.45 jd 0.40, lua ms 0.3, wall 0.992 s, max gap 19 ms, late 0
+ 28920.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.40, lua ms 0.4, wall 1.000 s, max gap 19 ms, late 0
+ 28980.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.47 jd 0.40, lua ms 0.4, wall 0.993 s, max gap 19 ms, late 0
+ 29040.000 per second: drawn 60, extra 46, ticks 20, dropped 0, cycles 20, gd 0.46 jd 0.38, lua ms 0.4, wall 0.997 s, max gap 19 ms, late 0
+ 29081.000 extra 1 missed (rendered false, buffer FFFF)
+ 29082.000 no ADSP time this cycle (overclock adsp)
+ 29082.000 extra 2 missed (rendered false, buffer 0000)
+ 29082.022 no 3D block: mb FFF9FC00 d2 5145 first 7000 at word nil, end word -, head 1FF3 C88B 000D 3774 1FF3 0036 FFCA FFF0 4000 0000 0000 0000
+ 29100.000 per second: drawn 39, extra 24, ticks 18, dropped 2, cycles 12, gd 0.45 jd 0.37, lua ms 0.2, wall 0.994 s, max gap 22 ms, late 0
+ 29103.031 no 3D block: mb FFF9FC00 d2 5145 first 7000 at word 323, end word 0D00, head 1FF3 C88B 000D 3774 1FF3 0036 FFCA FFF0 4000 0000 0000 0000
+ 29124.030 no 3D block: mb FFFCFC00 d2 5145 first 7000 at word nil, end word -, head 1FF3 C88B 000D 3774 1FF3 0036 FFCA FFF0 4000 0000 0000 0000
+ 29145.030 no 3D block: mb FFF9FC00 d2 5145 first 7000 at word 323, end word 0D00, head 1FF3 C88B 000D 3774 1FF3 0036 FFCA FFF0 4000 0000 0000 0000

@@ -1,0 +1,10 @@
+#!/bin/sh
+# Start the custom S.T.U.N. Runner 60fps build with explicit paths (no dependency on a distro MAME package / /etc/mame).
+# Extra arguments are passed to MAME (e.g. -window).
+export STUN60_CLOCK="${STUN60_CLOCK:-maincpu=3,gsp=4,adsp=8}"
+M="$HOME/.mame"
+mkdir -p "$M/cfg" "$M/nvram" "$M/snap"
+exec "$HOME/mame/build/mame-mame0285/stun60" stunrun -inipath "$M" -rompath "$HOME/mame/roms" \
+  -cfg_directory "$M/cfg" -nvram_directory "$M/nvram" -snapshot_directory "$M/snap" \
+  -sound portaudio -audio_latency 3 -autoboot_script "$HOME/mame/scripts/stunrun-interp60.lua" "$@" \
+  2> "$HOME/mame/stun60-stderr.log"
