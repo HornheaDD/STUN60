@@ -1,5 +1,8 @@
 # S.T.U.N. Runner 60fps
 
+> **The project continues in [STUN_HD60](https://github.com/HornheaDD/STUN_HD60)**, which adds a high-resolution redraw
+> of the 3D scene (press H to switch back to the original picture). This repository stays as the 60 fps-only v1.0 release.
+
 Atari's **S.T.U.N. Runner** (1989 arcade) at a real **60 frames per second** and the correct game speed, running in a
 lightly patched MAME 0.285 plus a Lua script.
 
