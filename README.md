@@ -15,6 +15,9 @@ statistics overlay (**O**), and portable Linux (AppImage) and Windows packages.
 `hd-experiment/stun60-sidebyside-realtime.mp4` shows 20 fps vs 60 fps from an early offline test
 (its HD redraw is a separate experiment, not part of the live build yet).
 
+**Download:** ready-to-run Linux (AppImage / tar.gz) and Windows builds are on the
+[Releases page](https://github.com/HornheaDD/STUN60/releases/latest).
+
 **No ROMs are included.** You need your own MAME 0.285 `stunrun.zip` (parent set).
 
 ## How it works (short version)
