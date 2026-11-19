@@ -65,4 +65,5 @@ the probes in `scripts/re-probes/` regenerate them from your own ROM set.
 Built on [MAME](https://www.mamedev.org/) 0.285. The MAME source files changed by `stun60-mame0285.patch`
 (`harddriv.cpp`, `harddriv.h`, `harddriv_m.cpp`, `luaengine.cpp`) are BSD-3-Clause, and the patch keeps their license.
 Binaries built from it are MAME builds and fall under MAME's overall license (GPL-2.0-or-later).
+Everything else in this repository (scripts, tools, packaging) is under the MIT License, see `LICENSE`.
 S.T.U.N. Runner is © 1989 Atari Games. This project is not affiliated with Atari or the MAME team.
